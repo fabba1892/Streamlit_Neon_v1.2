@@ -1,0 +1,6 @@
+# Excel files
+*.xlsx
+
+# Data files
+data/RAN_Region_County_Mapping_With_IDs.json
+data/Phase1result.txt
