@@ -6,13 +6,13 @@ def render_sidebar(metrics):
 
     st.sidebar.markdown("## Network Ops AI")
     
-    # 1. PULL RECALCULATED METRICS
+    # 1. PULL METRICS
     oos = metrics.get("total_oos", 0)
     hubs = metrics.get("total_incidents", 0)
     total = metrics.get("total_alarms", 0)
     p_data = metrics.get("priorities", {})
 
-    # 2. RENDER TOP STATS (HTML injected to get exact layout and colors)
+    # 2. TOP STATS
     st.sidebar.markdown(f"""
         <div class="neon-box blue-edge">
             <div class="stat-row"><span>Sites OOS</span> <span class="stat-val">{oos}</span></div>
@@ -27,38 +27,36 @@ def render_sidebar(metrics):
         </div>
     """, unsafe_allow_html=True)
 
-    # 3. RENDER RCA DISTRIBUTION (HTML injected)
-    rca_html = '<div class="neon-box"><span class="filter-header">RCA Distribution</span>'
+    # 3. RCA DISTRIBUTION
+    rca_html = '<div class="neon-box blue-edge"><span class="filter-header">RCA Distribution</span>'
     for rca, count in metrics.get("top_rcas", []):
         rca_html += f'<div class="neon-rca-row"><span>{rca}</span><span class="neon-rca-badge">{count}</span></div>'
     rca_html += '</div>'
     st.sidebar.markdown(rca_html, unsafe_allow_html=True)
 
-    # 4. STREAMLIT NATIVE FILTERS (Wrapped in a shaded container via CSS)
-    st.sidebar.markdown('<span class="filter-header" style="margin-left: 5px;">Intelligent Filters</span>', unsafe_allow_html=True)
-    
-    # st.sidebar.container(border=True) creates the shaded background box!
-    with st.sidebar.container(border=True):
-        st.session_state.search_query = st.text_input("Search RCA, ID, Hub...", placeholder="Search...")
+    # 4. INTELLIGENT FILTERS (Version-Proof Form Wrapper)
+    with st.sidebar.form("filter_panel"):
+        st.markdown('<span class="filter-header">Intelligent Filters</span>', unsafe_allow_html=True)
         
-        st.session_state.focus_filter = st.selectbox(
-            "Focus", 
-            ["All Incidents", "Hub Failures Only", "Link/Trans Only"]
-        )
+        # Form Inputs
+        st.session_state.search_query = st.text_input("Search RCA, ID, Hub...", placeholder="Search...")
+        st.session_state.focus_filter = st.selectbox("Focus", ["All Incidents", "Hub Failures Only", "Link/Trans Only"], label_visibility="collapsed")
         
         dynamic_rca = ["All"] + [rca[0] for rca in metrics.get("top_rcas", [])]
-        st.session_state.rca_filter = st.selectbox("Root Cause", dynamic_rca)
+        st.session_state.rca_filter = st.selectbox("Root Cause", dynamic_rca, label_visibility="collapsed")
         
-        st.session_state.county_filter = st.selectbox("County", ["All"])
-        
+        st.session_state.county_filter = st.selectbox("County", ["All"], label_visibility="collapsed")
         st.session_state.min_sites = st.number_input("Min Sites Impacted", min_value=0, step=1)
         
-        col1, col2 = st.columns(2)
-        with col1:
-            st.button("Sort Rank", use_container_width=True)
-        with col2:
-            st.button("Sort Time", use_container_width=True)
-            
-        st.button("Clear All Filters", type="primary", use_container_width=True)
+        # Consolidated Sorting for Form compatibility
+        st.session_state.sort_type = st.selectbox("Sort Priority", ["Rank (Highest Impact)", "Time (Newest First)"])
+        
+        # The mandatory Form Submit Button (Triggers the update across the dashboard)
+        submitted = st.form_submit_button("Apply Filters", use_container_width=True)
 
-    st.sidebar.markdown('<div style="font-size:0.65rem; margin-top:20px; color:#64748b; text-align:center;">Last Sync: Live Engine</div>', unsafe_allow_html=True)
+    # Clear Filters Button (Placed outside the form to reset states safely)
+    if st.sidebar.button("Clear All Filters", use_container_width=True):
+        st.session_state.clear()
+        st.rerun()
+
+    st.sidebar.markdown('<div style="font-size:0.65rem; margin-top:20px; color:#64748b; text-align:center;">Last Sync: Live Engine Active</div>', unsafe_allow_html=True)
