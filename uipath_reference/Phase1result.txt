@@ -1,0 +1,3342 @@
+{
+  "metadata": {
+    "last_refreshed": "2026-04-02 11:17:08",
+    "total_oos_sites": 536,
+    "total_incidents_shown": 11,
+    "min_avg_rank": 7282.7
+  },
+  "regional_data": {
+    "SGS": {
+      "Total_OOS_Count": 68,
+      "Incidents": [
+        {
+          "start_ts": 1775119664,
+          "Region": "SGS",
+          "Hub_Name": "EMDENI_UCCSA",
+          "County_List": [
+            "Deep South"
+          ],
+          "RAN_Risk_Count": 9,
+          "VBS_Count": 0,
+          "RAN_Failed_Count": 7,
+          "Potential_Failure": 16,
+          "OOS_Count": 4,
+          "Impact_15min_Count": 3,
+          "MSDP_Priority": "P4",
+          "Average_Rank": 9459.5,
+          "RCA": "Hubsite Failure - Transmission",
+          "OOS_Location_List": [
+            "EMDENI_UCCSA",
+            "FUNDANI_PRIM_SCHL",
+            "LUFHERENG_R558",
+            "NALEDI_LP"
+          ],
+          "OOS_Location_Details": {
+            "LUFHERENG_R558": {
+              "metadata": {
+                "is_primary_hub": false,
+                "Site_Rank": 9793,
+                "RAN_Risk_Count": 9,
+                "VBS_Count": 0,
+                "RAN_Failed_Count": 7,
+                "Potential_Failure": 16
+              },
+              "alarms": [
+                {
+                  "Alarm": "GSM_CELL_OUT_OF_SERVICE_OTHER_CAUSES",
+                  "Summary": "21801",
+                  "Severity": 4,
+                  "RawLastOccurrence": 1775119666,
+                  "LastOccurrence": "2026-04-02 10:47:46",
+                  "Serial": 801693101
+                },
+                {
+                  "Alarm": "GSM_CELL_OUT_OF_SERVICE_OTHER_CAUSES",
+                  "Summary": "21801",
+                  "Severity": 4,
+                  "RawLastOccurrence": 1775119672,
+                  "LastOccurrence": "2026-04-02 10:47:52",
+                  "Serial": 801693122
+                },
+                {
+                  "Alarm": "CSL_FAULT",
+                  "Summary": "21825",
+                  "Severity": 5,
+                  "RawLastOccurrence": 1775119675,
+                  "LastOccurrence": "2026-04-02 10:47:55",
+                  "Serial": 801693129
+                },
+                {
+                  "Alarm": "UMTS_CELL_UNAVAILABLE_NCP_CCP_FAILURE",
+                  "Summary": "22202",
+                  "Severity": 5,
+                  "RawLastOccurrence": 1775119711,
+                  "LastOccurrence": "2026-04-02 10:48:31",
+                  "Serial": 801693436
+                },
+                {
+                  "Alarm": "UMTS_CELL_UNAVAILABLE_NCP_CCP_FAILURE",
+                  "Summary": "22202",
+                  "Severity": 5,
+                  "RawLastOccurrence": 1775119711,
+                  "LastOccurrence": "2026-04-02 10:48:31",
+                  "Serial": 801693438
+                },
+                {
+                  "Alarm": "UMTS_CELL_UNAVAILABLE_NCP_CCP_FAILURE",
+                  "Summary": "22202",
+                  "Severity": 5,
+                  "RawLastOccurrence": 1775119711,
+                  "LastOccurrence": "2026-04-02 10:48:31",
+                  "Serial": 801693434
+                },
+                {
+                  "Alarm": "UMTS_CELL_UNAVAILABLE_NCP_CCP_FAILURE",
+                  "Summary": "22202",
+                  "Severity": 5,
+                  "RawLastOccurrence": 1775119711,
+                  "LastOccurrence": "2026-04-02 10:48:31",
+                  "Serial": 801693437
+                },
+                {
+                  "Alarm": "UMTS_CELL_UNAVAILABLE_NCP_CCP_FAILURE",
+                  "Summary": "22202",
+                  "Severity": 5,
+                  "RawLastOccurrence": 1775119711,
+                  "LastOccurrence": "2026-04-02 10:48:31",
+                  "Serial": 801693439
+                },
+                {
+                  "Alarm": "GSM_CELL_OUT_OF_SERVICE_OTHER_CAUSES",
+                  "Summary": "21801",
+                  "Severity": 4,
+                  "RawLastOccurrence": 1775119666,
+                  "LastOccurrence": "2026-04-02 10:47:46",
+                  "Serial": 801693100
+                },
+                {
+                  "Alarm": "UMTS_CELL_UNAVAILABLE_NCP_CCP_FAILURE",
+                  "Summary": "22202",
+                  "Severity": 5,
+                  "RawLastOccurrence": 1775119711,
+                  "LastOccurrence": "2026-04-02 10:48:31",
+                  "Serial": 801693433
+                },
+                {
+                  "Alarm": "REACHABILITYPROBLEM",
+                  "Summary": "[AlarmName = ReachabilityProblem] [ObjectFullName = faultManager:network@10.174.65.135|alarm-243-4-176]",
+                  "Severity": 4,
+                  "RawLastOccurrence": 1775119690,
+                  "LastOccurrence": "2026-04-02 10:48:10",
+                  "Serial": 1318484063
+                }
+              ]
+            },
+            "NALEDI_LP": {
+              "metadata": {
+                "is_primary_hub": false,
+                "Site_Rank": 12174,
+                "RAN_Risk_Count": 9,
+                "VBS_Count": 0,
+                "RAN_Failed_Count": 7,
+                "Potential_Failure": 16
+              },
+              "alarms": []
+            },
+            "FUNDANI_PRIM_SCHL": {
+              "metadata": {
+                "is_primary_hub": false,
+                "Site_Rank": 12375,
+                "RAN_Risk_Count": 9,
+                "VBS_Count": 0,
+                "RAN_Failed_Count": 7,
+                "Potential_Failure": 16
+              },
+              "alarms": [
+                {
+                  "Alarm": "UMTS_CELL_UNAVAILABLE_NCP_CCP_FAILURE",
+                  "Summary": "22202",
+                  "Severity": 5,
+                  "RawLastOccurrence": 1775119711,
+                  "LastOccurrence": "2026-04-02 10:48:31",
+                  "Serial": 801693432
+                },
+                {
+                  "Alarm": "UMTS_CELL_UNAVAILABLE_NCP_CCP_FAILURE",
+                  "Summary": "22202",
+                  "Severity": 5,
+                  "RawLastOccurrence": 1775119710,
+                  "LastOccurrence": "2026-04-02 10:48:30",
+                  "Serial": 801693424
+                },
+                {
+                  "Alarm": "NE_IS_DISCONNECTED",
+                  "Summary": "40012",
+                  "Severity": 5,
+                  "RawLastOccurrence": 1775119866,
+                  "LastOccurrence": "2026-04-02 10:51:06",
+                  "Serial": 801694110
+                },
+                {
+                  "Alarm": "UMTS_CELL_UNAVAILABLE_NCP_CCP_FAILURE",
+                  "Summary": "22202",
+                  "Severity": 5,
+                  "RawLastOccurrence": 1775119711,
+                  "LastOccurrence": "2026-04-02 10:48:31",
+                  "Serial": 801693431
+                },
+                {
+                  "Alarm": "UMTS_CELL_UNAVAILABLE_NCP_CCP_FAILURE",
+                  "Summary": "22202",
+                  "Severity": 5,
+                  "RawLastOccurrence": 1775119711,
+                  "LastOccurrence": "2026-04-02 10:48:31",
+                  "Serial": 801693536
+                },
+                {
+                  "Alarm": "MULTIPLE_UMTS_CELL_UNAVAILABLE",
+                  "Summary": "Synthetic Alert for : MULTIPLE_UMTS_CELL_UNAVAILABLE",
+                  "Severity": 5,
+                  "RawLastOccurrence": 1775119710,
+                  "LastOccurrence": "2026-04-02 10:48:30",
+                  "Serial": 801694369
+                },
+                {
+                  "Alarm": "UMTS_CELL_UNAVAILABLE_NCP_CCP_FAILURE",
+                  "Summary": "22202",
+                  "Severity": 5,
+                  "RawLastOccurrence": 1775119710,
+                  "LastOccurrence": "2026-04-02 10:48:30",
+                  "Serial": 801693425
+                },
+                {
+                  "Alarm": "NODEB_UNAVAILABLE",
+                  "Summary": "22214",
+                  "Severity": 5,
+                  "RawLastOccurrence": 1775119710,
+                  "LastOccurrence": "2026-04-02 10:48:30",
+                  "Serial": 801693422
+                },
+                {
+                  "Alarm": "UMTS_CELL_UNAVAILABLE_NCP_CCP_FAILURE",
+                  "Summary": "22202",
+                  "Severity": 5,
+                  "RawLastOccurrence": 1775119710,
+                  "LastOccurrence": "2026-04-02 10:48:30",
+                  "Serial": 801693423
+                },
+                {
+                  "Alarm": "REACHABILITYPROBLEM",
+                  "Summary": "[AlarmName = ReachabilityProblem] [ObjectFullName = faultManager:network@10.174.65.140|alarm-243-4-176]",
+                  "Severity": 4,
+                  "RawLastOccurrence": 1775119687,
+                  "LastOccurrence": "2026-04-02 10:48:07",
+                  "Serial": 1318484006
+                }
+              ]
+            },
+            "EMDENI_UCCSA": {
+              "metadata": {
+                "is_primary_hub": true,
+                "Site_Rank": 3496,
+                "RAN_Risk_Count": 9,
+                "VBS_Count": 0,
+                "RAN_Failed_Count": 7,
+                "Potential_Failure": 16
+              },
+              "alarms": [
+                {
+                  "Alarm": "CSL_FAULT",
+                  "Summary": "21825 - CSL_FAULT at Hub site: 2G_Emdeni_UCCSA_SGS",
+                  "Severity": 5,
+                  "RawLastOccurrence": 1775119664,
+                  "LastOccurrence": "2026-04-02 10:47:44",
+                  "Serial": 801693091
+                },
+                {
+                  "Alarm": "MULTIPLE_UMTS_CELL_UNAVAILABLE",
+                  "Summary": "Synthetic Alert for : MULTIPLE_UMTS_CELL_UNAVAILABLE",
+                  "Severity": 5,
+                  "RawLastOccurrence": 1775119710,
+                  "LastOccurrence": "2026-04-02 10:48:30",
+                  "Serial": 801694370
+                },
+                {
+                  "Alarm": "NODEB_UNAVAILABLE",
+                  "Summary": "22214",
+                  "Severity": 5,
+                  "RawLastOccurrence": 1775119710,
+                  "LastOccurrence": "2026-04-02 10:48:30",
+                  "Serial": 801693416
+                },
+                {
+                  "Alarm": "GSM_CELL_OUT_OF_SERVICE_OTHER_CAUSES",
+                  "Summary": "21801",
+                  "Severity": 4,
+                  "RawLastOccurrence": 1775119666,
+                  "LastOccurrence": "2026-04-02 10:47:46",
+                  "Serial": 801693099
+                },
+                {
+                  "Alarm": "UMTS_CELL_UNAVAILABLE_NCP_CCP_FAILURE",
+                  "Summary": "22202",
+                  "Severity": 5,
+                  "RawLastOccurrence": 1775119710,
+                  "LastOccurrence": "2026-04-02 10:48:30",
+                  "Serial": 801693418
+                },
+                {
+                  "Alarm": "UMTS_CELL_UNAVAILABLE_NCP_CCP_FAILURE",
+                  "Summary": "22202",
+                  "Severity": 5,
+                  "RawLastOccurrence": 1775119710,
+                  "LastOccurrence": "2026-04-02 10:48:30",
+                  "Serial": 801693420
+                },
+                {
+                  "Alarm": "UMTS_CELL_UNAVAILABLE_NCP_CCP_FAILURE",
+                  "Summary": "22202",
+                  "Severity": 5,
+                  "RawLastOccurrence": 1775119710,
+                  "LastOccurrence": "2026-04-02 10:48:30",
+                  "Serial": 801693417
+                },
+                {
+                  "Alarm": "GSM_CELL_OUT_OF_SERVICE_OTHER_CAUSES",
+                  "Summary": "21801",
+                  "Severity": 4,
+                  "RawLastOccurrence": 1775119666,
+                  "LastOccurrence": "2026-04-02 10:47:46",
+                  "Serial": 801693098
+                },
+                {
+                  "Alarm": "GSM_CELL_OUT_OF_SERVICE_OTHER_CAUSES",
+                  "Summary": "21801",
+                  "Severity": 4,
+                  "RawLastOccurrence": 1775119666,
+                  "LastOccurrence": "2026-04-02 10:47:46",
+                  "Serial": 801693097
+                },
+                {
+                  "Alarm": "NE_IS_DISCONNECTED",
+                  "Summary": "40012",
+                  "Severity": 5,
+                  "RawLastOccurrence": 1775119865,
+                  "LastOccurrence": "2026-04-02 10:51:05",
+                  "Serial": 801694107
+                },
+                {
+                  "Alarm": "UMTS_CELL_UNAVAILABLE_NCP_CCP_FAILURE",
+                  "Summary": "22202",
+                  "Severity": 5,
+                  "RawLastOccurrence": 1775119710,
+                  "LastOccurrence": "2026-04-02 10:48:30",
+                  "Serial": 801693419
+                },
+                {
+                  "Alarm": "UMTS_CELL_UNAVAILABLE_NCP_CCP_FAILURE",
+                  "Summary": "22202",
+                  "Severity": 5,
+                  "RawLastOccurrence": 1775119710,
+                  "LastOccurrence": "2026-04-02 10:48:30",
+                  "Serial": 801693535
+                },
+                {
+                  "Alarm": "NE_IS_DISCONNECTED",
+                  "Summary": "40012 BkTime=04:00",
+                  "Severity": 5,
+                  "RawLastOccurrence": 1775119798,
+                  "LastOccurrence": "2026-04-02 10:49:58",
+                  "Serial": 801694647
+                },
+                {
+                  "Alarm": "UMTS_CELL_UNAVAILABLE_NCP_CCP_FAILURE",
+                  "Summary": "22202",
+                  "Severity": 5,
+                  "RawLastOccurrence": 1775119710,
+                  "LastOccurrence": "2026-04-02 10:48:30",
+                  "Serial": 801693421
+                },
+                {
+                  "Alarm": "HUAWEI_SITE_OUT_OF_SERVICE_DUE_TO_ISISADJACENCYDOWN",
+                  "Summary": "Synthetic Alert for Huawei Site Out of Service",
+                  "Severity": 5,
+                  "RawLastOccurrence": 1775119860,
+                  "LastOccurrence": "2026-04-02 10:51:00",
+                  "Serial": 801693582
+                },
+                {
+                  "Alarm": "REACHABILITYPROBLEM",
+                  "Summary": "[AlarmName = ReachabilityProblem] [ObjectFullName = faultManager:network@10.174.65.154|alarm-243-4-176]",
+                  "Severity": 4,
+                  "RawLastOccurrence": 1775119690,
+                  "LastOccurrence": "2026-04-02 10:48:10",
+                  "Serial": 1318484061
+                },
+                {
+                  "Alarm": "LAGDOWN",
+                  "Summary": "[AlarmName = LagDown] [ObjectFullName = faultManager:network@10.174.65.154@lag@interface-8|alarm-20-3-17]",
+                  "Severity": 5,
+                  "RawLastOccurrence": 1775119483,
+                  "LastOccurrence": "2026-04-02 10:44:43",
+                  "Serial": 1318482174
+                }
+              ]
+            }
+          },
+          "Failure_Probability": "75.0%",
+          "Weather": {
+            "forecast_8h": {
+              "icon": "\u2600\ufe0f",
+              "wind": "21.2km/h",
+              "rain": "0.0mm",
+              "temp": "21.6\u00b0C",
+              "threat_level": "Low",
+              "impact": "Monitor for site stability",
+              "timestamp": 1775149200
+            },
+            "current": {
+              "icon": "\u2600\ufe0f",
+              "wind": "19.1km/h",
+              "rain": "0.0mm",
+              "temp": "23.6\u00b0C",
+              "threat_level": "Low",
+              "impact": "Monitor for site stability",
+              "timestamp": 1775120400
+            }
+          }
+        }
+      ],
+      "Weather_Summary": {
+        "current_icon": "\u2600\ufe0f",
+        "current_condition": "Peak Wind: 19.1km/h",
+        "warning_text": ""
+      }
+    },
+    "LIM": {
+      "Total_OOS_Count": 88,
+      "Incidents": [
+        {
+          "start_ts": 1775099834,
+          "Region": "LIM",
+          "Hub_Name": "TSHILAMBA",
+          "County_List": [
+            "Vhembe"
+          ],
+          "RAN_Risk_Count": 0,
+          "VBS_Count": 8,
+          "RAN_Failed_Count": 7,
+          "Potential_Failure": 7,
+          "OOS_Count": 5,
+          "Impact_15min_Count": 4,
+          "MSDP_Priority": "P3",
+          "Average_Rank": 7958.4,
+          "RCA": "Hubsite Failure - Power",
+          "OOS_Location_List": [
+            "MUTALE_HILLTOP",
+            "THENGWE",
+            "THENGWE_DECT",
+            "THONGANI",
+            "TSHILAMBA"
+          ],
+          "OOS_Location_Details": {
+            "THENGWE_DECT": {
+              "metadata": {
+                "is_primary_hub": false,
+                "Site_Rank": 8594,
+                "RAN_Risk_Count": 0,
+                "VBS_Count": 8,
+                "RAN_Failed_Count": 7,
+                "Potential_Failure": 7
+              },
+              "alarms": [
+                {
+                  "Alarm": "UMTS_CELL_UNAVAILABLE_NCP_CCP_FAILURE",
+                  "Summary": "22202",
+                  "Severity": 5,
+                  "RawLastOccurrence": 1775099847,
+                  "LastOccurrence": "2026-04-02 05:17:27",
+                  "Serial": 801620198
+                },
+                {
+                  "Alarm": "GSM_CELL_OUT_OF_SERVICE_OTHER_CAUSES",
+                  "Summary": "21801",
+                  "Severity": 4,
+                  "RawLastOccurrence": 1775099844,
+                  "LastOccurrence": "2026-04-02 05:17:24",
+                  "Serial": 801620180
+                },
+                {
+                  "Alarm": "GSM_CELL_OUT_OF_SERVICE_OTHER_CAUSES",
+                  "Summary": "21801",
+                  "Severity": 4,
+                  "RawLastOccurrence": 1775099844,
+                  "LastOccurrence": "2026-04-02 05:17:24",
+                  "Serial": 801620179
+                },
+                {
+                  "Alarm": "CSL_FAULT",
+                  "Summary": "21825",
+                  "Severity": 5,
+                  "RawLastOccurrence": 1775099834,
+                  "LastOccurrence": "2026-04-02 05:17:14",
+                  "Serial": 801620174
+                },
+                {
+                  "Alarm": "GSM_CELL_OUT_OF_SERVICE_OTHER_CAUSES",
+                  "Summary": "21801",
+                  "Severity": 4,
+                  "RawLastOccurrence": 1775099844,
+                  "LastOccurrence": "2026-04-02 05:17:24",
+                  "Serial": 801620223
+                },
+                {
+                  "Alarm": "CELL_UNAVAILABLE_RF_MODULE_ABNORMAL",
+                  "Summary": "29240",
+                  "Severity": 4,
+                  "RawLastOccurrence": 1775056992,
+                  "LastOccurrence": "2026-04-01 17:23:12",
+                  "Serial": 801480889
+                },
+                {
+                  "Alarm": "CELL_UNAVAILABLE_RF_MODULE_ABNORMAL",
+                  "Summary": "29240",
+                  "Severity": 4,
+                  "RawLastOccurrence": 1775056993,
+                  "LastOccurrence": "2026-04-01 17:23:13",
+                  "Serial": 801480887
+                },
+                {
+                  "Alarm": "CELL_UNAVAILABLE_RF_MODULE_ABNORMAL",
+                  "Summary": "29240",
+                  "Severity": 4,
+                  "RawLastOccurrence": 1775056992,
+                  "LastOccurrence": "2026-04-01 17:23:12",
+                  "Serial": 801480888
+                },
+                {
+                  "Alarm": "UMTS_CELL_UNAVAILABLE_NCP_CCP_FAILURE",
+                  "Summary": "22202",
+                  "Severity": 5,
+                  "RawLastOccurrence": 1775099847,
+                  "LastOccurrence": "2026-04-02 05:17:27",
+                  "Serial": 801620274
+                },
+                {
+                  "Alarm": "MULTIPLE_LTE_CELL_DEGRADED_UNAVAILABLE",
+                  "Summary": "Synthetic Alarm for MULTIPLE LTE CELL Unavailable",
+                  "Severity": 5,
+                  "RawLastOccurrence": 1775056930,
+                  "LastOccurrence": "2026-04-01 17:22:10",
+                  "Serial": 801481292
+                },
+                {
+                  "Alarm": "UMTS_CELL_UNAVAILABLE_NCP_CCP_FAILURE",
+                  "Summary": "22202",
+                  "Severity": 5,
+                  "RawLastOccurrence": 1775099847,
+                  "LastOccurrence": "2026-04-02 05:17:27",
+                  "Serial": 801620273
+                },
+                {
+                  "Alarm": "THE_DEVICE_IS_OFFLINE",
+                  "Summary": "Alarm Reason=Device discontinuity;Probable Cause=UNIDENTIFIED",
+                  "Severity": 5,
+                  "RawLastOccurrence": 1775099809,
+                  "LastOccurrence": "2026-04-02 05:16:49",
+                  "Serial": 1318319983
+                }
+              ]
+            },
+            "MUTALE_HILLTOP": {
+              "metadata": {
+                "is_primary_hub": false,
+                "Site_Rank": 10761,
+                "RAN_Risk_Count": 0,
+                "VBS_Count": 8,
+                "RAN_Failed_Count": 7,
+                "Potential_Failure": 7
+              },
+              "alarms": [
+                {
+                  "Alarm": "AC_MAINS_FAILED",
+                  "Summary": "65106",
+                  "Severity": 5,
+                  "RawLastOccurrence": 1775057058,
+                  "LastOccurrence": "2026-04-01 17:24:18",
+                  "Serial": 798610662
+                },
+                {
+                  "Alarm": "ESKOM_MAINS_FAILED",
+                  "Summary": "65110",
+                  "Severity": 4,
+                  "RawLastOccurrence": 1775057058,
+                  "LastOccurrence": "2026-04-01 17:24:18",
+                  "Serial": 798611217
+                },
+                {
+                  "Alarm": "CONFIGURATION_DATA_INCONSISTENCY",
+                  "Summary": "26245",
+                  "Severity": 4,
+                  "RawLastOccurrence": 1775057058,
+                  "LastOccurrence": "2026-04-01 17:24:18",
+                  "Serial": 798618833
+                },
+                {
+                  "Alarm": "ALL GSM CELLS OUT OF SERVICE",
+                  "Summary": "Synthetic Alert for : ALL GSM CELLS OUT OF SERVICE",
+                  "Severity": 5,
+                  "RawLastOccurrence": 1775099844,
+                  "LastOccurrence": "2026-04-02 05:17:24",
+                  "Serial": 801620488
+                },
+                {
+                  "Alarm": "BATTERY_LOW",
+                  "Summary": "65107",
+                  "Severity": 5,
+                  "RawLastOccurrence": 1775057058,
+                  "LastOccurrence": "2026-04-01 17:24:18",
+                  "Serial": 798620759
+                },
+                {
+                  "Alarm": "BATTERY_INTEGRITY",
+                  "Summary": "65109",
+                  "Severity": 4,
+                  "RawLastOccurrence": 1775057058,
+                  "LastOccurrence": "2026-04-01 17:24:18",
+                  "Serial": 798631841
+                },
+                {
+                  "Alarm": "AC_PHASE_FAILED",
+                  "Summary": "65108",
+                  "Severity": 3,
+                  "RawLastOccurrence": 1775057058,
+                  "LastOccurrence": "2026-04-01 17:24:18",
+                  "Serial": 798634163
+                },
+                {
+                  "Alarm": "NE_IS_DISCONNECTED",
+                  "Summary": "40012",
+                  "Severity": 5,
+                  "RawLastOccurrence": 1775100035,
+                  "LastOccurrence": "2026-04-02 05:20:35",
+                  "Serial": 801620639
+                },
+                {
+                  "Alarm": "RECTIFIER_SYSTEM_FAILED",
+                  "Summary": "65105",
+                  "Severity": 5,
+                  "RawLastOccurrence": 1775057058,
+                  "LastOccurrence": "2026-04-01 17:24:18",
+                  "Serial": 798636481
+                },
+                {
+                  "Alarm": "HIGH_TEMPERATURE",
+                  "Summary": "65102",
+                  "Severity": 4,
+                  "RawLastOccurrence": 1775057058,
+                  "LastOccurrence": "2026-04-01 17:24:18",
+                  "Serial": 798642427
+                },
+                {
+                  "Alarm": "AIRCRAFT_LIGHT_FAILED",
+                  "Summary": "65111",
+                  "Severity": 3,
+                  "RawLastOccurrence": 1775057058,
+                  "LastOccurrence": "2026-04-01 17:24:18",
+                  "Serial": 798642875
+                },
+                {
+                  "Alarm": "CSL_FAULT",
+                  "Summary": "21825",
+                  "Severity": 5,
+                  "RawLastOccurrence": 1775099842,
+                  "LastOccurrence": "2026-04-02 05:17:22",
+                  "Serial": 801620176
+                },
+                {
+                  "Alarm": "GSM_CELL_OUT_OF_SERVICE_OTHER_CAUSES",
+                  "Summary": "21801",
+                  "Severity": 4,
+                  "RawLastOccurrence": 1775099844,
+                  "LastOccurrence": "2026-04-02 05:17:24",
+                  "Serial": 801620183
+                },
+                {
+                  "Alarm": "RECTIFIER_MODULE_FAILED",
+                  "Summary": "65103",
+                  "Severity": 3,
+                  "RawLastOccurrence": 1775057058,
+                  "LastOccurrence": "2026-04-01 17:24:18",
+                  "Serial": 798651327
+                },
+                {
+                  "Alarm": "NODEB_UNAVAILABLE",
+                  "Summary": "22214",
+                  "Severity": 5,
+                  "RawLastOccurrence": 1775099897,
+                  "LastOccurrence": "2026-04-02 05:18:17",
+                  "Serial": 801620371
+                },
+                {
+                  "Alarm": "INTRUDER",
+                  "Summary": "65100",
+                  "Severity": 4,
+                  "RawLastOccurrence": 1775057058,
+                  "LastOccurrence": "2026-04-01 17:24:18",
+                  "Serial": 798672776
+                },
+                {
+                  "Alarm": "SMOKE",
+                  "Summary": "65101",
+                  "Severity": 4,
+                  "RawLastOccurrence": 1775057058,
+                  "LastOccurrence": "2026-04-01 17:24:18",
+                  "Serial": 798673110
+                },
+                {
+                  "Alarm": "AIRCON_1_FAILED",
+                  "Summary": "65113",
+                  "Severity": 3,
+                  "RawLastOccurrence": 1775057058,
+                  "LastOccurrence": "2026-04-01 17:24:18",
+                  "Serial": 798673606
+                },
+                {
+                  "Alarm": "GSM_CELL_OUT_OF_SERVICE_OTHER_CAUSES",
+                  "Summary": "21801",
+                  "Severity": 4,
+                  "RawLastOccurrence": 1775099844,
+                  "LastOccurrence": "2026-04-02 05:17:24",
+                  "Serial": 801620225
+                },
+                {
+                  "Alarm": "GSM_CELL_OUT_OF_SERVICE_OTHER_CAUSES",
+                  "Summary": "21801",
+                  "Severity": 4,
+                  "RawLastOccurrence": 1775099844,
+                  "LastOccurrence": "2026-04-02 05:17:24",
+                  "Serial": 801620228
+                },
+                {
+                  "Alarm": "CONFIGURATION_DATA_INCONSISTENCY",
+                  "Summary": "26245",
+                  "Severity": 4,
+                  "RawLastOccurrence": 1775058633,
+                  "LastOccurrence": "2026-04-01 17:50:33",
+                  "Serial": 801489261
+                },
+                {
+                  "Alarm": "AIRCON_2_FAILED",
+                  "Summary": "65114",
+                  "Severity": 3,
+                  "RawLastOccurrence": 1775057058,
+                  "LastOccurrence": "2026-04-01 17:24:18",
+                  "Serial": 798683474
+                },
+                {
+                  "Alarm": "HUAWEI_SITE_OUT_OF_SERVICE",
+                  "Summary": "Synthetic Alert for Huawei Site Out of Service",
+                  "Severity": 5,
+                  "RawLastOccurrence": 1775100062,
+                  "LastOccurrence": "2026-04-02 05:21:02",
+                  "Serial": 801620449
+                },
+                {
+                  "Alarm": "MOVEMENT",
+                  "Summary": "65104",
+                  "Severity": 3,
+                  "RawLastOccurrence": 1775057058,
+                  "LastOccurrence": "2026-04-01 17:24:18",
+                  "Serial": 798704585
+                },
+                {
+                  "Alarm": "NE_NOT_LOGIN",
+                  "Summary": "Alarm Reason=This NE is not logged in;Probable Cause=UNIDENTIFIED",
+                  "Severity": 5,
+                  "RawLastOccurrence": 1775099841,
+                  "LastOccurrence": "2026-04-02 05:17:21",
+                  "Serial": 1318320234
+                },
+                {
+                  "Alarm": "THE_DEVICE_IS_OFFLINE",
+                  "Summary": "Alarm Reason=Device discontinuity;Probable Cause=UNIDENTIFIED",
+                  "Severity": 5,
+                  "RawLastOccurrence": 1775099818,
+                  "LastOccurrence": "2026-04-02 05:16:58",
+                  "Serial": 1318320003
+                },
+                {
+                  "Alarm": "NE_COMMU_BREAK",
+                  "Summary": "Alarm Reason=NE communication was lost;Probable Cause=NE_COMMU_BREAK",
+                  "Severity": 5,
+                  "RawLastOccurrence": 1775099841,
+                  "LastOccurrence": "2026-04-02 05:17:21",
+                  "Serial": 1318320233
+                },
+                {
+                  "Alarm": "POWER_ABNORMAL",
+                  "Summary": "Alarm Parameter II(hex) 0x02 0x00;Alarm Reason=Power abnormal;Probable Cause=EQPT",
+                  "Severity": 4,
+                  "RawLastOccurrence": 1775056866,
+                  "LastOccurrence": "2026-04-01 17:21:06",
+                  "Serial": 1317978143
+                }
+              ]
+            },
+            "TSHILAMBA": {
+              "metadata": {
+                "is_primary_hub": true,
+                "Site_Rank": 3435,
+                "RAN_Risk_Count": 0,
+                "VBS_Count": 8,
+                "RAN_Failed_Count": 7,
+                "Potential_Failure": 7
+              },
+              "alarms": [
+                {
+                  "Alarm": "AIRCON_2_FAILED",
+                  "Summary": "65114",
+                  "Severity": 3,
+                  "RawLastOccurrence": 1775068824,
+                  "LastOccurrence": "2026-04-01 20:40:24",
+                  "Serial": 798976542
+                },
+                {
+                  "Alarm": "MULTIPLE_LTE_CELL_DEGRADED_UNAVAILABLE",
+                  "Summary": "Synthetic Alarm for MULTIPLE LTE CELL Unavailable",
+                  "Severity": 5,
+                  "RawLastOccurrence": 1775068941,
+                  "LastOccurrence": "2026-04-01 20:42:21",
+                  "Serial": 800495459
+                },
+                {
+                  "Alarm": "BATTERY_INTEGRITY",
+                  "Summary": "65109",
+                  "Severity": 4,
+                  "RawLastOccurrence": 1775068824,
+                  "LastOccurrence": "2026-04-01 20:40:24",
+                  "Serial": 801481747
+                },
+                {
+                  "Alarm": "POSSIBLE_ALARM_PANEL_FAILURE",
+                  "Summary": "Synthetic Alarm for PANEL FAILURE",
+                  "Severity": 5,
+                  "RawLastOccurrence": 1775057212,
+                  "LastOccurrence": "2026-04-01 17:26:52",
+                  "Serial": 801481726
+                },
+                {
+                  "Alarm": "UMTS_CELL_UNAVAILABLE_NCP_CCP_FAILURE",
+                  "Summary": "22202",
+                  "Severity": 5,
+                  "RawLastOccurrence": 1775082863,
+                  "LastOccurrence": "2026-04-02 00:34:23",
+                  "Serial": 801575894
+                },
+                {
+                  "Alarm": "NE_IS_DISCONNECTED",
+                  "Summary": "40012 BkTime=04:00",
+                  "Severity": 5,
+                  "RawLastOccurrence": 1775083000,
+                  "LastOccurrence": "2026-04-02 00:36:40",
+                  "Serial": 801576775
+                },
+                {
+                  "Alarm": "BBU_CPRI_INTERFACE_ERROR_RECEIVE_NO_SIGNAL",
+                  "Summary": "26234",
+                  "Severity": 4,
+                  "RawLastOccurrence": 1775068591,
+                  "LastOccurrence": "2026-04-01 20:36:31",
+                  "Serial": 801480771
+                },
+                {
+                  "Alarm": "HUAWEI_SITE_OUT_OF_SERVICE",
+                  "Summary": "Synthetic Alert for Huawei Site Out of Service",
+                  "Severity": 5,
+                  "RawLastOccurrence": 1775083016,
+                  "LastOccurrence": "2026-04-02 00:36:56",
+                  "Serial": 801575995
+                },
+                {
+                  "Alarm": "ALL GSM CELLS OUT OF SERVICE",
+                  "Summary": "Synthetic Alert for : ALL GSM CELLS OUT OF SERVICE",
+                  "Severity": 5,
+                  "RawLastOccurrence": 1775082860,
+                  "LastOccurrence": "2026-04-02 00:34:20",
+                  "Serial": 801576191
+                },
+                {
+                  "Alarm": "RF_UNIT_MAINTENANCE_LINK_FAILURE",
+                  "Summary": "26235",
+                  "Severity": 4,
+                  "RawLastOccurrence": 1775068591,
+                  "LastOccurrence": "2026-04-01 20:36:31",
+                  "Serial": 801480772
+                },
+                {
+                  "Alarm": "CELL_UNAVAILABLE_RF_MODULE_ABNORMAL",
+                  "Summary": "29240",
+                  "Severity": 5,
+                  "RawLastOccurrence": 1775068625,
+                  "LastOccurrence": "2026-04-01 20:37:05",
+                  "Serial": 798642695
+                },
+                {
+                  "Alarm": "RECTIFIER_SYSTEM_FAILED",
+                  "Summary": "65105",
+                  "Severity": 5,
+                  "RawLastOccurrence": 1775068824,
+                  "LastOccurrence": "2026-04-01 20:40:24",
+                  "Serial": 798643862
+                },
+                {
+                  "Alarm": "UMTS_CELL_UNAVAILABLE_NCP_CCP_FAILURE",
+                  "Summary": "22202",
+                  "Severity": 5,
+                  "RawLastOccurrence": 1775082863,
+                  "LastOccurrence": "2026-04-02 00:34:23",
+                  "Serial": 801575895
+                },
+                {
+                  "Alarm": "BATTERY_LOW",
+                  "Summary": "65107",
+                  "Severity": 5,
+                  "RawLastOccurrence": 1775068824,
+                  "LastOccurrence": "2026-04-01 20:40:24",
+                  "Serial": 801481182
+                },
+                {
+                  "Alarm": "NODEB_UNAVAILABLE",
+                  "Summary": "22214",
+                  "Severity": 5,
+                  "RawLastOccurrence": 1775082863,
+                  "LastOccurrence": "2026-04-02 00:34:23",
+                  "Serial": 801575893
+                },
+                {
+                  "Alarm": "RECTIFIER_MODULE_FAILED",
+                  "Summary": "65103",
+                  "Severity": 3,
+                  "RawLastOccurrence": 1775068824,
+                  "LastOccurrence": "2026-04-01 20:40:24",
+                  "Serial": 801481179
+                },
+                {
+                  "Alarm": "GNSS_ANTENNA_FAULT_ANTENNA_SHORT-CIRCUITED",
+                  "Summary": "26125",
+                  "Severity": 3,
+                  "RawLastOccurrence": 1775068591,
+                  "LastOccurrence": "2026-04-01 20:36:31",
+                  "Serial": 801480770
+                },
+                {
+                  "Alarm": "HIGH_TEMPERATURE",
+                  "Summary": "65102",
+                  "Severity": 4,
+                  "RawLastOccurrence": 1775068824,
+                  "LastOccurrence": "2026-04-01 20:40:24",
+                  "Serial": 801481178
+                },
+                {
+                  "Alarm": "SMOKE",
+                  "Summary": "65101",
+                  "Severity": 4,
+                  "RawLastOccurrence": 1775068824,
+                  "LastOccurrence": "2026-04-01 20:40:24",
+                  "Serial": 801481177
+                },
+                {
+                  "Alarm": "AC_PHASE_FAILED",
+                  "Summary": "65108",
+                  "Severity": 3,
+                  "RawLastOccurrence": 1775068824,
+                  "LastOccurrence": "2026-04-01 20:40:24",
+                  "Serial": 801481183
+                },
+                {
+                  "Alarm": "AIRCRAFT_LIGHT_FAILED",
+                  "Summary": "65111",
+                  "Severity": 3,
+                  "RawLastOccurrence": 1775068824,
+                  "LastOccurrence": "2026-04-01 20:40:24",
+                  "Serial": 801481185
+                },
+                {
+                  "Alarm": "MULTIPLE_UMTS_CELL_UNAVAILABLE",
+                  "Summary": "Synthetic Alert for : MULTIPLE_UMTS_CELL_UNAVAILABLE",
+                  "Severity": 5,
+                  "RawLastOccurrence": 1775082863,
+                  "LastOccurrence": "2026-04-02 00:34:23",
+                  "Serial": 801576187
+                },
+                {
+                  "Alarm": "UMTS_CELL_UNAVAILABLE_NCP_CCP_FAILURE",
+                  "Summary": "22202",
+                  "Severity": 5,
+                  "RawLastOccurrence": 1775082863,
+                  "LastOccurrence": "2026-04-02 00:34:23",
+                  "Serial": 801575962
+                },
+                {
+                  "Alarm": "GSM_CELL_OUT_OF_SERVICE_OTHER_CAUSES",
+                  "Summary": "21801",
+                  "Severity": 4,
+                  "RawLastOccurrence": 1775082860,
+                  "LastOccurrence": "2026-04-02 00:34:20",
+                  "Serial": 801575960
+                },
+                {
+                  "Alarm": "CSL_FAULT",
+                  "Summary": "21825 - CSL_FAULT at Hub site: 2G_Tshilamba_LIM",
+                  "Severity": 5,
+                  "RawLastOccurrence": 1775082857,
+                  "LastOccurrence": "2026-04-02 00:34:17",
+                  "Serial": 801575958
+                },
+                {
+                  "Alarm": "AIRCON_1_FAILED",
+                  "Summary": "65113",
+                  "Severity": 3,
+                  "RawLastOccurrence": 1775068824,
+                  "LastOccurrence": "2026-04-01 20:40:24",
+                  "Serial": 801481187
+                },
+                {
+                  "Alarm": "ESKOM_MAINS_FAILED",
+                  "Summary": "65110",
+                  "Severity": 4,
+                  "RawLastOccurrence": 1775068824,
+                  "LastOccurrence": "2026-04-01 20:40:24",
+                  "Serial": 801481184
+                },
+                {
+                  "Alarm": "NE_IS_DISCONNECTED",
+                  "Summary": "40012",
+                  "Severity": 5,
+                  "RawLastOccurrence": 1775083047,
+                  "LastOccurrence": "2026-04-02 00:37:27",
+                  "Serial": 801576333
+                },
+                {
+                  "Alarm": "AC_MAINS_FAILED",
+                  "Summary": "65106",
+                  "Severity": 5,
+                  "RawLastOccurrence": 1775068824,
+                  "LastOccurrence": "2026-04-01 20:40:24",
+                  "Serial": 801481181
+                },
+                {
+                  "Alarm": "EXTERNAL_CLOCK_REFERENCE_PROBLEM_CLOCK_REFERENCE_LOST",
+                  "Summary": "26262",
+                  "Severity": 4,
+                  "RawLastOccurrence": 1775068591,
+                  "LastOccurrence": "2026-04-01 20:36:31",
+                  "Serial": 801480868
+                },
+                {
+                  "Alarm": "MOVEMENT",
+                  "Summary": "65104",
+                  "Severity": 3,
+                  "RawLastOccurrence": 1775068824,
+                  "LastOccurrence": "2026-04-01 20:40:24",
+                  "Serial": 801481180
+                },
+                {
+                  "Alarm": "CONFIGURATION_DATA_INCONSISTENCY",
+                  "Summary": "26245",
+                  "Severity": 4,
+                  "RawLastOccurrence": 1775070448,
+                  "LastOccurrence": "2026-04-01 21:07:28",
+                  "Serial": 801537161
+                },
+                {
+                  "Alarm": "INTRUDER",
+                  "Summary": "65100",
+                  "Severity": 4,
+                  "RawLastOccurrence": 1775068824,
+                  "LastOccurrence": "2026-04-01 20:40:24",
+                  "Serial": 801481176
+                },
+                {
+                  "Alarm": "GSM_CELL_OUT_OF_SERVICE_OTHER_CAUSES",
+                  "Summary": "21801",
+                  "Severity": 4,
+                  "RawLastOccurrence": 1775082860,
+                  "LastOccurrence": "2026-04-02 00:34:20",
+                  "Serial": 801575890
+                },
+                {
+                  "Alarm": "GSM_CELL_OUT_OF_SERVICE_OTHER_CAUSES",
+                  "Summary": "21801",
+                  "Severity": 4,
+                  "RawLastOccurrence": 1775082860,
+                  "LastOccurrence": "2026-04-02 00:34:20",
+                  "Serial": 801575889
+                },
+                {
+                  "Alarm": "LINK_DOWN",
+                  "Summary": "If admin status=up If oper status=down If phy status=unreported Main If Name=GigabitEthernet027 LinkDown Reason=mainifdown LSR ID=10.36.81.97;Alarm Reason=Link Down;Probable Cause=UNIDENTIFIED",
+                  "Severity": 5,
+                  "RawLastOccurrence": 1775082679,
+                  "LastOccurrence": "2026-04-02 00:31:19",
+                  "Serial": 1318202294
+                },
+                {
+                  "Alarm": "LINK_DOWN",
+                  "Summary": "If admin status=up If oper status=down If phy status=unreported Main If Name=25GE0223 LinkDown Reason=physicalLinkDown LSR ID=10.36.81.97;Alarm Reason=Link Down;Probable Cause=UNIDENTIFIED",
+                  "Severity": 5,
+                  "RawLastOccurrence": 1775099622,
+                  "LastOccurrence": "2026-04-02 05:13:42",
+                  "Serial": 1318318944
+                },
+                {
+                  "Alarm": "POWER_INVALID",
+                  "Summary": "PhysicalIndex=17104896 EntityStatus=enabled EntityTrapReasonDescr=The input voltage of the power supply module was lower than the minimum voltage;Alarm Reason=Power Invalid;Probable Cause=UNIDENTIFIED",
+                  "Severity": 5,
+                  "RawLastOccurrence": 1775099641,
+                  "LastOccurrence": "2026-04-02 05:14:01",
+                  "Serial": 1318319006
+                },
+                {
+                  "Alarm": "PHYSICAL_PORT_DOWN",
+                  "Summary": "PhysicalIndex=16912664 Detail DownReason=LOS If oper status=down If admin status=up;Alarm Reason=Physical Port Down(Entity);Probable Cause=UNIDENTIFIED",
+                  "Severity": 5,
+                  "RawLastOccurrence": 1775099623,
+                  "LastOccurrence": "2026-04-02 05:13:43",
+                  "Serial": 1318318945
+                },
+                {
+                  "Alarm": "PHYSICAL_PORT_DOWN",
+                  "Summary": "PhysicalIndex=16912660 Detail DownReason=LOS If oper status=down If admin status=up;Alarm Reason=Physical Port Down(Entity);Probable Cause=UNIDENTIFIED",
+                  "Severity": 5,
+                  "RawLastOccurrence": 1775082683,
+                  "LastOccurrence": "2026-04-02 00:31:23",
+                  "Serial": 1318202322
+                },
+                {
+                  "Alarm": "LINK_DOWN",
+                  "Summary": "If admin status=up If oper status=down If phy status=unreported Main If Name=GigabitEthernet027 LinkDown Reason=mainifdown LSR ID=10.36.81.97;Alarm Reason=Link Down;Probable Cause=UNIDENTIFIED",
+                  "Severity": 5,
+                  "RawLastOccurrence": 1775082679,
+                  "LastOccurrence": "2026-04-02 00:31:19",
+                  "Serial": 1318202279
+                },
+                {
+                  "Alarm": "DEVICE_POWERED_OFF",
+                  "Summary": "Alarm Reason=Power supply failed.;Probable Cause=UNIDENTIFIED",
+                  "Severity": 5,
+                  "RawLastOccurrence": 1775099655,
+                  "LastOccurrence": "2026-04-02 05:14:15",
+                  "Serial": 1318319193
+                },
+                {
+                  "Alarm": "ETH_LOS",
+                  "Summary": "Alarm Reason=Loss of network interface connection;Probable Cause=UNIDENTIFIED",
+                  "Severity": 5,
+                  "RawLastOccurrence": 1775082683,
+                  "LastOccurrence": "2026-04-02 00:31:23",
+                  "Serial": 1318202325
+                },
+                {
+                  "Alarm": "LINK_DOWN",
+                  "Summary": "If admin status=up If oper status=down If phy status=unreported Main If Name=25GE0223 LinkDown Reason=mainifdown LSR ID=10.36.81.97;Alarm Reason=Link Down;Probable Cause=UNIDENTIFIED",
+                  "Severity": 5,
+                  "RawLastOccurrence": 1775099622,
+                  "LastOccurrence": "2026-04-02 05:13:42",
+                  "Serial": 1318318941
+                },
+                {
+                  "Alarm": "POWER_INVALID",
+                  "Summary": "PhysicalIndex=17170432 EntityStatus=enabled EntityTrapReasonDescr=The input voltage of the power supply module was lower than the minimum voltage;Alarm Reason=Power Invalid;Probable Cause=UNIDENTIFIED",
+                  "Severity": 5,
+                  "RawLastOccurrence": 1775099637,
+                  "LastOccurrence": "2026-04-02 05:13:57",
+                  "Serial": 1318318975
+                },
+                {
+                  "Alarm": "LINK_DOWN",
+                  "Summary": "If admin status=up If oper status=down If phy status=unreported Main If Name=25GE0219 LinkDown Reason=mainifdown LSR ID=10.36.81.97;Alarm Reason=Link Down;Probable Cause=UNIDENTIFIED",
+                  "Severity": 5,
+                  "RawLastOccurrence": 1775082679,
+                  "LastOccurrence": "2026-04-02 00:31:19",
+                  "Serial": 1318202291
+                },
+                {
+                  "Alarm": "NE_NOT_LOGIN",
+                  "Summary": "Alarm Reason=This NE is not logged in;Probable Cause=UNIDENTIFIED",
+                  "Severity": 5,
+                  "RawLastOccurrence": 1775099841,
+                  "LastOccurrence": "2026-04-02 05:17:21",
+                  "Serial": 1318320242
+                },
+                {
+                  "Alarm": "THE_DEVICE_IS_OFFLINE",
+                  "Summary": "Alarm Reason=Device discontinuity;Probable Cause=UNIDENTIFIED",
+                  "Severity": 5,
+                  "RawLastOccurrence": 1775099784,
+                  "LastOccurrence": "2026-04-02 05:16:24",
+                  "Serial": 1318319954
+                },
+                {
+                  "Alarm": "LINK_DOWN",
+                  "Summary": "If admin status=up If oper status=down If phy status=unreported Main If Name=25GE0223 LinkDown Reason=mainifdown LSR ID=10.36.81.97;Alarm Reason=Link Down;Probable Cause=UNIDENTIFIED",
+                  "Severity": 5,
+                  "RawLastOccurrence": 1775099622,
+                  "LastOccurrence": "2026-04-02 05:13:42",
+                  "Serial": 1318318934
+                },
+                {
+                  "Alarm": "NE_NOT_LOGIN",
+                  "Summary": "Alarm Reason=This NE is not logged in;Probable Cause=UNIDENTIFIED",
+                  "Severity": 5,
+                  "RawLastOccurrence": 1775099903,
+                  "LastOccurrence": "2026-04-02 05:18:23",
+                  "Serial": 1318320647
+                },
+                {
+                  "Alarm": "ETH_LOS",
+                  "Summary": "Alarm Reason=Loss of network interface connection;Probable Cause=UNIDENTIFIED",
+                  "Severity": 5,
+                  "RawLastOccurrence": 1775099623,
+                  "LastOccurrence": "2026-04-02 05:13:43",
+                  "Serial": 1318318946
+                },
+                {
+                  "Alarm": "1380_TIMEPICTRA-SE-NENA",
+                  "Summary": "Network Element Not Available",
+                  "Severity": 5,
+                  "RawLastOccurrence": 1775121365,
+                  "LastOccurrence": "2026-04-02 11:16:05",
+                  "Serial": 1318446415
+                },
+                {
+                  "Alarm": "LINK_DOWN",
+                  "Summary": "If admin status=up If oper status=down If phy status=unreported Main If Name=25GE0223 LinkDown Reason=mainifdown LSR ID=10.36.81.97;Alarm Reason=Link Down;Probable Cause=UNIDENTIFIED",
+                  "Severity": 5,
+                  "RawLastOccurrence": 1775099622,
+                  "LastOccurrence": "2026-04-02 05:13:42",
+                  "Serial": 1318318930
+                },
+                {
+                  "Alarm": "GNE_CONNECT_FAIL",
+                  "Summary": "Alarm Reason=The gateway NE connect failed;Probable Cause=GNE_CONNECT_FAIL",
+                  "Severity": 5,
+                  "RawLastOccurrence": 1775099841,
+                  "LastOccurrence": "2026-04-02 05:17:21",
+                  "Serial": 1318320240
+                },
+                {
+                  "Alarm": "NE_COMMU_BREAK",
+                  "Summary": "Alarm Reason=NE communication was lost;Probable Cause=NE_COMMU_BREAK",
+                  "Severity": 5,
+                  "RawLastOccurrence": 1775099903,
+                  "LastOccurrence": "2026-04-02 05:18:23",
+                  "Serial": 1318320580
+                },
+                {
+                  "Alarm": "LINK_DOWN",
+                  "Summary": "If admin status=up If oper status=down If phy status=unreported Main If Name=25GE0219 LinkDown Reason=physicalLinkDown LSR ID=10.36.81.97;Alarm Reason=Link Down;Probable Cause=UNIDENTIFIED",
+                  "Severity": 5,
+                  "RawLastOccurrence": 1775082679,
+                  "LastOccurrence": "2026-04-02 00:31:19",
+                  "Serial": 1318202276
+                },
+                {
+                  "Alarm": "LINK_DOWN",
+                  "Summary": "If admin status=up If oper status=down If phy status=unreported Main If Name=25GE0223 LinkDown Reason=mainifdown LSR ID=10.36.81.97;Alarm Reason=Link Down;Probable Cause=UNIDENTIFIED",
+                  "Severity": 5,
+                  "RawLastOccurrence": 1775099622,
+                  "LastOccurrence": "2026-04-02 05:13:42",
+                  "Serial": 1318318933
+                },
+                {
+                  "Alarm": "LINK_DOWN",
+                  "Summary": "If admin status=up If oper status=down If phy status=unreported Main If Name=25GE0223 LinkDown Reason=mainifdown LSR ID=10.36.81.97;Alarm Reason=Link Down;Probable Cause=UNIDENTIFIED",
+                  "Severity": 5,
+                  "RawLastOccurrence": 1775099622,
+                  "LastOccurrence": "2026-04-02 05:13:42",
+                  "Serial": 1318318943
+                },
+                {
+                  "Alarm": "LINK_DOWN",
+                  "Summary": "If admin status=up If oper status=down If phy status=unreported Main If Name=GigabitEthernet027 LinkDown Reason=mainifdown LSR ID=10.36.81.97;Alarm Reason=Link Down;Probable Cause=UNIDENTIFIED",
+                  "Severity": 5,
+                  "RawLastOccurrence": 1775082679,
+                  "LastOccurrence": "2026-04-02 00:31:19",
+                  "Serial": 1318202292
+                },
+                {
+                  "Alarm": "LINK_DOWN",
+                  "Summary": "If admin status=up If oper status=down If phy status=unreported Main If Name=25GE0223 LinkDown Reason=mainifdown LSR ID=10.36.81.97;Alarm Reason=Link Down;Probable Cause=UNIDENTIFIED",
+                  "Severity": 5,
+                  "RawLastOccurrence": 1775099622,
+                  "LastOccurrence": "2026-04-02 05:13:42",
+                  "Serial": 1318318931
+                },
+                {
+                  "Alarm": "PHYSICAL_PORT_DOWN",
+                  "Summary": "PhysicalIndex=16912648 Detail DownReason=LOS If oper status=down If admin status=up;Alarm Reason=Physical Port Down(Entity);Probable Cause=UNIDENTIFIED",
+                  "Severity": 5,
+                  "RawLastOccurrence": 1775082683,
+                  "LastOccurrence": "2026-04-02 00:31:23",
+                  "Serial": 1318202323
+                },
+                {
+                  "Alarm": "LINK_DOWN",
+                  "Summary": "If admin status=up If oper status=down If phy status=unreported Main If Name=25GE0223 LinkDown Reason=mainifdown LSR ID=10.36.81.97;Alarm Reason=Link Down;Probable Cause=UNIDENTIFIED",
+                  "Severity": 5,
+                  "RawLastOccurrence": 1775099622,
+                  "LastOccurrence": "2026-04-02 05:13:42",
+                  "Serial": 1318318936
+                },
+                {
+                  "Alarm": "LINK_DOWN",
+                  "Summary": "If admin status=up If oper status=down If phy status=unreported Main If Name=25GE0223 LinkDown Reason=mainifdown LSR ID=10.36.81.97;Alarm Reason=Link Down;Probable Cause=UNIDENTIFIED",
+                  "Severity": 5,
+                  "RawLastOccurrence": 1775099622,
+                  "LastOccurrence": "2026-04-02 05:13:42",
+                  "Serial": 1318318938
+                },
+                {
+                  "Alarm": "LINK_DOWN",
+                  "Summary": "If admin status=up If oper status=down If phy status=unreported Main If Name=25GE0219 LinkDown Reason=mainifdown LSR ID=10.36.81.97;Alarm Reason=Link Down;Probable Cause=UNIDENTIFIED",
+                  "Severity": 5,
+                  "RawLastOccurrence": 1775082679,
+                  "LastOccurrence": "2026-04-02 00:31:19",
+                  "Serial": 1318202283
+                },
+                {
+                  "Alarm": "NE_COMMU_BREAK",
+                  "Summary": "Alarm Reason=NE communication was lost;Probable Cause=NE_COMMU_BREAK",
+                  "Severity": 5,
+                  "RawLastOccurrence": 1775099841,
+                  "LastOccurrence": "2026-04-02 05:17:21",
+                  "Serial": 1318320238
+                },
+                {
+                  "Alarm": "LINK_DOWN",
+                  "Summary": "If admin status=up If oper status=down If phy status=unreported Main If Name=25GE0223 LinkDown Reason=mainifdown LSR ID=10.36.81.97;Alarm Reason=Link Down;Probable Cause=UNIDENTIFIED",
+                  "Severity": 5,
+                  "RawLastOccurrence": 1775099622,
+                  "LastOccurrence": "2026-04-02 05:13:42",
+                  "Serial": 1318318942
+                },
+                {
+                  "Alarm": "LINK_DOWN",
+                  "Summary": "If admin status=up If oper status=down If phy status=unreported Main If Name=25GE0219 LinkDown Reason=mainifdown LSR ID=10.36.81.97;Alarm Reason=Link Down;Probable Cause=UNIDENTIFIED",
+                  "Severity": 5,
+                  "RawLastOccurrence": 1775082679,
+                  "LastOccurrence": "2026-04-02 00:31:19",
+                  "Serial": 1318202288
+                },
+                {
+                  "Alarm": "LINK_DOWN",
+                  "Summary": "If admin status=up If oper status=down If phy status=unreported Main If Name=25GE0223 LinkDown Reason=mainifdown LSR ID=10.36.81.97;Alarm Reason=Link Down;Probable Cause=UNIDENTIFIED",
+                  "Severity": 5,
+                  "RawLastOccurrence": 1775099622,
+                  "LastOccurrence": "2026-04-02 05:13:42",
+                  "Serial": 1318318937
+                },
+                {
+                  "Alarm": "LINK_DOWN",
+                  "Summary": "If admin status=up If oper status=down If phy status=unreported Main If Name=GigabitEthernet027 LinkDown Reason=physicalLinkDown LSR ID=10.36.81.97;Alarm Reason=Link Down;Probable Cause=UNIDENTIFIED",
+                  "Severity": 5,
+                  "RawLastOccurrence": 1775082679,
+                  "LastOccurrence": "2026-04-02 00:31:19",
+                  "Serial": 1318202275
+                },
+                {
+                  "Alarm": "LINK_DOWN",
+                  "Summary": "If admin status=up If oper status=down If phy status=unreported Main If Name=GigabitEthernet027 LinkDown Reason=mainifdown LSR ID=10.36.81.97;Alarm Reason=Link Down;Probable Cause=UNIDENTIFIED",
+                  "Severity": 5,
+                  "RawLastOccurrence": 1775082679,
+                  "LastOccurrence": "2026-04-02 00:31:19",
+                  "Serial": 1318202290
+                },
+                {
+                  "Alarm": "LINK_DOWN",
+                  "Summary": "If admin status=up If oper status=down If phy status=unreported Main If Name=GigabitEthernet027 LinkDown Reason=mainifdown LSR ID=10.36.81.97;Alarm Reason=Link Down;Probable Cause=UNIDENTIFIED",
+                  "Severity": 5,
+                  "RawLastOccurrence": 1775082679,
+                  "LastOccurrence": "2026-04-02 00:31:19",
+                  "Serial": 1318202293
+                },
+                {
+                  "Alarm": "LINK_DOWN",
+                  "Summary": "If admin status=up If oper status=down If phy status=unreported Main If Name=GigabitEthernet027 LinkDown Reason=mainifdown LSR ID=10.36.81.97;Alarm Reason=Link Down;Probable Cause=UNIDENTIFIED",
+                  "Severity": 5,
+                  "RawLastOccurrence": 1775082679,
+                  "LastOccurrence": "2026-04-02 00:31:19",
+                  "Serial": 1318202278
+                },
+                {
+                  "Alarm": "LINK_DOWN",
+                  "Summary": "If admin status=up If oper status=down If phy status=unreported Main If Name=GigabitEthernet027 LinkDown Reason=mainifdown LSR ID=10.36.81.97;Alarm Reason=Link Down;Probable Cause=UNIDENTIFIED",
+                  "Severity": 5,
+                  "RawLastOccurrence": 1775082679,
+                  "LastOccurrence": "2026-04-02 00:31:19",
+                  "Serial": 1318202289
+                },
+                {
+                  "Alarm": "LINK_DOWN",
+                  "Summary": "If admin status=up If oper status=down If phy status=unreported Main If Name=GigabitEthernet027 LinkDown Reason=mainifdown LSR ID=10.36.81.97;Alarm Reason=Link Down;Probable Cause=UNIDENTIFIED",
+                  "Severity": 5,
+                  "RawLastOccurrence": 1775082679,
+                  "LastOccurrence": "2026-04-02 00:31:19",
+                  "Serial": 1318202285
+                },
+                {
+                  "Alarm": "ETH_LOS",
+                  "Summary": "Alarm Reason=Loss of network interface connection;Probable Cause=UNIDENTIFIED",
+                  "Severity": 5,
+                  "RawLastOccurrence": 1775082683,
+                  "LastOccurrence": "2026-04-02 00:31:23",
+                  "Serial": 1318202324
+                },
+                {
+                  "Alarm": "PHYSICAL_PORT_DOWN",
+                  "Summary": "PhysicalIndex=16912662 Detail DownReason=LOS If oper status=down If admin status=up;Alarm Reason=Physical Port Down(Entity);Probable Cause=UNIDENTIFIED",
+                  "Severity": 5,
+                  "RawLastOccurrence": 1775057013,
+                  "LastOccurrence": "2026-04-01 17:23:33",
+                  "Serial": 1317979540
+                },
+                {
+                  "Alarm": "LINK_DOWN",
+                  "Summary": "If admin status=up If oper status=down If phy status=unreported Main If Name=GigabitEthernet027 LinkDown Reason=mainifdown LSR ID=10.36.81.97;Alarm Reason=Link Down;Probable Cause=UNIDENTIFIED",
+                  "Severity": 5,
+                  "RawLastOccurrence": 1775082679,
+                  "LastOccurrence": "2026-04-02 00:31:19",
+                  "Serial": 1318202280
+                },
+                {
+                  "Alarm": "LINK_DOWN",
+                  "Summary": "If admin status=up If oper status=down If phy status=unreported Main If Name=25GE0219 LinkDown Reason=mainifdown LSR ID=10.36.81.97;Alarm Reason=Link Down;Probable Cause=UNIDENTIFIED",
+                  "Severity": 5,
+                  "RawLastOccurrence": 1775082679,
+                  "LastOccurrence": "2026-04-02 00:31:19",
+                  "Serial": 1318202277
+                },
+                {
+                  "Alarm": "NE_COMMU_BREAK",
+                  "Summary": "Alarm Reason=NE communication was lost;Probable Cause=NE_COMMU_BREAK",
+                  "Severity": 5,
+                  "RawLastOccurrence": 1775099841,
+                  "LastOccurrence": "2026-04-02 05:17:21",
+                  "Serial": 1318320241
+                },
+                {
+                  "Alarm": "LINK_DOWN",
+                  "Summary": "If admin status=up If oper status=down If phy status=unreported Main If Name=25GE0219 LinkDown Reason=mainifdown LSR ID=10.36.81.97;Alarm Reason=Link Down;Probable Cause=UNIDENTIFIED",
+                  "Severity": 5,
+                  "RawLastOccurrence": 1775082679,
+                  "LastOccurrence": "2026-04-02 00:31:19",
+                  "Serial": 1318202287
+                },
+                {
+                  "Alarm": "LINK_DOWN",
+                  "Summary": "If admin status=up If oper status=down If phy status=unreported Main If Name=25GE0223 LinkDown Reason=mainifdown LSR ID=10.36.81.97;Alarm Reason=Link Down;Probable Cause=UNIDENTIFIED",
+                  "Severity": 5,
+                  "RawLastOccurrence": 1775099622,
+                  "LastOccurrence": "2026-04-02 05:13:42",
+                  "Serial": 1318318935
+                },
+                {
+                  "Alarm": "LINK_DOWN",
+                  "Summary": "If admin status=up If oper status=down If phy status=unreported Main If Name=25GE0219 LinkDown Reason=mainifdown LSR ID=10.36.81.97;Alarm Reason=Link Down;Probable Cause=UNIDENTIFIED",
+                  "Severity": 5,
+                  "RawLastOccurrence": 1775082679,
+                  "LastOccurrence": "2026-04-02 00:31:19",
+                  "Serial": 1318202284
+                },
+                {
+                  "Alarm": "LINK_DOWN",
+                  "Summary": "If admin status=up If oper status=down If phy status=unreported Main If Name=GigabitEthernet027 LinkDown Reason=mainifdown LSR ID=10.36.81.97;Alarm Reason=Link Down;Probable Cause=UNIDENTIFIED",
+                  "Severity": 5,
+                  "RawLastOccurrence": 1775082679,
+                  "LastOccurrence": "2026-04-02 00:31:19",
+                  "Serial": 1318202282
+                },
+                {
+                  "Alarm": "GNE_CONNECT_FAIL",
+                  "Summary": "Alarm Reason=The gateway NE connect failed;Probable Cause=GNE_CONNECT_FAIL",
+                  "Severity": 5,
+                  "RawLastOccurrence": 1775099841,
+                  "LastOccurrence": "2026-04-02 05:17:21",
+                  "Serial": 1318320237
+                },
+                {
+                  "Alarm": "NE_NOT_LOGIN",
+                  "Summary": "Alarm Reason=This NE is not logged in;Probable Cause=UNIDENTIFIED",
+                  "Severity": 5,
+                  "RawLastOccurrence": 1775099841,
+                  "LastOccurrence": "2026-04-02 05:17:21",
+                  "Serial": 1318320239
+                },
+                {
+                  "Alarm": "LINK_DOWN",
+                  "Summary": "If admin status=up If oper status=down If phy status=unreported Main If Name=25GE0223 LinkDown Reason=mainifdown LSR ID=10.36.81.97;Alarm Reason=Link Down;Probable Cause=UNIDENTIFIED",
+                  "Severity": 5,
+                  "RawLastOccurrence": 1775099622,
+                  "LastOccurrence": "2026-04-02 05:13:42",
+                  "Serial": 1318318940
+                },
+                {
+                  "Alarm": "LINK_DOWN",
+                  "Summary": "If admin status=up If oper status=down If phy status=unreported Main If Name=25GE0223 LinkDown Reason=mainifdown LSR ID=10.36.81.97;Alarm Reason=Link Down;Probable Cause=UNIDENTIFIED",
+                  "Severity": 5,
+                  "RawLastOccurrence": 1775099622,
+                  "LastOccurrence": "2026-04-02 05:13:42",
+                  "Serial": 1318318939
+                },
+                {
+                  "Alarm": "LINK_DOWN",
+                  "Summary": "If admin status=up If oper status=down If phy status=unreported Main If Name=GigabitEthernet027 LinkDown Reason=mainifdown LSR ID=10.36.81.97;Alarm Reason=Link Down;Probable Cause=UNIDENTIFIED",
+                  "Severity": 5,
+                  "RawLastOccurrence": 1775082679,
+                  "LastOccurrence": "2026-04-02 00:31:19",
+                  "Serial": 1318202286
+                },
+                {
+                  "Alarm": "LINK_DOWN",
+                  "Summary": "If admin status=up If oper status=down If phy status=unreported Main If Name=GigabitEthernet027 LinkDown Reason=mainifdown LSR ID=10.36.81.97;Alarm Reason=Link Down;Probable Cause=UNIDENTIFIED",
+                  "Severity": 5,
+                  "RawLastOccurrence": 1775082679,
+                  "LastOccurrence": "2026-04-02 00:31:19",
+                  "Serial": 1318202281
+                },
+                {
+                  "Alarm": "LINK_DOWN",
+                  "Summary": "If admin status=up If oper status=down If phy status=unreported Main If Name=25GE0223 LinkDown Reason=mainifdown LSR ID=10.36.81.97;Alarm Reason=Link Down;Probable Cause=UNIDENTIFIED",
+                  "Severity": 5,
+                  "RawLastOccurrence": 1775099622,
+                  "LastOccurrence": "2026-04-02 05:13:42",
+                  "Serial": 1318318932
+                }
+              ]
+            },
+            "THONGANI": {
+              "metadata": {
+                "is_primary_hub": false,
+                "Site_Rank": 8575,
+                "RAN_Risk_Count": 0,
+                "VBS_Count": 8,
+                "RAN_Failed_Count": 7,
+                "Potential_Failure": 7
+              },
+              "alarms": [
+                {
+                  "Alarm": "MULTIPLE_UMTS_CELL_UNAVAILABLE",
+                  "Summary": "Synthetic Alert for : MULTIPLE_UMTS_CELL_UNAVAILABLE",
+                  "Severity": 5,
+                  "RawLastOccurrence": 1775099845,
+                  "LastOccurrence": "2026-04-02 05:17:25",
+                  "Serial": 801620452
+                },
+                {
+                  "Alarm": "UMTS_CELL_UNAVAILABLE_NCP_CCP_FAILURE",
+                  "Summary": "22202",
+                  "Severity": 5,
+                  "RawLastOccurrence": 1775099845,
+                  "LastOccurrence": "2026-04-02 05:17:25",
+                  "Serial": 801620186
+                },
+                {
+                  "Alarm": "NODEB_UNAVAILABLE",
+                  "Summary": "22214",
+                  "Severity": 5,
+                  "RawLastOccurrence": 1775099845,
+                  "LastOccurrence": "2026-04-02 05:17:25",
+                  "Serial": 801620185
+                },
+                {
+                  "Alarm": "UMTS_CELL_UNAVAILABLE_NCP_CCP_FAILURE",
+                  "Summary": "22202",
+                  "Severity": 5,
+                  "RawLastOccurrence": 1775099845,
+                  "LastOccurrence": "2026-04-02 05:17:25",
+                  "Serial": 801620187
+                },
+                {
+                  "Alarm": "ALL GSM CELLS OUT OF SERVICE",
+                  "Summary": "Synthetic Alert for : ALL GSM CELLS OUT OF SERVICE",
+                  "Severity": 5,
+                  "RawLastOccurrence": 1775099844,
+                  "LastOccurrence": "2026-04-02 05:17:24",
+                  "Serial": 801620489
+                },
+                {
+                  "Alarm": "GSM_CELL_OUT_OF_SERVICE_OTHER_CAUSES",
+                  "Summary": "21801",
+                  "Severity": 4,
+                  "RawLastOccurrence": 1775099844,
+                  "LastOccurrence": "2026-04-02 05:17:24",
+                  "Serial": 801620182
+                },
+                {
+                  "Alarm": "UMTS_CELL_UNAVAILABLE_NCP_CCP_FAILURE",
+                  "Summary": "22202",
+                  "Severity": 5,
+                  "RawLastOccurrence": 1775099845,
+                  "LastOccurrence": "2026-04-02 05:17:25",
+                  "Serial": 801620229
+                },
+                {
+                  "Alarm": "GSM_CELL_OUT_OF_SERVICE_OTHER_CAUSES",
+                  "Summary": "21801",
+                  "Severity": 4,
+                  "RawLastOccurrence": 1775099844,
+                  "LastOccurrence": "2026-04-02 05:17:24",
+                  "Serial": 801620224
+                },
+                {
+                  "Alarm": "GSM_CELL_OUT_OF_SERVICE_OTHER_CAUSES",
+                  "Summary": "21801",
+                  "Severity": 4,
+                  "RawLastOccurrence": 1775099844,
+                  "LastOccurrence": "2026-04-02 05:17:24",
+                  "Serial": 801620271
+                },
+                {
+                  "Alarm": "CSL_FAULT",
+                  "Summary": "21825",
+                  "Severity": 5,
+                  "RawLastOccurrence": 1775099842,
+                  "LastOccurrence": "2026-04-02 05:17:22",
+                  "Serial": 801620268
+                },
+                {
+                  "Alarm": "HUAWEI_SITE_OUT_OF_SERVICE",
+                  "Summary": "Synthetic Alert for Huawei Site Out of Service",
+                  "Severity": 5,
+                  "RawLastOccurrence": 1775100030,
+                  "LastOccurrence": "2026-04-02 05:20:30",
+                  "Serial": 801620442
+                },
+                {
+                  "Alarm": "NE_IS_DISCONNECTED",
+                  "Summary": "40012",
+                  "Severity": 5,
+                  "RawLastOccurrence": 1775100031,
+                  "LastOccurrence": "2026-04-02 05:20:31",
+                  "Serial": 801620674
+                },
+                {
+                  "Alarm": "THE_DEVICE_IS_OFFLINE",
+                  "Summary": "Alarm Reason=Device discontinuity;Probable Cause=UNIDENTIFIED",
+                  "Severity": 5,
+                  "RawLastOccurrence": 1775099817,
+                  "LastOccurrence": "2026-04-02 05:16:57",
+                  "Serial": 1318319997
+                }
+              ]
+            },
+            "THENGWE": {
+              "metadata": {
+                "is_primary_hub": false,
+                "Site_Rank": 8427,
+                "RAN_Risk_Count": 0,
+                "VBS_Count": 8,
+                "RAN_Failed_Count": 7,
+                "Potential_Failure": 7
+              },
+              "alarms": [
+                {
+                  "Alarm": "BOARD_HARDWARE_FAULT",
+                  "Summary": "26200",
+                  "Severity": 4,
+                  "RawLastOccurrence": 1775056992,
+                  "LastOccurrence": "2026-04-01 17:23:12",
+                  "Serial": 798607164
+                },
+                {
+                  "Alarm": "MOVEMENT",
+                  "Summary": "65104",
+                  "Severity": 3,
+                  "RawLastOccurrence": 1775057049,
+                  "LastOccurrence": "2026-04-01 17:24:09",
+                  "Serial": 798607371
+                },
+                {
+                  "Alarm": "BATTERY_LOW",
+                  "Summary": "65107",
+                  "Severity": 5,
+                  "RawLastOccurrence": 1775057049,
+                  "LastOccurrence": "2026-04-01 17:24:09",
+                  "Serial": 798607700
+                },
+                {
+                  "Alarm": "UMTS_CELL_UNAVAILABLE_NCP_CCP_FAILURE",
+                  "Summary": "22202",
+                  "Severity": 5,
+                  "RawLastOccurrence": 1775099845,
+                  "LastOccurrence": "2026-04-02 05:17:25",
+                  "Serial": 801620189
+                },
+                {
+                  "Alarm": "RF_UNIT_MAINTENANCE_LINK_FAILURE",
+                  "Summary": "26235",
+                  "Severity": 4,
+                  "RawLastOccurrence": 1775056992,
+                  "LastOccurrence": "2026-04-01 17:23:12",
+                  "Serial": 798613530
+                },
+                {
+                  "Alarm": "ESKOM_MAINS_FAILED",
+                  "Summary": "65110",
+                  "Severity": 4,
+                  "RawLastOccurrence": 1775056992,
+                  "LastOccurrence": "2026-04-01 17:23:12",
+                  "Serial": 798620847
+                },
+                {
+                  "Alarm": "UMTS_CELL_UNAVAILABLE_NCP_CCP_FAILURE",
+                  "Summary": "22202",
+                  "Severity": 5,
+                  "RawLastOccurrence": 1775099845,
+                  "LastOccurrence": "2026-04-02 05:17:25",
+                  "Serial": 801620190
+                },
+                {
+                  "Alarm": "AIRCON_2_FAILED",
+                  "Summary": "65114",
+                  "Severity": 3,
+                  "RawLastOccurrence": 1775057049,
+                  "LastOccurrence": "2026-04-01 17:24:09",
+                  "Serial": 798622118
+                },
+                {
+                  "Alarm": "NODEB_UNAVAILABLE",
+                  "Summary": "22214",
+                  "Severity": 5,
+                  "RawLastOccurrence": 1775099845,
+                  "LastOccurrence": "2026-04-02 05:17:25",
+                  "Serial": 801620188
+                },
+                {
+                  "Alarm": "GSM_CELL_OUT_OF_SERVICE_OTHER_CAUSES",
+                  "Summary": "21801",
+                  "Severity": 4,
+                  "RawLastOccurrence": 1775099844,
+                  "LastOccurrence": "2026-04-02 05:17:24",
+                  "Serial": 801620181
+                },
+                {
+                  "Alarm": "RECTIFIER_SYSTEM_FAILED",
+                  "Summary": "65105",
+                  "Severity": 5,
+                  "RawLastOccurrence": 1775057049,
+                  "LastOccurrence": "2026-04-01 17:24:09",
+                  "Serial": 798628164
+                },
+                {
+                  "Alarm": "HUAWEI_SITE_OUT_OF_SERVICE",
+                  "Summary": "Synthetic Alert for Huawei Site Out of Service",
+                  "Severity": 5,
+                  "RawLastOccurrence": 1775100030,
+                  "LastOccurrence": "2026-04-02 05:20:30",
+                  "Serial": 801620441
+                },
+                {
+                  "Alarm": "NE_IS_DISCONNECTED",
+                  "Summary": "40012",
+                  "Severity": 5,
+                  "RawLastOccurrence": 1775100044,
+                  "LastOccurrence": "2026-04-02 05:20:44",
+                  "Serial": 801620641
+                },
+                {
+                  "Alarm": "HIGH_TEMPERATURE",
+                  "Summary": "65102",
+                  "Severity": 4,
+                  "RawLastOccurrence": 1775057049,
+                  "LastOccurrence": "2026-04-01 17:24:09",
+                  "Serial": 798634059
+                },
+                {
+                  "Alarm": "GSM_CELL_OUT_OF_SERVICE_OTHER_CAUSES",
+                  "Summary": "21801",
+                  "Severity": 4,
+                  "RawLastOccurrence": 1775099844,
+                  "LastOccurrence": "2026-04-02 05:17:24",
+                  "Serial": 801620227
+                },
+                {
+                  "Alarm": "SMOKE",
+                  "Summary": "65101",
+                  "Severity": 4,
+                  "RawLastOccurrence": 1775057049,
+                  "LastOccurrence": "2026-04-01 17:24:09",
+                  "Serial": 798637583
+                },
+                {
+                  "Alarm": "ALL GSM CELLS OUT OF SERVICE",
+                  "Summary": "Synthetic Alert for : ALL GSM CELLS OUT OF SERVICE",
+                  "Severity": 5,
+                  "RawLastOccurrence": 1775099844,
+                  "LastOccurrence": "2026-04-02 05:17:24",
+                  "Serial": 801620487
+                },
+                {
+                  "Alarm": "HIGH_TEMPERATURE",
+                  "Summary": "65102",
+                  "Severity": 4,
+                  "RawLastOccurrence": 1775056992,
+                  "LastOccurrence": "2026-04-01 17:23:12",
+                  "Serial": 798639365
+                },
+                {
+                  "Alarm": "CONFIGURATION_DATA_INCONSISTENCY",
+                  "Summary": "26245",
+                  "Severity": 4,
+                  "RawLastOccurrence": 1775058553,
+                  "LastOccurrence": "2026-04-01 17:49:13",
+                  "Serial": 801488772
+                },
+                {
+                  "Alarm": "NODEB_UNAVAILABLE",
+                  "Summary": "22214",
+                  "Severity": 5,
+                  "RawLastOccurrence": 1775099847,
+                  "LastOccurrence": "2026-04-02 05:17:27",
+                  "Serial": 801620197
+                },
+                {
+                  "Alarm": "BATTERY_INTEGRITY",
+                  "Summary": "65109",
+                  "Severity": 4,
+                  "RawLastOccurrence": 1775056992,
+                  "LastOccurrence": "2026-04-01 17:23:12",
+                  "Serial": 798647141
+                },
+                {
+                  "Alarm": "AIRCON_1_FAILED",
+                  "Summary": "65113",
+                  "Severity": 3,
+                  "RawLastOccurrence": 1775057049,
+                  "LastOccurrence": "2026-04-01 17:24:09",
+                  "Serial": 798651371
+                },
+                {
+                  "Alarm": "RF_UNIT_MAINTENANCE_LINK_FAILURE",
+                  "Summary": "26235",
+                  "Severity": 4,
+                  "RawLastOccurrence": 1775056992,
+                  "LastOccurrence": "2026-04-01 17:23:12",
+                  "Serial": 798655758
+                },
+                {
+                  "Alarm": "RECTIFIER_MODULE_FAILED",
+                  "Summary": "65103",
+                  "Severity": 3,
+                  "RawLastOccurrence": 1775057049,
+                  "LastOccurrence": "2026-04-01 17:24:09",
+                  "Serial": 798658353
+                },
+                {
+                  "Alarm": "MULTIPLE_UMTS_CELL_UNAVAILABLE",
+                  "Summary": "Synthetic Alert for : MULTIPLE_UMTS_CELL_UNAVAILABLE",
+                  "Severity": 5,
+                  "RawLastOccurrence": 1775099847,
+                  "LastOccurrence": "2026-04-02 05:17:27",
+                  "Serial": 801620454
+                },
+                {
+                  "Alarm": "NE_IS_DISCONNECTED",
+                  "Summary": "40012",
+                  "Severity": 5,
+                  "RawLastOccurrence": 1775100041,
+                  "LastOccurrence": "2026-04-02 05:20:41",
+                  "Serial": 801620681
+                },
+                {
+                  "Alarm": "AC_MAINS_FAILED",
+                  "Summary": "65106",
+                  "Severity": 5,
+                  "RawLastOccurrence": 1775057151,
+                  "LastOccurrence": "2026-04-01 17:25:51",
+                  "Serial": 798660206
+                },
+                {
+                  "Alarm": "ESKOM_MAINS_FAILED",
+                  "Summary": "65110",
+                  "Severity": 4,
+                  "RawLastOccurrence": 1775057049,
+                  "LastOccurrence": "2026-04-01 17:24:09",
+                  "Serial": 798663670
+                },
+                {
+                  "Alarm": "NOTIFICATION_PRIORITY_FAILURE_DETECTED",
+                  "Summary": "Synthetic Alert for : NOTIFICATION_PRIORITY_FAILURE_DETECTED for 1013",
+                  "Severity": 5,
+                  "RawLastOccurrence": 1775100126,
+                  "LastOccurrence": "2026-04-02 05:22:06",
+                  "Serial": 801620651
+                },
+                {
+                  "Alarm": "INTRUDER",
+                  "Summary": "65100",
+                  "Severity": 4,
+                  "RawLastOccurrence": 1775056992,
+                  "LastOccurrence": "2026-04-01 17:23:12",
+                  "Serial": 798670341
+                },
+                {
+                  "Alarm": "RF_UNIT_MAINTENANCE_LINK_FAILURE",
+                  "Summary": "26235",
+                  "Severity": 4,
+                  "RawLastOccurrence": 1775056992,
+                  "LastOccurrence": "2026-04-01 17:23:12",
+                  "Serial": 798671153
+                },
+                {
+                  "Alarm": "BATTERY_INTEGRITY",
+                  "Summary": "65109",
+                  "Severity": 4,
+                  "RawLastOccurrence": 1775057049,
+                  "LastOccurrence": "2026-04-01 17:24:09",
+                  "Serial": 798672562
+                },
+                {
+                  "Alarm": "AIRCRAFT_LIGHT_FAILED",
+                  "Summary": "65111",
+                  "Severity": 3,
+                  "RawLastOccurrence": 1775057049,
+                  "LastOccurrence": "2026-04-01 17:24:09",
+                  "Serial": 798676018
+                },
+                {
+                  "Alarm": "UMTS_CELL_UNAVAILABLE_NCP_CCP_FAILURE",
+                  "Summary": "22202",
+                  "Severity": 5,
+                  "RawLastOccurrence": 1775099845,
+                  "LastOccurrence": "2026-04-02 05:17:25",
+                  "Serial": 801620230
+                },
+                {
+                  "Alarm": "CSL_FAULT",
+                  "Summary": "21825",
+                  "Severity": 5,
+                  "RawLastOccurrence": 1775099839,
+                  "LastOccurrence": "2026-04-02 05:17:19",
+                  "Serial": 801620267
+                },
+                {
+                  "Alarm": "INTRUDER",
+                  "Summary": "65100",
+                  "Severity": 4,
+                  "RawLastOccurrence": 1775057049,
+                  "LastOccurrence": "2026-04-01 17:24:09",
+                  "Serial": 798685959
+                },
+                {
+                  "Alarm": "GSM_CELL_OUT_OF_SERVICE_OTHER_CAUSES",
+                  "Summary": "21801",
+                  "Severity": 4,
+                  "RawLastOccurrence": 1775099844,
+                  "LastOccurrence": "2026-04-02 05:17:24",
+                  "Serial": 801620270
+                },
+                {
+                  "Alarm": "AC_MAINS_FAILED",
+                  "Summary": "65106",
+                  "Severity": 5,
+                  "RawLastOccurrence": 1775056992,
+                  "LastOccurrence": "2026-04-01 17:23:12",
+                  "Serial": 798701180
+                },
+                {
+                  "Alarm": "MULTIPLE_UMTS_CELL_UNAVAILABLE",
+                  "Summary": "Synthetic Alert for : MULTIPLE_UMTS_CELL_UNAVAILABLE",
+                  "Severity": 5,
+                  "RawLastOccurrence": 1775099845,
+                  "LastOccurrence": "2026-04-02 05:17:25",
+                  "Serial": 801620438
+                },
+                {
+                  "Alarm": "THE_DEVICE_IS_OFFLINE",
+                  "Summary": "Alarm Reason=Device discontinuity;Probable Cause=UNIDENTIFIED",
+                  "Severity": 5,
+                  "RawLastOccurrence": 1775099818,
+                  "LastOccurrence": "2026-04-02 05:16:58",
+                  "Serial": 1318320004
+                }
+              ]
+            }
+          },
+          "Failure_Probability": "80.0%",
+          "Weather": {
+            "current": {
+              "icon": "\u2600\ufe0f",
+              "wind": "35.3km/h",
+              "rain": "0.0mm",
+              "temp": "19.8\u00b0C",
+              "threat_level": "Low",
+              "impact": "Monitor for site stability",
+              "timestamp": 1775120400
+            },
+            "forecast_8h": {
+              "icon": "\u2600\ufe0f",
+              "wind": "32.8km/h",
+              "rain": "0.0mm",
+              "temp": "17.1\u00b0C",
+              "threat_level": "Low",
+              "impact": "Monitor for site stability",
+              "timestamp": 1775149200
+            }
+          }
+        },
+        {
+          "start_ts": 1775120910,
+          "Region": "LIM",
+          "Hub_Name": "MPHANAMA",
+          "County_List": [
+            "Waterberg"
+          ],
+          "RAN_Risk_Count": 0,
+          "VBS_Count": 0,
+          "RAN_Failed_Count": 2,
+          "Potential_Failure": 2,
+          "OOS_Count": 3,
+          "Impact_15min_Count": 3,
+          "MSDP_Priority": "P4",
+          "Average_Rank": 8572.7,
+          "RCA": "Hubsite Failure - Power",
+          "OOS_Location_List": [
+            "GA_MATSHATSHA_1",
+            "MPHANAMA",
+            "MPHANAMA_VILLAGE"
+          ],
+          "OOS_Location_Details": {
+            "GA_MATSHATSHA_1": {
+              "metadata": {
+                "is_primary_hub": false,
+                "Site_Rank": 8743,
+                "RAN_Risk_Count": 33,
+                "VBS_Count": 2,
+                "RAN_Failed_Count": 2,
+                "Potential_Failure": 35
+              },
+              "alarms": [
+                {
+                  "Alarm": "UMTS_CELL_UNAVAILABLE_NCP_CCP_FAILURE",
+                  "Summary": "22202",
+                  "Severity": 5,
+                  "RawLastOccurrence": 1775120919,
+                  "LastOccurrence": "2026-04-02 11:08:39",
+                  "Serial": 801698807
+                },
+                {
+                  "Alarm": "HUAWEI_SITE_OUT_OF_SERVICE",
+                  "Summary": "Synthetic Alert for Huawei Site Out of Service",
+                  "Severity": 5,
+                  "RawLastOccurrence": 1775120910,
+                  "LastOccurrence": "2026-04-02 11:08:30",
+                  "Serial": 801698976
+                },
+                {
+                  "Alarm": "MULTIPLE_GSM_CELL_OUT_OF_SERVICE",
+                  "Summary": "Synthetic Alarm for GSM CELL OUT OF SERVICE",
+                  "Severity": 5,
+                  "RawLastOccurrence": 1775120850,
+                  "LastOccurrence": "2026-04-02 11:07:30",
+                  "Serial": 801698982
+                },
+                {
+                  "Alarm": "UMTS_CELL_UNAVAILABLE_NCP_CCP_FAILURE",
+                  "Summary": "22202",
+                  "Severity": 5,
+                  "RawLastOccurrence": 1775120919,
+                  "LastOccurrence": "2026-04-02 11:08:39",
+                  "Serial": 801698806
+                },
+                {
+                  "Alarm": "GSM_CELL_OUT_OF_SERVICE_OTHER_CAUSES",
+                  "Summary": "21801",
+                  "Severity": 4,
+                  "RawLastOccurrence": 1775120911,
+                  "LastOccurrence": "2026-04-02 11:08:31",
+                  "Serial": 801698829
+                },
+                {
+                  "Alarm": "UMTS_CELL_UNAVAILABLE_NCP_CCP_FAILURE",
+                  "Summary": "22202",
+                  "Severity": 5,
+                  "RawLastOccurrence": 1775120919,
+                  "LastOccurrence": "2026-04-02 11:08:39",
+                  "Serial": 801698866
+                },
+                {
+                  "Alarm": "GSM_CELL_OUT_OF_SERVICE_OTHER_CAUSES",
+                  "Summary": "21801",
+                  "Severity": 4,
+                  "RawLastOccurrence": 1775120911,
+                  "LastOccurrence": "2026-04-02 11:08:31",
+                  "Serial": 801698802
+                },
+                {
+                  "Alarm": "NE_IS_DISCONNECTED",
+                  "Summary": "40012",
+                  "Severity": 5,
+                  "RawLastOccurrence": 1775121099,
+                  "LastOccurrence": "2026-04-02 11:11:39",
+                  "Serial": 801699501
+                },
+                {
+                  "Alarm": "CSL_FAULT",
+                  "Summary": "21825",
+                  "Severity": 5,
+                  "RawLastOccurrence": 1775120910,
+                  "LastOccurrence": "2026-04-02 11:08:30",
+                  "Serial": 801698916
+                },
+                {
+                  "Alarm": "NODEB_UNAVAILABLE",
+                  "Summary": "22214",
+                  "Severity": 5,
+                  "RawLastOccurrence": 1775120919,
+                  "LastOccurrence": "2026-04-02 11:08:39",
+                  "Serial": 801698923
+                },
+                {
+                  "Alarm": "GSM_CELL_OUT_OF_SERVICE_OTHER_CAUSES",
+                  "Summary": "21801",
+                  "Severity": 4,
+                  "RawLastOccurrence": 1775120911,
+                  "LastOccurrence": "2026-04-02 11:08:31",
+                  "Serial": 801698954
+                },
+                {
+                  "Alarm": "NE_NOT_LOGIN",
+                  "Summary": "Alarm Reason=This NE is not logged in;Probable Cause=UNIDENTIFIED",
+                  "Severity": 5,
+                  "RawLastOccurrence": 1775120937,
+                  "LastOccurrence": "2026-04-02 11:08:57",
+                  "Serial": 1318498628
+                },
+                {
+                  "Alarm": "THE_DEVICE_IS_OFFLINE",
+                  "Summary": "Alarm Reason=Device discontinuity;Probable Cause=UNIDENTIFIED",
+                  "Severity": 5,
+                  "RawLastOccurrence": 1775121007,
+                  "LastOccurrence": "2026-04-02 11:10:07",
+                  "Serial": 1318499562
+                },
+                {
+                  "Alarm": "NE_COMMU_BREAK",
+                  "Summary": "Alarm Reason=NE communication was lost;Probable Cause=NE_COMMU_BREAK",
+                  "Severity": 5,
+                  "RawLastOccurrence": 1775120937,
+                  "LastOccurrence": "2026-04-02 11:08:57",
+                  "Serial": 1318498627
+                }
+              ]
+            },
+            "MPHANAMA_VILLAGE": {
+              "metadata": {
+                "is_primary_hub": false,
+                "Site_Rank": 10750,
+                "RAN_Risk_Count": 33,
+                "VBS_Count": 2,
+                "RAN_Failed_Count": 2,
+                "Potential_Failure": 35
+              },
+              "alarms": [
+                {
+                  "Alarm": "HUAWEI_SITE_OUT_OF_SERVICE",
+                  "Summary": "Synthetic Alert for Huawei Site Out of Service",
+                  "Severity": 5,
+                  "RawLastOccurrence": 1775120912,
+                  "LastOccurrence": "2026-04-02 11:08:32",
+                  "Serial": 801698985
+                },
+                {
+                  "Alarm": "GSM_CELL_OUT_OF_SERVICE_OTHER_CAUSES",
+                  "Summary": "21801",
+                  "Severity": 4,
+                  "RawLastOccurrence": 1775120914,
+                  "LastOccurrence": "2026-04-02 11:08:34",
+                  "Serial": 801698803
+                },
+                {
+                  "Alarm": "NE_IS_DISCONNECTED",
+                  "Summary": "40012",
+                  "Severity": 5,
+                  "RawLastOccurrence": 1775121108,
+                  "LastOccurrence": "2026-04-02 11:11:48",
+                  "Serial": 801699472
+                },
+                {
+                  "Alarm": "UMTS_CELL_UNAVAILABLE_NCP_CCP_FAILURE",
+                  "Summary": "22202",
+                  "Severity": 5,
+                  "RawLastOccurrence": 1775120917,
+                  "LastOccurrence": "2026-04-02 11:08:37",
+                  "Serial": 801698833
+                },
+                {
+                  "Alarm": "MULTIPLE_GSM_CELL_OUT_OF_SERVICE",
+                  "Summary": "Synthetic Alarm for GSM CELL OUT OF SERVICE",
+                  "Severity": 5,
+                  "RawLastOccurrence": 1775120852,
+                  "LastOccurrence": "2026-04-02 11:07:32",
+                  "Serial": 801698977
+                },
+                {
+                  "Alarm": "GSM_CELL_OUT_OF_SERVICE_OTHER_CAUSES",
+                  "Summary": "21801",
+                  "Severity": 4,
+                  "RawLastOccurrence": 1775120907,
+                  "LastOccurrence": "2026-04-02 11:08:27",
+                  "Serial": 801698826
+                },
+                {
+                  "Alarm": "NODEB_UNAVAILABLE",
+                  "Summary": "22214",
+                  "Severity": 5,
+                  "RawLastOccurrence": 1775120917,
+                  "LastOccurrence": "2026-04-02 11:08:37",
+                  "Serial": 801698865
+                },
+                {
+                  "Alarm": "UMTS_CELL_UNAVAILABLE_NCP_CCP_FAILURE",
+                  "Summary": "22202",
+                  "Severity": 5,
+                  "RawLastOccurrence": 1775120917,
+                  "LastOccurrence": "2026-04-02 11:08:37",
+                  "Serial": 801698926
+                },
+                {
+                  "Alarm": "GSM_CELL_OUT_OF_SERVICE_OTHER_CAUSES",
+                  "Summary": "21801",
+                  "Severity": 4,
+                  "RawLastOccurrence": 1775120914,
+                  "LastOccurrence": "2026-04-02 11:08:34",
+                  "Serial": 801698934
+                },
+                {
+                  "Alarm": "CSL_FAULT",
+                  "Summary": "21825",
+                  "Severity": 5,
+                  "RawLastOccurrence": 1775120912,
+                  "LastOccurrence": "2026-04-02 11:08:32",
+                  "Serial": 801698936
+                },
+                {
+                  "Alarm": "UMTS_CELL_UNAVAILABLE_NCP_CCP_FAILURE",
+                  "Summary": "22202",
+                  "Severity": 5,
+                  "RawLastOccurrence": 1775120917,
+                  "LastOccurrence": "2026-04-02 11:08:37",
+                  "Serial": 801698953
+                },
+                {
+                  "Alarm": "COMMS_LOST",
+                  "Summary": "Comms Lost from Vodacom LIM/Waterberg County/Mphanama_Village/Rectifier ACTIVE",
+                  "Severity": 4,
+                  "RawLastOccurrence": 1775121178,
+                  "LastOccurrence": "2026-04-02 11:12:58",
+                  "Serial": 801699873
+                },
+                {
+                  "Alarm": "THE_DEVICE_IS_OFFLINE",
+                  "Summary": "Alarm Reason=Device discontinuity;Probable Cause=UNIDENTIFIED",
+                  "Severity": 5,
+                  "RawLastOccurrence": 1775120999,
+                  "LastOccurrence": "2026-04-02 11:09:59",
+                  "Serial": 1318499526
+                }
+              ]
+            },
+            "MPHANAMA": {
+              "metadata": {
+                "is_primary_hub": true,
+                "Site_Rank": 6225,
+                "RAN_Risk_Count": 0,
+                "VBS_Count": 0,
+                "RAN_Failed_Count": 2,
+                "Potential_Failure": 2
+              },
+              "alarms": [
+                {
+                  "Alarm": "MULTIPLE_GSM_CELL_OUT_OF_SERVICE",
+                  "Summary": "Synthetic Alarm for GSM CELL OUT OF SERVICE",
+                  "Severity": 5,
+                  "RawLastOccurrence": 1775120849,
+                  "LastOccurrence": "2026-04-02 11:07:29",
+                  "Serial": 801698975
+                },
+                {
+                  "Alarm": "GSM_CELL_OUT_OF_SERVICE_OTHER_CAUSES",
+                  "Summary": "21801",
+                  "Severity": 4,
+                  "RawLastOccurrence": 1775120911,
+                  "LastOccurrence": "2026-04-02 11:08:31",
+                  "Serial": 801698800
+                },
+                {
+                  "Alarm": "GSM_CELL_OUT_OF_SERVICE_OTHER_CAUSES",
+                  "Summary": "21801",
+                  "Severity": 4,
+                  "RawLastOccurrence": 1775120911,
+                  "LastOccurrence": "2026-04-02 11:08:31",
+                  "Serial": 801698801
+                },
+                {
+                  "Alarm": "UMTS_CELL_UNAVAILABLE_NCP_CCP_FAILURE",
+                  "Summary": "22202",
+                  "Severity": 5,
+                  "RawLastOccurrence": 1775120916,
+                  "LastOccurrence": "2026-04-02 11:08:36",
+                  "Serial": 801698805
+                },
+                {
+                  "Alarm": "CSL_FAULT",
+                  "Summary": "21825 - CSL_FAULT at Hub site: 2G_Mphanama_LIM",
+                  "Severity": 5,
+                  "RawLastOccurrence": 1775120910,
+                  "LastOccurrence": "2026-04-02 11:08:30",
+                  "Serial": 801698828
+                },
+                {
+                  "Alarm": "UMTS_CELL_UNAVAILABLE_NCP_CCP_FAILURE",
+                  "Summary": "22202",
+                  "Severity": 5,
+                  "RawLastOccurrence": 1775120916,
+                  "LastOccurrence": "2026-04-02 11:08:36",
+                  "Serial": 801698832
+                },
+                {
+                  "Alarm": "UMTS_CELL_UNAVAILABLE_NCP_CCP_FAILURE",
+                  "Summary": "22202",
+                  "Severity": 5,
+                  "RawLastOccurrence": 1775120916,
+                  "LastOccurrence": "2026-04-02 11:08:36",
+                  "Serial": 801698864
+                },
+                {
+                  "Alarm": "GSM_CELL_OUT_OF_SERVICE_OTHER_CAUSES",
+                  "Summary": "21801",
+                  "Severity": 4,
+                  "RawLastOccurrence": 1775120911,
+                  "LastOccurrence": "2026-04-02 11:08:31",
+                  "Serial": 801698830
+                },
+                {
+                  "Alarm": "NODEB_UNAVAILABLE",
+                  "Summary": "22214",
+                  "Severity": 5,
+                  "RawLastOccurrence": 1775120916,
+                  "LastOccurrence": "2026-04-02 11:08:36",
+                  "Serial": 801698910
+                },
+                {
+                  "Alarm": "NE_IS_DISCONNECTED",
+                  "Summary": "40012",
+                  "Severity": 5,
+                  "RawLastOccurrence": 1775121115,
+                  "LastOccurrence": "2026-04-02 11:11:55",
+                  "Serial": 801699526
+                },
+                {
+                  "Alarm": "HUAWEI_SITE_OUT_OF_SERVICE",
+                  "Summary": "Synthetic Alert for Huawei Site Out of Service",
+                  "Severity": 5,
+                  "RawLastOccurrence": 1775121081,
+                  "LastOccurrence": "2026-04-02 11:11:21",
+                  "Serial": 801698981
+                },
+                {
+                  "Alarm": "NE_COMMU_BREAK",
+                  "Summary": "Alarm Reason=NE communication was lost;Probable Cause=NE_COMMU_BREAK",
+                  "Severity": 5,
+                  "RawLastOccurrence": 1775120936,
+                  "LastOccurrence": "2026-04-02 11:08:56",
+                  "Serial": 1318498623
+                },
+                {
+                  "Alarm": "NE_NOT_LOGIN",
+                  "Summary": "Alarm Reason=This NE is not logged in;Probable Cause=UNIDENTIFIED",
+                  "Severity": 5,
+                  "RawLastOccurrence": 1775120936,
+                  "LastOccurrence": "2026-04-02 11:08:56",
+                  "Serial": 1318498624
+                },
+                {
+                  "Alarm": "THE_DEVICE_IS_OFFLINE",
+                  "Summary": "Alarm Reason=Device discontinuity;Probable Cause=UNIDENTIFIED",
+                  "Severity": 5,
+                  "RawLastOccurrence": 1775120999,
+                  "LastOccurrence": "2026-04-02 11:09:59",
+                  "Serial": 1318499683
+                },
+                {
+                  "Alarm": "GNE_CONNECT_FAIL",
+                  "Summary": "Alarm Reason=The gateway NE connect failed;Probable Cause=GNE_CONNECT_FAIL",
+                  "Severity": 5,
+                  "RawLastOccurrence": 1775120937,
+                  "LastOccurrence": "2026-04-02 11:08:57",
+                  "Serial": 1318498626
+                }
+              ]
+            }
+          },
+          "Failure_Probability": "100.0%",
+          "Weather": {
+            "forecast_8h": {
+              "icon": "\u2600\ufe0f",
+              "wind": "10.1km/h",
+              "rain": "0.0mm",
+              "temp": "21.1\u00b0C",
+              "threat_level": "Low",
+              "impact": "Monitor for site stability",
+              "timestamp": 1775149200
+            },
+            "current": {
+              "icon": "\u2600\ufe0f",
+              "wind": "16.9km/h",
+              "rain": "0.0mm",
+              "temp": "24.6\u00b0C",
+              "threat_level": "Low",
+              "impact": "Monitor for site stability",
+              "timestamp": 1775120400
+            }
+          }
+        }
+      ],
+      "Weather_Summary": {
+        "current_icon": "\u2600\ufe0f",
+        "current_condition": "Peak Wind: 35.3km/h",
+        "warning_text": ""
+      }
+    },
+    "CEN": {
+      "Total_OOS_Count": 39,
+      "Incidents": [],
+      "Weather_Summary": {
+        "current_icon": "\u2600\ufe0f",
+        "current_condition": "Peak Wind: 27.0km/h",
+        "warning_text": ""
+      }
+    },
+    "MPU": {
+      "Total_OOS_Count": 89,
+      "Incidents": [
+        {
+          "start_ts": 1775120621,
+          "Region": "MPU",
+          "Hub_Name": "KRIEL_TOWN",
+          "County_List": [
+            "Gert Sibande"
+          ],
+          "RAN_Risk_Count": 0,
+          "VBS_Count": 4,
+          "RAN_Failed_Count": 2,
+          "Potential_Failure": 2,
+          "OOS_Count": 3,
+          "Impact_15min_Count": 3,
+          "MSDP_Priority": "P4",
+          "Average_Rank": 7282.7,
+          "RCA": "Hubsite Failure - Power",
+          "OOS_Location_List": [
+            "HUBBARD_AND_SNYMAN",
+            "KRIEL_TOWN",
+            "MEGAMARK_MALL"
+          ],
+          "OOS_Location_Details": {
+            "KRIEL_TOWN": {
+              "metadata": {
+                "is_primary_hub": true,
+                "Site_Rank": 4717,
+                "RAN_Risk_Count": 0,
+                "VBS_Count": 4,
+                "RAN_Failed_Count": 2,
+                "Potential_Failure": 2
+              },
+              "alarms": [
+                {
+                  "Alarm": "GSM_CELL_OUT_OF_SERVICE_OTHER_CAUSES",
+                  "Summary": "21801",
+                  "Severity": 4,
+                  "RawLastOccurrence": 1775120756,
+                  "LastOccurrence": "2026-04-02 11:05:56",
+                  "Serial": 801698124
+                },
+                {
+                  "Alarm": "NE_IS_DISCONNECTED",
+                  "Summary": "40012",
+                  "Severity": 5,
+                  "RawLastOccurrence": 1775120951,
+                  "LastOccurrence": "2026-04-02 11:09:11",
+                  "Serial": 801698819
+                },
+                {
+                  "Alarm": "HUAWEI_SITE_OUT_OF_SERVICE",
+                  "Summary": "Synthetic Alert for Huawei Site Out of Service",
+                  "Severity": 5,
+                  "RawLastOccurrence": 1775120880,
+                  "LastOccurrence": "2026-04-02 11:08:00",
+                  "Serial": 801698315
+                },
+                {
+                  "Alarm": "NE_IS_DISCONNECTED",
+                  "Summary": "40012 BkTime=04:00",
+                  "Severity": 5,
+                  "RawLastOccurrence": 1775120892,
+                  "LastOccurrence": "2026-04-02 11:08:12",
+                  "Serial": 801699276
+                },
+                {
+                  "Alarm": "GSM_CELL_OUT_OF_SERVICE_OTHER_CAUSES",
+                  "Summary": "21801",
+                  "Severity": 4,
+                  "RawLastOccurrence": 1775120756,
+                  "LastOccurrence": "2026-04-02 11:05:56",
+                  "Serial": 801698038
+                },
+                {
+                  "Alarm": "NODEB_UNAVAILABLE",
+                  "Summary": "22214",
+                  "Severity": 5,
+                  "RawLastOccurrence": 1775120764,
+                  "LastOccurrence": "2026-04-02 11:06:04",
+                  "Serial": 801698046
+                },
+                {
+                  "Alarm": "UMTS_CELL_UNAVAILABLE_NCP_CCP_FAILURE",
+                  "Summary": "22202",
+                  "Severity": 5,
+                  "RawLastOccurrence": 1775120764,
+                  "LastOccurrence": "2026-04-02 11:06:04",
+                  "Serial": 801698048
+                },
+                {
+                  "Alarm": "UMTS_CELL_UNAVAILABLE_NCP_CCP_FAILURE",
+                  "Summary": "22202",
+                  "Severity": 5,
+                  "RawLastOccurrence": 1775120764,
+                  "LastOccurrence": "2026-04-02 11:06:04",
+                  "Serial": 801698052
+                },
+                {
+                  "Alarm": "GSM_CELL_OUT_OF_SERVICE_OTHER_CAUSES",
+                  "Summary": "21801",
+                  "Severity": 4,
+                  "RawLastOccurrence": 1775120756,
+                  "LastOccurrence": "2026-04-02 11:05:56",
+                  "Serial": 801698125
+                },
+                {
+                  "Alarm": "LG_POWERMETER_COMMS_LOST",
+                  "Summary": "LG COMMS LOST from Vodacom MPU/Gert Sibande GS County/Kriel_Town/LGMeter TLK ACTIVE",
+                  "Severity": 4,
+                  "RawLastOccurrence": 1775087886,
+                  "LastOccurrence": "2026-04-02 01:58:06",
+                  "Serial": 801588708
+                },
+                {
+                  "Alarm": "CSL_FAULT",
+                  "Summary": "21825 - CSL_FAULT at Hub site: 2G_Kriel_Town_MPU",
+                  "Severity": 5,
+                  "RawLastOccurrence": 1775120756,
+                  "LastOccurrence": "2026-04-02 11:05:56",
+                  "Serial": 801698123
+                },
+                {
+                  "Alarm": "UMTS_CELL_UNAVAILABLE_NCP_CCP_FAILURE",
+                  "Summary": "22202",
+                  "Severity": 5,
+                  "RawLastOccurrence": 1775120764,
+                  "LastOccurrence": "2026-04-02 11:06:04",
+                  "Serial": 801698148
+                },
+                {
+                  "Alarm": "NE_NOT_LOGIN",
+                  "Summary": "Alarm Reason=This NE is not logged in;Probable Cause=UNIDENTIFIED",
+                  "Severity": 5,
+                  "RawLastOccurrence": 1775120757,
+                  "LastOccurrence": "2026-04-02 11:05:57",
+                  "Serial": 1318494045
+                },
+                {
+                  "Alarm": "TIME_LOCK_FAIL",
+                  "Summary": "Alarm Parameter II(hex) 0x05;Alarm Reason=Time lock failure alarm;Probable Cause=UNIDENTIFIED",
+                  "Severity": 4,
+                  "RawLastOccurrence": 1775119847,
+                  "LastOccurrence": "2026-04-02 10:50:47",
+                  "Serial": 1318486419
+                },
+                {
+                  "Alarm": "GNE_CONNECT_FAIL",
+                  "Summary": "Alarm Reason=The gateway NE connect failed;Probable Cause=GNE_CONNECT_FAIL",
+                  "Severity": 5,
+                  "RawLastOccurrence": 1775120757,
+                  "LastOccurrence": "2026-04-02 11:05:57",
+                  "Serial": 1318494048
+                },
+                {
+                  "Alarm": "NE_NOT_LOGIN",
+                  "Summary": "Alarm Reason=This NE is not logged in;Probable Cause=UNIDENTIFIED",
+                  "Severity": 5,
+                  "RawLastOccurrence": 1775120757,
+                  "LastOccurrence": "2026-04-02 11:05:57",
+                  "Serial": 1318494050
+                },
+                {
+                  "Alarm": "NE_COMMU_BREAK",
+                  "Summary": "Alarm Reason=NE communication was lost;Probable Cause=NE_COMMU_BREAK",
+                  "Severity": 5,
+                  "RawLastOccurrence": 1775120757,
+                  "LastOccurrence": "2026-04-02 11:05:57",
+                  "Serial": 1318494049
+                },
+                {
+                  "Alarm": "NE_COMMU_BREAK",
+                  "Summary": "Alarm Reason=NE communication was lost;Probable Cause=NE_COMMU_BREAK",
+                  "Severity": 5,
+                  "RawLastOccurrence": 1775120757,
+                  "LastOccurrence": "2026-04-02 11:05:57",
+                  "Serial": 1318494044
+                },
+                {
+                  "Alarm": "TIME_SYNCHRONIZATION_FAILED",
+                  "Summary": "Time Lock Status=unLock unlockReason=offsetSumExceed;Alarm Reason=Time synchronization failed;Probable Cause=UNIDENTIFIED",
+                  "Severity": 4,
+                  "RawLastOccurrence": 1775120501,
+                  "LastOccurrence": "2026-04-02 11:01:41",
+                  "Serial": 1318491102
+                },
+                {
+                  "Alarm": "GNE_CONNECT_FAIL",
+                  "Summary": "Alarm Reason=The gateway NE connect failed;Probable Cause=GNE_CONNECT_FAIL",
+                  "Severity": 5,
+                  "RawLastOccurrence": 1775120757,
+                  "LastOccurrence": "2026-04-02 11:05:57",
+                  "Serial": 1318494197
+                },
+                {
+                  "Alarm": "THE_DEVICE_IS_OFFLINE",
+                  "Summary": "Alarm Reason=Device discontinuity;Probable Cause=UNIDENTIFIED",
+                  "Severity": 5,
+                  "RawLastOccurrence": 1775120693,
+                  "LastOccurrence": "2026-04-02 11:04:53",
+                  "Serial": 1318493747
+                }
+              ]
+            },
+            "HUBBARD_AND_SNYMAN": {
+              "metadata": {
+                "is_primary_hub": false,
+                "Site_Rank": 3201,
+                "RAN_Risk_Count": 11,
+                "VBS_Count": 1,
+                "RAN_Failed_Count": 1,
+                "Potential_Failure": 12
+              },
+              "alarms": [
+                {
+                  "Alarm": "CSL_FAULT",
+                  "Summary": "21825",
+                  "Severity": 5,
+                  "RawLastOccurrence": 1775120635,
+                  "LastOccurrence": "2026-04-02 11:03:55",
+                  "Serial": 801349346
+                },
+                {
+                  "Alarm": "MULTIPLE_UMTS_CELL_UNAVAILABLE",
+                  "Summary": "Synthetic Alert for : MULTIPLE_UMTS_CELL_UNAVAILABLE",
+                  "Severity": 5,
+                  "RawLastOccurrence": 1775114638,
+                  "LastOccurrence": "2026-04-02 09:23:58",
+                  "Serial": 801644973
+                },
+                {
+                  "Alarm": "UMTS_CELL_UNAVAILABLE_COMMON_CHANNEL_FAILURE_OR_REMOVAL",
+                  "Summary": "22202",
+                  "Severity": 5,
+                  "RawLastOccurrence": 1775114638,
+                  "LastOccurrence": "2026-04-02 09:23:58",
+                  "Serial": 801670065
+                },
+                {
+                  "Alarm": "NODEB_UNAVAILABLE",
+                  "Summary": "22214",
+                  "Severity": 5,
+                  "RawLastOccurrence": 1775120621,
+                  "LastOccurrence": "2026-04-02 11:03:41",
+                  "Serial": 801677342
+                },
+                {
+                  "Alarm": "NE_IS_DISCONNECTED",
+                  "Summary": "40012",
+                  "Severity": 5,
+                  "RawLastOccurrence": 1775120772,
+                  "LastOccurrence": "2026-04-02 11:06:12",
+                  "Serial": 801698156
+                },
+                {
+                  "Alarm": "UMTS_CELL_UNAVAILABLE_COMMON_CHANNEL_FAILURE_OR_REMOVAL",
+                  "Summary": "22202",
+                  "Severity": 5,
+                  "RawLastOccurrence": 1775114638,
+                  "LastOccurrence": "2026-04-02 09:23:58",
+                  "Serial": 801670067
+                },
+                {
+                  "Alarm": "UMTS_CELL_UNAVAILABLE_COMMON_CHANNEL_FAILURE_OR_REMOVAL",
+                  "Summary": "22202",
+                  "Severity": 5,
+                  "RawLastOccurrence": 1775114638,
+                  "LastOccurrence": "2026-04-02 09:23:58",
+                  "Serial": 801670066
+                },
+                {
+                  "Alarm": "THE_DEVICE_IS_OFFLINE",
+                  "Summary": "Alarm Reason=Device discontinuity;Probable Cause=UNIDENTIFIED",
+                  "Severity": 5,
+                  "RawLastOccurrence": 1775120554,
+                  "LastOccurrence": "2026-04-02 11:02:34",
+                  "Serial": 1318486388
+                }
+              ]
+            },
+            "MEGAMARK_MALL": {
+              "metadata": {
+                "is_primary_hub": false,
+                "Site_Rank": 13930,
+                "RAN_Risk_Count": 0,
+                "VBS_Count": 4,
+                "RAN_Failed_Count": 2,
+                "Potential_Failure": 2
+              },
+              "alarms": [
+                {
+                  "Alarm": "NE_IS_DISCONNECTED",
+                  "Summary": "40012",
+                  "Severity": 5,
+                  "RawLastOccurrence": 1775120939,
+                  "LastOccurrence": "2026-04-02 11:08:59",
+                  "Serial": 801698836
+                },
+                {
+                  "Alarm": "UMTS_CELL_UNAVAILABLE_NCP_CCP_FAILURE",
+                  "Summary": "22202",
+                  "Severity": 5,
+                  "RawLastOccurrence": 1775120764,
+                  "LastOccurrence": "2026-04-02 11:06:04",
+                  "Serial": 801698047
+                },
+                {
+                  "Alarm": "GSM_CELL_OUT_OF_SERVICE_OTHER_CAUSES",
+                  "Summary": "21801",
+                  "Severity": 4,
+                  "RawLastOccurrence": 1775120756,
+                  "LastOccurrence": "2026-04-02 11:05:56",
+                  "Serial": 801698037
+                },
+                {
+                  "Alarm": "NODEB_UNAVAILABLE",
+                  "Summary": "22214",
+                  "Severity": 5,
+                  "RawLastOccurrence": 1775120764,
+                  "LastOccurrence": "2026-04-02 11:06:04",
+                  "Serial": 801698051
+                },
+                {
+                  "Alarm": "CSL_FAULT",
+                  "Summary": "21825",
+                  "Severity": 5,
+                  "RawLastOccurrence": 1775120760,
+                  "LastOccurrence": "2026-04-02 11:06:00",
+                  "Serial": 801698133
+                },
+                {
+                  "Alarm": "UMTS_CELL_UNAVAILABLE_NCP_CCP_FAILURE",
+                  "Summary": "22202",
+                  "Severity": 5,
+                  "RawLastOccurrence": 1775120764,
+                  "LastOccurrence": "2026-04-02 11:06:04",
+                  "Serial": 801698147
+                },
+                {
+                  "Alarm": "AC_PHASE_FAILED",
+                  "Summary": "65108",
+                  "Severity": 3,
+                  "RawLastOccurrence": 1775120470,
+                  "LastOccurrence": "2026-04-02 11:01:10",
+                  "Serial": 801340158
+                },
+                {
+                  "Alarm": "HUAWEI_SITE_OUT_OF_SERVICE",
+                  "Summary": "Synthetic Alert for Huawei Site Out of Service",
+                  "Severity": 5,
+                  "RawLastOccurrence": 1775120886,
+                  "LastOccurrence": "2026-04-02 11:08:06",
+                  "Serial": 801698318
+                },
+                {
+                  "Alarm": "GSM_CELL_OUT_OF_SERVICE_OTHER_CAUSES",
+                  "Summary": "21801",
+                  "Severity": 4,
+                  "RawLastOccurrence": 1775120761,
+                  "LastOccurrence": "2026-04-02 11:06:01",
+                  "Serial": 801698141
+                },
+                {
+                  "Alarm": "THE_DEVICE_IS_OFFLINE",
+                  "Summary": "Alarm Reason=Device discontinuity;Probable Cause=UNIDENTIFIED",
+                  "Severity": 5,
+                  "RawLastOccurrence": 1775120701,
+                  "LastOccurrence": "2026-04-02 11:05:01",
+                  "Serial": 1318493753
+                },
+                {
+                  "Alarm": "TIME_LOCK_FAIL",
+                  "Summary": "Alarm Parameter II(hex) 0x05;Alarm Reason=Time lock failure alarm;Probable Cause=UNIDENTIFIED",
+                  "Severity": 4,
+                  "RawLastOccurrence": 1775120170,
+                  "LastOccurrence": "2026-04-02 10:56:10",
+                  "Serial": 1318486486
+                },
+                {
+                  "Alarm": "NE_NOT_LOGIN",
+                  "Summary": "Alarm Reason=This NE is not logged in;Probable Cause=UNIDENTIFIED",
+                  "Severity": 5,
+                  "RawLastOccurrence": 1775120757,
+                  "LastOccurrence": "2026-04-02 11:05:57",
+                  "Serial": 1318494047
+                },
+                {
+                  "Alarm": "NE_COMMU_BREAK",
+                  "Summary": "Alarm Reason=NE communication was lost;Probable Cause=NE_COMMU_BREAK",
+                  "Severity": 5,
+                  "RawLastOccurrence": 1775120757,
+                  "LastOccurrence": "2026-04-02 11:05:57",
+                  "Serial": 1318494199
+                }
+              ]
+            }
+          },
+          "Failure_Probability": "100.0%",
+          "Weather": {
+            "forecast_8h": {
+              "icon": "\u2600\ufe0f",
+              "wind": "20.9km/h",
+              "rain": "0.0mm",
+              "temp": "17.6\u00b0C",
+              "threat_level": "Low",
+              "impact": "Monitor for site stability",
+              "timestamp": 1775149200
+            },
+            "current": {
+              "icon": "\u2600\ufe0f",
+              "wind": "23.0km/h",
+              "rain": "0.0mm",
+              "temp": "22.0\u00b0C",
+              "threat_level": "Low",
+              "impact": "Monitor for site stability",
+              "timestamp": 1775120400
+            }
+          }
+        }
+      ],
+      "Weather_Summary": {
+        "current_icon": "\ud83c\udf27\ufe0f",
+        "current_condition": "Peak Wind: 36.0km/h",
+        "warning_text": ""
+      }
+    },
+    "KZN": {
+      "Total_OOS_Count": 66,
+      "Incidents": [
+        {
+          "start_ts": 1775120022,
+          "Region": "KZN",
+          "Hub_Name": "NOTTINGHAM_RD_WATER_TOWER",
+          "County_List": [
+            "South"
+          ],
+          "RAN_Risk_Count": 0,
+          "VBS_Count": 2,
+          "RAN_Failed_Count": 1,
+          "Potential_Failure": 1,
+          "OOS_Count": 4,
+          "Impact_15min_Count": 4,
+          "MSDP_Priority": "P4",
+          "Average_Rank": 9234.2,
+          "RCA": "Hubsite Failure - Transmission",
+          "OOS_Location_List": [
+            "EASINGWOLD_FARM",
+            "HLANGANANI_PRIMARY_SCHOOL_N3",
+            "NOTTINGHAM_RD_MW",
+            "NOTTINGHAM_RD_WATER_TOWER"
+          ],
+          "OOS_Location_Details": {
+            "EASINGWOLD_FARM": {
+              "metadata": {
+                "is_primary_hub": false,
+                "Site_Rank": 6038,
+                "RAN_Risk_Count": 29,
+                "VBS_Count": 2,
+                "RAN_Failed_Count": 3,
+                "Potential_Failure": 32
+              },
+              "alarms": [
+                {
+                  "Alarm": "WCDMA_BASE_STATION_OUT_OF_USE",
+                  "Summary": "7786",
+                  "Severity": 5,
+                  "RawLastOccurrence": 1775120031,
+                  "LastOccurrence": "2026-04-02 10:53:51",
+                  "Serial": 801694774
+                },
+                {
+                  "Alarm": "MULTIPLE_BCCH_MISSING",
+                  "Summary": "Synthetic Alert for : MULTIPLE_BCCH_MISSING",
+                  "Severity": 5,
+                  "RawLastOccurrence": 1775120077,
+                  "LastOccurrence": "2026-04-02 10:54:37",
+                  "Serial": 801695798
+                },
+                {
+                  "Alarm": "BTS_O&M_LINK_FAILURE",
+                  "Summary": "7706 - BTS_O&M_LINK_FAILURE at Hub site: 2G_Easingwold_Farm_KZN",
+                  "Severity": 5,
+                  "RawLastOccurrence": 1775120022,
+                  "LastOccurrence": "2026-04-02 10:53:42",
+                  "Serial": 801694750
+                },
+                {
+                  "Alarm": "BCCH_MISSING",
+                  "Summary": "7767",
+                  "Severity": 5,
+                  "RawLastOccurrence": 1775120077,
+                  "LastOccurrence": "2026-04-02 10:54:37",
+                  "Serial": 801695042
+                },
+                {
+                  "Alarm": "BCCH_MISSING",
+                  "Summary": "7767",
+                  "Severity": 5,
+                  "RawLastOccurrence": 1775120078,
+                  "LastOccurrence": "2026-04-02 10:54:38",
+                  "Serial": 801695048
+                },
+                {
+                  "Alarm": "BCCH_MISSING",
+                  "Summary": "7767",
+                  "Severity": 5,
+                  "RawLastOccurrence": 1775120076,
+                  "LastOccurrence": "2026-04-02 10:54:36",
+                  "Serial": 801695040
+                },
+                {
+                  "Alarm": "NOKIA_SITE_OUT_OF_SERVICE",
+                  "Summary": "Synthetic Alert for NetAct Site Out of Service",
+                  "Severity": 5,
+                  "RawLastOccurrence": 1775120031,
+                  "LastOccurrence": "2026-04-02 10:53:51",
+                  "Serial": 801695014
+                },
+                {
+                  "Alarm": "THE_DEVICE_IS_OFFLINE",
+                  "Summary": "Alarm Reason=Device discontinuity;Probable Cause=UNIDENTIFIED",
+                  "Severity": 5,
+                  "RawLastOccurrence": 1775120567,
+                  "LastOccurrence": "2026-04-02 11:02:47",
+                  "Serial": 1318487619
+                }
+              ]
+            },
+            "HLANGANANI_PRIMARY_SCHOOL_N3": {
+              "metadata": {
+                "is_primary_hub": false,
+                "Site_Rank": 13368,
+                "RAN_Risk_Count": 29,
+                "VBS_Count": 2,
+                "RAN_Failed_Count": 3,
+                "Potential_Failure": 32
+              },
+              "alarms": [
+                {
+                  "Alarm": "WCDMA_BASE_STATION_OUT_OF_USE",
+                  "Summary": "7786",
+                  "Severity": 5,
+                  "RawLastOccurrence": 1775120026,
+                  "LastOccurrence": "2026-04-02 10:53:46",
+                  "Serial": 801694760
+                },
+                {
+                  "Alarm": "THE_DEVICE_IS_OFFLINE",
+                  "Summary": "Alarm Reason=Device discontinuity;Probable Cause=UNIDENTIFIED",
+                  "Severity": 5,
+                  "RawLastOccurrence": 1775120178,
+                  "LastOccurrence": "2026-04-02 10:56:18",
+                  "Serial": 1318489045
+                }
+              ]
+            },
+            "NOTTINGHAM_RD_MW": {
+              "metadata": {
+                "is_primary_hub": false,
+                "Site_Rank": 7068,
+                "RAN_Risk_Count": 0,
+                "VBS_Count": 1,
+                "RAN_Failed_Count": 1,
+                "Potential_Failure": 1
+              },
+              "alarms": [
+                {
+                  "Alarm": "WCDMA_BASE_STATION_OUT_OF_USE",
+                  "Summary": "7786",
+                  "Severity": 5,
+                  "RawLastOccurrence": 1775120025,
+                  "LastOccurrence": "2026-04-02 10:53:45",
+                  "Serial": 801694757
+                },
+                {
+                  "Alarm": "MULTIPLE_BCCH_MISSING",
+                  "Summary": "Synthetic Alert for : MULTIPLE_BCCH_MISSING",
+                  "Severity": 5,
+                  "RawLastOccurrence": 1775120080,
+                  "LastOccurrence": "2026-04-02 10:54:40",
+                  "Serial": 801695801
+                },
+                {
+                  "Alarm": "NOKIA_SITE_OUT_OF_SERVICE",
+                  "Summary": "Synthetic Alert for NetAct Site Out of Service",
+                  "Severity": 5,
+                  "RawLastOccurrence": 1775120025,
+                  "LastOccurrence": "2026-04-02 10:53:45",
+                  "Serial": 801695013
+                },
+                {
+                  "Alarm": "BCCH_MISSING",
+                  "Summary": "7767",
+                  "Severity": 5,
+                  "RawLastOccurrence": 1775120080,
+                  "LastOccurrence": "2026-04-02 10:54:40",
+                  "Serial": 801695051
+                },
+                {
+                  "Alarm": "BCCH_MISSING",
+                  "Summary": "7767",
+                  "Severity": 5,
+                  "RawLastOccurrence": 1775120083,
+                  "LastOccurrence": "2026-04-02 10:54:43",
+                  "Serial": 801695065
+                },
+                {
+                  "Alarm": "BTS_O&M_LINK_FAILURE",
+                  "Summary": "7706",
+                  "Severity": 5,
+                  "RawLastOccurrence": 1775120022,
+                  "LastOccurrence": "2026-04-02 10:53:42",
+                  "Serial": 801694747
+                },
+                {
+                  "Alarm": "LINK_DOWN",
+                  "Summary": "If admin status=up If oper status=down If phy status=unreported Main If Name=Tunnel142103 LinkDown Reason=tunnelDownOrInexist LSR ID=10.35.145.159;Alarm Reason=Link Down;Probable Cause=UNIDENTIFIED",
+                  "Severity": 5,
+                  "RawLastOccurrence": 1775119178,
+                  "LastOccurrence": "2026-04-02 10:39:38",
+                  "Serial": 1318479938
+                },
+                {
+                  "Alarm": "IPV4_IFSTATE_ALARM",
+                  "Summary": "ifName=Tunnel142103 ifOperStatus=2 reasonCode=The interface link status is down;Alarm Reason=The IPv4 status changes.;Probable Cause=UNIDENTIFIED",
+                  "Severity": 4,
+                  "RawLastOccurrence": 1775119177,
+                  "LastOccurrence": "2026-04-02 10:39:37",
+                  "Serial": 1318479934
+                },
+                {
+                  "Alarm": "THE_DEVICE_IS_OFFLINE",
+                  "Summary": "Alarm Reason=Device discontinuity;Probable Cause=UNIDENTIFIED",
+                  "Severity": 5,
+                  "RawLastOccurrence": 1775120007,
+                  "LastOccurrence": "2026-04-02 10:53:27",
+                  "Serial": 1318487669
+                },
+                {
+                  "Alarm": "THE_TE_TUNNEL_CHANGES_TO_DOWN",
+                  "Summary": "TunnelIf=Tunnel142103 TunnelType=primary Tunnel AdminStatus=up OperStatus=down Reason=Other EgressIf=GigabitEthernet020 FaultLsrID=10.35.145.194 FaultIfIP=10.163.49.146 FaultIfName=Tunnel142103;Alarm Reason=The TE tunnel Changes to Down;Probable Cause=UNI",
+                  "Severity": 5,
+                  "RawLastOccurrence": 1775119178,
+                  "LastOccurrence": "2026-04-02 10:39:38",
+                  "Serial": 1318479939
+                },
+                {
+                  "Alarm": "BGP_STATUS_CHANGED",
+                  "Summary": "Final error in BGP peer establishment=Cease connect BGP Local State=idle Reason=Remote peer not reachable If Name=--;Alarm Reason=The BGP status changed.;Probable Cause=UNIDENTIFIED",
+                  "Severity": 4,
+                  "RawLastOccurrence": 1775119213,
+                  "LastOccurrence": "2026-04-02 10:40:13",
+                  "Serial": 1318480016
+                },
+                {
+                  "Alarm": "BGP_PEER_BACKWARD_TRANSITION",
+                  "Summary": "LastError=60 BGP Peer State=idle PeerUnavaiReason=Remote peer not reachable IfName=--;Alarm Reason=Bgp Peer Backward Transition.;Probable Cause=UNIDENTIFIED",
+                  "Severity": 4,
+                  "RawLastOccurrence": 1775119206,
+                  "LastOccurrence": "2026-04-02 10:40:06",
+                  "Serial": 1318479998
+                }
+              ]
+            },
+            "NOTTINGHAM_RD_WATER_TOWER": {
+              "metadata": {
+                "is_primary_hub": true,
+                "Site_Rank": 10463,
+                "RAN_Risk_Count": 0,
+                "VBS_Count": 2,
+                "RAN_Failed_Count": 1,
+                "Potential_Failure": 1
+              },
+              "alarms": [
+                {
+                  "Alarm": "BTS_O&M_LINK_FAILURE",
+                  "Summary": "7706 - BTS_O&M_LINK_FAILURE at Hub site: 2G_Nottingham_Rd_Water_Tower_KZN",
+                  "Severity": 5,
+                  "RawLastOccurrence": 1775120022,
+                  "LastOccurrence": "2026-04-02 10:53:42",
+                  "Serial": 801694749
+                },
+                {
+                  "Alarm": "NOKIA_SITE_OUT_OF_SERVICE",
+                  "Summary": "Synthetic Alert for NetAct Site Out of Service",
+                  "Severity": 5,
+                  "RawLastOccurrence": 1775120026,
+                  "LastOccurrence": "2026-04-02 10:53:46",
+                  "Serial": 801695020
+                },
+                {
+                  "Alarm": "MULTIPLE_BCCH_MISSING",
+                  "Summary": "Synthetic Alert for : MULTIPLE_BCCH_MISSING",
+                  "Severity": 5,
+                  "RawLastOccurrence": 1775120076,
+                  "LastOccurrence": "2026-04-02 10:54:36",
+                  "Serial": 801695800
+                },
+                {
+                  "Alarm": "BCCH_MISSING",
+                  "Summary": "7767",
+                  "Severity": 5,
+                  "RawLastOccurrence": 1775120077,
+                  "LastOccurrence": "2026-04-02 10:54:37",
+                  "Serial": 801695044
+                },
+                {
+                  "Alarm": "BCCH_MISSING",
+                  "Summary": "7767",
+                  "Severity": 5,
+                  "RawLastOccurrence": 1775120076,
+                  "LastOccurrence": "2026-04-02 10:54:36",
+                  "Serial": 801695039
+                },
+                {
+                  "Alarm": "WCDMA_BASE_STATION_OUT_OF_USE",
+                  "Summary": "7786",
+                  "Severity": 5,
+                  "RawLastOccurrence": 1775120026,
+                  "LastOccurrence": "2026-04-02 10:53:46",
+                  "Serial": 801694759
+                },
+                {
+                  "Alarm": "BCCH_MISSING",
+                  "Summary": "7767",
+                  "Severity": 5,
+                  "RawLastOccurrence": 1775120078,
+                  "LastOccurrence": "2026-04-02 10:54:38",
+                  "Serial": 801695049
+                },
+                {
+                  "Alarm": "THE_DEVICE_IS_OFFLINE",
+                  "Summary": "Alarm Reason=Device discontinuity;Probable Cause=UNIDENTIFIED",
+                  "Severity": 5,
+                  "RawLastOccurrence": 1775120025,
+                  "LastOccurrence": "2026-04-02 10:53:45",
+                  "Serial": 1318488015
+                }
+              ]
+            }
+          },
+          "Failure_Probability": "100.0%",
+          "Weather": {
+            "forecast_8h": {
+              "icon": "\u2600\ufe0f",
+              "wind": "14.0km/h",
+              "rain": "0.0mm",
+              "temp": "16.4\u00b0C",
+              "threat_level": "Low",
+              "impact": "Monitor for site stability",
+              "timestamp": 1775149200
+            },
+            "current": {
+              "icon": "\u2600\ufe0f",
+              "wind": "14.8km/h",
+              "rain": "0.0mm",
+              "temp": "22.3\u00b0C",
+              "threat_level": "Low",
+              "impact": "Monitor for site stability",
+              "timestamp": 1775120400
+            }
+          }
+        }
+      ],
+      "Weather_Summary": {
+        "current_icon": "\u2600\ufe0f",
+        "current_condition": "Peak Wind: 25.9km/h",
+        "warning_text": ""
+      }
+    },
+    "NGA": {
+      "Total_OOS_Count": 36,
+      "Incidents": [],
+      "Weather_Summary": {
+        "current_icon": "\u2600\ufe0f",
+        "current_condition": "Peak Wind: 26.3km/h",
+        "warning_text": ""
+      }
+    },
+    "SGC": {
+      "Total_OOS_Count": 77,
+      "Incidents": [],
+      "Weather_Summary": {
+        "current_icon": "\u2600\ufe0f",
+        "current_condition": "Peak Wind: 18.7km/h",
+        "warning_text": ""
+      }
+    },
+    "EAS": {
+      "Total_OOS_Count": 59,
+      "Incidents": [],
+      "Weather_Summary": {
+        "current_icon": "\u2600\ufe0f",
+        "current_condition": "Peak Wind: 28.4km/h",
+        "warning_text": ""
+      }
+    },
+    "WES": {
+      "Total_OOS_Count": 13,
+      "Incidents": [
+        {
+          "start_ts": 1775120400,
+          "Region": "WES",
+          "Hub_Name": "\ud83d\udca8 CURRENT WEATHER ALERT: Whale",
+          "County_List": [
+            "Whale"
+          ],
+          "OOS_Count": 0,
+          "MSDP_Priority": "\ud83d\udca8",
+          "Average_Rank": 2600,
+          "RCA": "Weather (CURRENT): 48.6km/h, 0.0mm. Potential for wind-blown debris/intermittent link fades",
+          "Weather": {
+            "forecast_8h": {
+              "icon": "\ud83c\udf27\ufe0f",
+              "wind": "18.7km/h",
+              "rain": "0.1mm",
+              "temp": "22.7\u00b0C",
+              "threat_level": "Low",
+              "impact": "Monitor for site stability",
+              "timestamp": 1775149200
+            },
+            "current": {
+              "icon": "\ud83d\udca8",
+              "wind": "48.6km/h",
+              "rain": "0.0mm",
+              "temp": "24.2\u00b0C",
+              "threat_level": "Medium",
+              "impact": "Potential for wind-blown debris/intermittent link fades",
+              "timestamp": 1775120400
+            }
+          }
+        },
+        {
+          "start_ts": 1775149200,
+          "Region": "WES",
+          "Hub_Name": "\ud83d\udca8 FORECAST 8H WEATHER ALERT: Diamond",
+          "County_List": [
+            "Diamond"
+          ],
+          "OOS_Count": 0,
+          "MSDP_Priority": "\ud83d\udca8",
+          "Average_Rank": 2600,
+          "RCA": "Weather (8H FORECAST): 40.3km/h, 0.0mm. Monitor for site stability",
+          "Weather": {
+            "current": {
+              "icon": "\u2600\ufe0f",
+              "wind": "22.0km/h",
+              "rain": "0.0mm",
+              "temp": "29.1\u00b0C",
+              "threat_level": "Low",
+              "impact": "Monitor for site stability",
+              "timestamp": 1775120400
+            },
+            "forecast_8h": {
+              "icon": "\ud83d\udca8",
+              "wind": "40.3km/h",
+              "rain": "0.0mm",
+              "temp": "26.8\u00b0C",
+              "threat_level": "Medium",
+              "impact": "Monitor for site stability",
+              "timestamp": 1775149200
+            }
+          }
+        }
+      ],
+      "Weather_Summary": {
+        "current_icon": "\ud83d\udca8",
+        "current_condition": "Peak Wind: 48.6km/h",
+        "warning_text": "\u26a0\ufe0f Severe Weather Active"
+      }
+    },
+    "Unknown": {
+      "Total_OOS_Count": 1,
+      "Incidents": [],
+      "Weather_Summary": {
+        "current_icon": "\u2600\ufe0f",
+        "current_condition": "Peak Wind: 0.0km/h",
+        "warning_text": ""
+      }
+    },
+    "DOWNDETECTOR": {
+      "Total_OOS_Count": 198,
+      "Incidents": [
+        {
+          "start_ts": 1775121440,
+          "Region": "DOWNDETECTOR",
+          "Hub_Name": "VODACOM: 143 Reports",
+          "County_List": [
+            "National"
+          ],
+          "OOS_Count": 143,
+          "Impact_15min_Count": 143,
+          "MSDP_Priority": "P1",
+          "Average_Rank": 0,
+          "RCA": "Crowdsourced Spike: Mobile Internet (55.24%)",
+          "Failure_Probability": "100.0%",
+          "OOS_Location_List": [],
+          "OOS_Location_Details": {}
+        },
+        {
+          "start_ts": 1775121440,
+          "Region": "DOWNDETECTOR",
+          "Hub_Name": "MTN: 55 Reports",
+          "County_List": [
+            "National"
+          ],
+          "OOS_Count": 55,
+          "Impact_15min_Count": 55,
+          "MSDP_Priority": "P2",
+          "Average_Rank": 0,
+          "RCA": "Crowdsourced Spike: Mobile Internet (61.82%)",
+          "Failure_Probability": "100.0%",
+          "OOS_Location_List": [],
+          "OOS_Location_Details": {}
+        }
+      ]
+    }
+  }
+}

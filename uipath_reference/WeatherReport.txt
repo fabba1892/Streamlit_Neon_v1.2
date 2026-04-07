@@ -1,0 +1,782 @@
+{
+  "WES": {
+    "Whale": {
+      "forecast_8h": {
+        "icon": "🌧️",
+        "wind": "18.7km/h",
+        "rain": "0.1mm",
+        "temp": "22.7°C",
+        "threat_level": "Low",
+        "impact": "Monitor for site stability",
+        "timestamp": 1775149200
+      },
+      "current": {
+        "icon": "💨",
+        "wind": "48.6km/h",
+        "rain": "0.0mm",
+        "temp": "24.2°C",
+        "threat_level": "Medium",
+        "impact": "Potential for wind-blown debris/intermittent link fades",
+        "timestamp": 1775120400
+      }
+    },
+    "Winelands": {
+      "current": {
+        "icon": "☀️",
+        "wind": "27.4km/h",
+        "rain": "0.0mm",
+        "temp": "23.4°C",
+        "threat_level": "Low",
+        "impact": "Monitor for site stability",
+        "timestamp": 1775120400
+      },
+      "forecast_8h": {
+        "icon": "☀️",
+        "wind": "24.5km/h",
+        "rain": "0.0mm",
+        "temp": "24.2°C",
+        "threat_level": "Low",
+        "impact": "Monitor for site stability",
+        "timestamp": 1775149200
+      }
+    },
+    "Atlantic": {
+      "forecast_8h": {
+        "icon": "☀️",
+        "wind": "33.5km/h",
+        "rain": "0.0mm",
+        "temp": "22.2°C",
+        "threat_level": "Low",
+        "impact": "Monitor for site stability",
+        "timestamp": 1775149200
+      },
+      "current": {
+        "icon": "☀️",
+        "wind": "31.7km/h",
+        "rain": "0.0mm",
+        "temp": "29.3°C",
+        "threat_level": "Low",
+        "impact": "Monitor for site stability",
+        "timestamp": 1775120400
+      }
+    },
+    "": {
+      "current": {
+        "icon": "☀️",
+        "wind": "23.0km/h",
+        "rain": "0.0mm",
+        "temp": "24.6°C",
+        "threat_level": "Low",
+        "impact": "Monitor for site stability",
+        "timestamp": 1775120400
+      },
+      "forecast_8h": {
+        "icon": "🌧️",
+        "wind": "13.7km/h",
+        "rain": "0.2mm",
+        "temp": "20.8°C",
+        "threat_level": "Low",
+        "impact": "Monitor for site stability",
+        "timestamp": 1775149200
+      }
+    },
+    "Diamond": {
+      "current": {
+        "icon": "☀️",
+        "wind": "22.0km/h",
+        "rain": "0.0mm",
+        "temp": "29.1°C",
+        "threat_level": "Low",
+        "impact": "Monitor for site stability",
+        "timestamp": 1775120400
+      },
+      "forecast_8h": {
+        "icon": "💨",
+        "wind": "40.3km/h",
+        "rain": "0.0mm",
+        "temp": "26.8°C",
+        "threat_level": "Medium",
+        "impact": "Monitor for site stability",
+        "timestamp": 1775149200
+      }
+    },
+    "Eden": {
+      "forecast_8h": {
+        "icon": "☀️",
+        "wind": "15.1km/h",
+        "rain": "0.0mm",
+        "temp": "25.5°C",
+        "threat_level": "Low",
+        "impact": "Monitor for site stability",
+        "timestamp": 1775149200
+      },
+      "current": {
+        "icon": "☀️",
+        "wind": "32.8km/h",
+        "rain": "0.0mm",
+        "temp": "26.5°C",
+        "threat_level": "Low",
+        "impact": "Monitor for site stability",
+        "timestamp": 1775120400
+      }
+    }
+  },
+  "EAS": {
+    "Eden": {
+      "forecast_8h": {
+        "icon": "☀️",
+        "wind": "21.6km/h",
+        "rain": "0.0mm",
+        "temp": "25.3°C",
+        "threat_level": "Low",
+        "impact": "Monitor for site stability",
+        "timestamp": 1775149200
+      },
+      "current": {
+        "icon": "☀️",
+        "wind": "5.8km/h",
+        "rain": "0.0mm",
+        "temp": "27.7°C",
+        "threat_level": "Low",
+        "impact": "Monitor for site stability",
+        "timestamp": 1775120400
+      }
+    },
+    "Bay": {
+      "current": {
+        "icon": "☀️",
+        "wind": "10.1km/h",
+        "rain": "0.0mm",
+        "temp": "29.0°C",
+        "threat_level": "Low",
+        "impact": "Monitor for site stability",
+        "timestamp": 1775120400
+      },
+      "forecast_8h": {
+        "icon": "☀️",
+        "wind": "11.5km/h",
+        "rain": "0.0mm",
+        "temp": "27.5°C",
+        "threat_level": "Low",
+        "impact": "Monitor for site stability",
+        "timestamp": 1775149200
+      }
+    },
+    "": {
+      "forecast_8h": {
+        "icon": "☀️",
+        "wind": "40.0km/h",
+        "rain": "0.0mm",
+        "temp": "16.3°C",
+        "threat_level": "Low",
+        "impact": "Monitor for site stability",
+        "timestamp": 1775149200
+      },
+      "current": {
+        "icon": "☀️",
+        "wind": "11.5km/h",
+        "rain": "0.0mm",
+        "temp": "20.6°C",
+        "threat_level": "Low",
+        "impact": "Monitor for site stability",
+        "timestamp": 1775120400
+      }
+    },
+    "Kei": {
+      "forecast_8h": {
+        "icon": "☀️",
+        "wind": "11.5km/h",
+        "rain": "0.0mm",
+        "temp": "21.1°C",
+        "threat_level": "Low",
+        "impact": "Monitor for site stability",
+        "timestamp": 1775149200
+      },
+      "current": {
+        "icon": "☀️",
+        "wind": "28.4km/h",
+        "rain": "0.0mm",
+        "temp": "26.9°C",
+        "threat_level": "Low",
+        "impact": "Monitor for site stability",
+        "timestamp": 1775120400
+      }
+    }
+  },
+  "NONE": {
+    "": {
+      "forecast_8h": {
+        "icon": "☀️",
+        "wind": "20.2km/h",
+        "rain": "0.0mm",
+        "temp": "23.4°C",
+        "threat_level": "Low",
+        "impact": "Monitor for site stability",
+        "timestamp": 1775149200
+      },
+      "current": {
+        "icon": "☀️",
+        "wind": "30.2km/h",
+        "rain": "0.0mm",
+        "temp": "25.9°C",
+        "threat_level": "Low",
+        "impact": "Monitor for site stability",
+        "timestamp": 1775120400
+      }
+    }
+  },
+  "CEN": {
+    "Diamond": {
+      "forecast_8h": {
+        "icon": "☀️",
+        "wind": "16.9km/h",
+        "rain": "0.0mm",
+        "temp": "24.1°C",
+        "threat_level": "Low",
+        "impact": "Monitor for site stability",
+        "timestamp": 1775149200
+      },
+      "current": {
+        "icon": "☀️",
+        "wind": "16.6km/h",
+        "rain": "0.0mm",
+        "temp": "27.3°C",
+        "threat_level": "Low",
+        "impact": "Monitor for site stability",
+        "timestamp": 1775120400
+      }
+    },
+    "Goldfields": {
+      "current": {
+        "icon": "☀️",
+        "wind": "27.0km/h",
+        "rain": "0.0mm",
+        "temp": "23.5°C",
+        "threat_level": "Low",
+        "impact": "Monitor for site stability",
+        "timestamp": 1775120400
+      },
+      "forecast_8h": {
+        "icon": "☀️",
+        "wind": "5.4km/h",
+        "rain": "0.0mm",
+        "temp": "21.7°C",
+        "threat_level": "Low",
+        "impact": "Monitor for site stability",
+        "timestamp": 1775149200
+      }
+    },
+    "Platinum": {
+      "forecast_8h": {
+        "icon": "☀️",
+        "wind": "3.6km/h",
+        "rain": "0.0mm",
+        "temp": "24.2°C",
+        "threat_level": "Low",
+        "impact": "Monitor for site stability",
+        "timestamp": 1775149200
+      },
+      "current": {
+        "icon": "☀️",
+        "wind": "11.5km/h",
+        "rain": "0.0mm",
+        "temp": "27.0°C",
+        "threat_level": "Low",
+        "impact": "Monitor for site stability",
+        "timestamp": 1775120400
+      }
+    },
+    "": {
+      "current": {
+        "icon": "☀️",
+        "wind": "26.6km/h",
+        "rain": "0.0mm",
+        "temp": "26.9°C",
+        "threat_level": "Low",
+        "impact": "Monitor for site stability",
+        "timestamp": 1775120400
+      },
+      "forecast_8h": {
+        "icon": "☀️",
+        "wind": "9.7km/h",
+        "rain": "0.0mm",
+        "temp": "24.6°C",
+        "threat_level": "Low",
+        "impact": "Monitor for site stability",
+        "timestamp": 1775149200
+      }
+    }
+  },
+  "KZN": {
+    "Berg": {
+      "forecast_8h": {
+        "icon": "☀️",
+        "wind": "20.9km/h",
+        "rain": "0.0mm",
+        "temp": "16.7°C",
+        "threat_level": "Low",
+        "impact": "Monitor for site stability",
+        "timestamp": 1775149200
+      },
+      "current": {
+        "icon": "☀️",
+        "wind": "19.4km/h",
+        "rain": "0.0mm",
+        "temp": "22.3°C",
+        "threat_level": "Low",
+        "impact": "Monitor for site stability",
+        "timestamp": 1775120400
+      }
+    },
+    "South": {
+      "forecast_8h": {
+        "icon": "☀️",
+        "wind": "14.0km/h",
+        "rain": "0.0mm",
+        "temp": "16.4°C",
+        "threat_level": "Low",
+        "impact": "Monitor for site stability",
+        "timestamp": 1775149200
+      },
+      "current": {
+        "icon": "☀️",
+        "wind": "14.8km/h",
+        "rain": "0.0mm",
+        "temp": "22.3°C",
+        "threat_level": "Low",
+        "impact": "Monitor for site stability",
+        "timestamp": 1775120400
+      }
+    },
+    "Zululand": {
+      "forecast_8h": {
+        "icon": "☀️",
+        "wind": "12.2km/h",
+        "rain": "0.0mm",
+        "temp": "22.1°C",
+        "threat_level": "Low",
+        "impact": "Monitor for site stability",
+        "timestamp": 1775149200
+      },
+      "current": {
+        "icon": "☀️",
+        "wind": "25.9km/h",
+        "rain": "0.0mm",
+        "temp": "27.0°C",
+        "threat_level": "Low",
+        "impact": "Monitor for site stability",
+        "timestamp": 1775120400
+      }
+    },
+    "eThekwini": {
+      "forecast_8h": {
+        "icon": "☀️",
+        "wind": "23.8km/h",
+        "rain": "0.0mm",
+        "temp": "20.6°C",
+        "threat_level": "Low",
+        "impact": "Monitor for site stability",
+        "timestamp": 1775149200
+      },
+      "current": {
+        "icon": "☀️",
+        "wind": "22.0km/h",
+        "rain": "0.0mm",
+        "temp": "26.6°C",
+        "threat_level": "Low",
+        "impact": "Monitor for site stability",
+        "timestamp": 1775120400
+      }
+    },
+    "": {
+      "forecast_8h": {
+        "icon": "☀️",
+        "wind": "20.5km/h",
+        "rain": "0.0mm",
+        "temp": "11.1°C",
+        "threat_level": "Low",
+        "impact": "Monitor for site stability",
+        "timestamp": 1775149200
+      },
+      "current": {
+        "icon": "☀️",
+        "wind": "18.0km/h",
+        "rain": "0.0mm",
+        "temp": "15.3°C",
+        "threat_level": "Low",
+        "impact": "Monitor for site stability",
+        "timestamp": 1775120400
+      }
+    }
+  },
+  "NGA": {
+    "North West": {
+      "current": {
+        "icon": "☀️",
+        "wind": "22.7km/h",
+        "rain": "0.0mm",
+        "temp": "24.0°C",
+        "threat_level": "Low",
+        "impact": "Monitor for site stability",
+        "timestamp": 1775120400
+      },
+      "forecast_8h": {
+        "icon": "☀️",
+        "wind": "7.6km/h",
+        "rain": "0.0mm",
+        "temp": "21.0°C",
+        "threat_level": "Low",
+        "impact": "Monitor for site stability",
+        "timestamp": 1775149200
+      }
+    },
+    "NGA North": {
+      "current": {
+        "icon": "☀️",
+        "wind": "11.5km/h",
+        "rain": "0.0mm",
+        "temp": "25.5°C",
+        "threat_level": "Low",
+        "impact": "Monitor for site stability",
+        "timestamp": 1775120400
+      },
+      "forecast_8h": {
+        "icon": "☀️",
+        "wind": "5.0km/h",
+        "rain": "0.0mm",
+        "temp": "24.4°C",
+        "threat_level": "Low",
+        "impact": "Monitor for site stability",
+        "timestamp": 1775149200
+      }
+    },
+    "": {
+      "current": {
+        "icon": "☀️",
+        "wind": "25.2km/h",
+        "rain": "0.0mm",
+        "temp": "24.5°C",
+        "threat_level": "Low",
+        "impact": "Monitor for site stability",
+        "timestamp": 1775120400
+      },
+      "forecast_8h": {
+        "icon": "☀️",
+        "wind": "10.1km/h",
+        "rain": "0.0mm",
+        "temp": "22.5°C",
+        "threat_level": "Low",
+        "impact": "Monitor for site stability",
+        "timestamp": 1775149200
+      }
+    },
+    "NGA Metro": {
+      "current": {
+        "icon": "☀️",
+        "wind": "15.8km/h",
+        "rain": "0.0mm",
+        "temp": "23.4°C",
+        "threat_level": "Low",
+        "impact": "Monitor for site stability",
+        "timestamp": 1775120400
+      },
+      "forecast_8h": {
+        "icon": "☀️",
+        "wind": "20.5km/h",
+        "rain": "0.0mm",
+        "temp": "21.7°C",
+        "threat_level": "Low",
+        "impact": "Monitor for site stability",
+        "timestamp": 1775149200
+      }
+    },
+    "Waterberg": {
+      "forecast_8h": {
+        "icon": "☀️",
+        "wind": "6.1km/h",
+        "rain": "0.0mm",
+        "temp": "23.1°C",
+        "threat_level": "Low",
+        "impact": "Monitor for site stability",
+        "timestamp": 1775149200
+      },
+      "current": {
+        "icon": "☀️",
+        "wind": "26.3km/h",
+        "rain": "0.0mm",
+        "temp": "25.6°C",
+        "threat_level": "Low",
+        "impact": "Monitor for site stability",
+        "timestamp": 1775120400
+      }
+    }
+  },
+  "MPU": {
+    "Nkangala": {
+      "forecast_8h": {
+        "icon": "☀️",
+        "wind": "21.6km/h",
+        "rain": "0.0mm",
+        "temp": "21.0°C",
+        "threat_level": "Low",
+        "impact": "Monitor for site stability",
+        "timestamp": 1775149200
+      },
+      "current": {
+        "icon": "☀️",
+        "wind": "22.0km/h",
+        "rain": "0.0mm",
+        "temp": "25.0°C",
+        "threat_level": "Low",
+        "impact": "Monitor for site stability",
+        "timestamp": 1775120400
+      }
+    },
+    "Ehlanzeni": {
+      "forecast_8h": {
+        "icon": "🌧️",
+        "wind": "18.7km/h",
+        "rain": "0.0mm",
+        "temp": "20.7°C",
+        "threat_level": "Low",
+        "impact": "Monitor for site stability",
+        "timestamp": 1775149200
+      },
+      "current": {
+        "icon": "🌧️",
+        "wind": "36.0km/h",
+        "rain": "0.0mm",
+        "temp": "21.9°C",
+        "threat_level": "Low",
+        "impact": "Monitor for site stability",
+        "timestamp": 1775120400
+      }
+    },
+    "Gert Sibande": {
+      "forecast_8h": {
+        "icon": "☀️",
+        "wind": "20.9km/h",
+        "rain": "0.0mm",
+        "temp": "17.6°C",
+        "threat_level": "Low",
+        "impact": "Monitor for site stability",
+        "timestamp": 1775149200
+      },
+      "current": {
+        "icon": "☀️",
+        "wind": "23.0km/h",
+        "rain": "0.0mm",
+        "temp": "22.0°C",
+        "threat_level": "Low",
+        "impact": "Monitor for site stability",
+        "timestamp": 1775120400
+      }
+    },
+    "": {
+      "current": {
+        "icon": "☀️",
+        "wind": "26.6km/h",
+        "rain": "0.0mm",
+        "temp": "25.2°C",
+        "threat_level": "Low",
+        "impact": "Monitor for site stability",
+        "timestamp": 1775120400
+      },
+      "forecast_8h": {
+        "icon": "☀️",
+        "wind": "19.1km/h",
+        "rain": "0.0mm",
+        "temp": "22.4°C",
+        "threat_level": "Low",
+        "impact": "Monitor for site stability",
+        "timestamp": 1775149200
+      }
+    }
+  },
+  "LIM": {
+    "Capricorn": {
+      "forecast_8h": {
+        "icon": "☀️",
+        "wind": "12.6km/h",
+        "rain": "0.0mm",
+        "temp": "22.9°C",
+        "threat_level": "Low",
+        "impact": "Monitor for site stability",
+        "timestamp": 1775149200
+      },
+      "current": {
+        "icon": "☀️",
+        "wind": "18.7km/h",
+        "rain": "0.0mm",
+        "temp": "24.8°C",
+        "threat_level": "Low",
+        "impact": "Monitor for site stability",
+        "timestamp": 1775120400
+      }
+    },
+    "Waterberg": {
+      "forecast_8h": {
+        "icon": "☀️",
+        "wind": "10.1km/h",
+        "rain": "0.0mm",
+        "temp": "21.1°C",
+        "threat_level": "Low",
+        "impact": "Monitor for site stability",
+        "timestamp": 1775149200
+      },
+      "current": {
+        "icon": "☀️",
+        "wind": "16.9km/h",
+        "rain": "0.0mm",
+        "temp": "24.6°C",
+        "threat_level": "Low",
+        "impact": "Monitor for site stability",
+        "timestamp": 1775120400
+      }
+    },
+    "Vhembe": {
+      "current": {
+        "icon": "☀️",
+        "wind": "35.3km/h",
+        "rain": "0.0mm",
+        "temp": "19.8°C",
+        "threat_level": "Low",
+        "impact": "Monitor for site stability",
+        "timestamp": 1775120400
+      },
+      "forecast_8h": {
+        "icon": "☀️",
+        "wind": "32.8km/h",
+        "rain": "0.0mm",
+        "temp": "17.1°C",
+        "threat_level": "Low",
+        "impact": "Monitor for site stability",
+        "timestamp": 1775149200
+      }
+    },
+    "": {
+      "current": {
+        "icon": "☀️",
+        "wind": "31.0km/h",
+        "rain": "0.0mm",
+        "temp": "26.0°C",
+        "threat_level": "Low",
+        "impact": "Monitor for site stability",
+        "timestamp": 1775120400
+      },
+      "forecast_8h": {
+        "icon": "☀️",
+        "wind": "16.6km/h",
+        "rain": "0.0mm",
+        "temp": "22.9°C",
+        "threat_level": "Low",
+        "impact": "Monitor for site stability",
+        "timestamp": 1775149200
+      }
+    }
+  },
+  "SGS": {
+    "Deep South": {
+      "forecast_8h": {
+        "icon": "☀️",
+        "wind": "21.2km/h",
+        "rain": "0.0mm",
+        "temp": "21.6°C",
+        "threat_level": "Low",
+        "impact": "Monitor for site stability",
+        "timestamp": 1775149200
+      },
+      "current": {
+        "icon": "☀️",
+        "wind": "19.1km/h",
+        "rain": "0.0mm",
+        "temp": "23.6°C",
+        "threat_level": "Low",
+        "impact": "Monitor for site stability",
+        "timestamp": 1775120400
+      }
+    },
+    "Far East": {
+      "forecast_8h": {
+        "icon": "☀️",
+        "wind": "16.6km/h",
+        "rain": "0.0mm",
+        "temp": "20.0°C",
+        "threat_level": "Low",
+        "impact": "Monitor for site stability",
+        "timestamp": 1775149200
+      },
+      "current": {
+        "icon": "☀️",
+        "wind": "15.5km/h",
+        "rain": "0.0mm",
+        "temp": "23.1°C",
+        "threat_level": "Low",
+        "impact": "Monitor for site stability",
+        "timestamp": 1775120400
+      }
+    },
+    "Jozi West": {
+      "forecast_8h": {
+        "icon": "☀️",
+        "wind": "17.6km/h",
+        "rain": "0.0mm",
+        "temp": "20.4°C",
+        "threat_level": "Low",
+        "impact": "Monitor for site stability",
+        "timestamp": 1775149200
+      },
+      "current": {
+        "icon": "☀️",
+        "wind": "19.1km/h",
+        "rain": "0.0mm",
+        "temp": "23.7°C",
+        "threat_level": "Low",
+        "impact": "Monitor for site stability",
+        "timestamp": 1775120400
+      }
+    }
+  },
+  "SGC": {
+    "West Side": {
+      "forecast_8h": {
+        "icon": "☀️",
+        "wind": "15.5km/h",
+        "rain": "0.0mm",
+        "temp": "21.7°C",
+        "threat_level": "Low",
+        "impact": "Monitor for site stability",
+        "timestamp": 1775149200
+      },
+      "current": {
+        "icon": "☀️",
+        "wind": "18.7km/h",
+        "rain": "0.0mm",
+        "temp": "22.9°C",
+        "threat_level": "Low",
+        "impact": "Monitor for site stability",
+        "timestamp": 1775120400
+      }
+    },
+    "Aerotropolis": {
+      "current": {
+        "icon": "☀️",
+        "wind": "15.5km/h",
+        "rain": "0.0mm",
+        "temp": "21.9°C",
+        "threat_level": "Low",
+        "impact": "Monitor for site stability",
+        "timestamp": 1775120400
+      },
+      "forecast_8h": {
+        "icon": "☀️",
+        "wind": "17.6km/h",
+        "rain": "0.0mm",
+        "temp": "20.4°C",
+        "threat_level": "Low",
+        "impact": "Monitor for site stability",
+        "timestamp": 1775149200
+      }
+    }
+  }
+}

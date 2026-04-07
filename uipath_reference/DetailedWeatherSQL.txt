@@ -1,0 +1,42 @@
+SELECT 
+    TO_CHAR(w.DATETIME, 'YYYY-MM-DD HH24:MI:SS') AS DATETIME_FULL,
+    g.REGION,
+    g.REGION || '_' || g.COUNTY AS COUNTY_ID, 
+    g.ATOLL_SITE_NAME, 
+    g.LATITUDE, 
+    g.LONGITUDE,
+    w.MAX_WIND_GUSTS_10M,   
+    w.SUM_RAIN,             
+    w.MAX_TEMPERATURE_2M,   
+    w.WEATHER_CODE
+FROM npm_rpt.GEN_ATOLL_LAST_STATUS g
+INNER JOIN sonar_usr.weather_data_site_hr w
+    ON ROUND(g.LATITUDE, 1) = w.LATITUDE 
+    AND ROUND(g.LONGITUDE, 1) = w.LONGITUDE
+WHERE 
+    UPPER(g.ATOLL_SITE_NAME) IN (
+        'EASINGWOLD_FARM',
+        'EMDENI_UCCSA',
+        'FUNDANI_PRIM_SCHL',
+        'GA_MATSHATSHA_1',
+        'HLANGANANI_PRIMARY_SCHOOL_N3',
+        'HUBBARD_AND_SNYMAN',
+        'KRIEL_TOWN',
+        'LUFHERENG_R558',
+        'MEGAMARK_MALL',
+        'MPHANAMA',
+        'MPHANAMA_VILLAGE',
+        'MUTALE_HILLTOP',
+        'NALEDI_LP',
+        'NOTTINGHAM_RD_MW',
+        'NOTTINGHAM_RD_WATER_TOWER',
+        'THENGWE',
+        'THENGWE_DECT',
+        'THONGANI',
+        'TSHILAMBA'
+    )
+    AND w.DATETIME >= TRUNC(SYSDATE, 'HH24') - INTERVAL '4' HOUR
+    AND w.DATETIME <= SYSDATE
+ORDER BY 
+    w.DATETIME DESC, 
+    g.ATOLL_SITE_NAME ASC

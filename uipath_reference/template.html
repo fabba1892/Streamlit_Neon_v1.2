@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Network Incident Intelligence</title>
+    
+    <style>
+        :root { --primary: #3b82f6; --bg: #f8fafc; --sidebar: #0f172a; --card-bg: #ffffff; --p1: #ef4444; --p2: #f97316; --p3: #eab308; --p4: #64748b; }
+        body { display: flex; font-family: 'Inter', system-ui, sans-serif; background: var(--bg); margin: 0; height: 100vh; overflow: hidden; }
+        
+        /* Sidebar styling */
+        .sidebar { width: 340px; background: var(--sidebar); color: #f1f5f9; padding: 24px; height: 100vh; overflow-y: auto; flex-shrink: 0; box-shadow: 4px 0 15px rgba(0,0,0,0.2); }
+        .sidebar h2 { font-size: 1.4rem; font-weight: 800; border-bottom: 2px solid #1e293b; padding-bottom: 12px; margin-bottom: 20px; }
+        .stats-container { background: #1e293b; padding: 18px; border-radius: 10px; margin-top: 20px; border-left: 5px solid var(--primary); }
+        .stat-row { display: flex; justify-content: space-between; margin-bottom: 8px; font-size: 0.9rem; color: #94a3b8; }
+        .stat-val { font-weight: 700; color: #ffffff; }
+
+        /* Filters */
+        .filter-group { background: #1e293b; padding: 18px; border-radius: 10px; margin-top: 20px; border: 1px solid #334155; }
+        .filter-label { font-size: 0.75rem; color: #64748b; text-transform: uppercase; font-weight: 700; margin-bottom: 10px; display: block; }
+        .search-box, .filter-select, .input-small { width: 100%; padding: 10px; border-radius: 8px; border: 1px solid #334155; background: #0f172a; color: white; margin-bottom: 12px; box-sizing: border-box; }
+        
+        /* Main Panel */
+        .main { flex-grow: 1; padding: 30px; overflow-y: auto; display: flex; flex-direction: column; gap: 20px; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(110px, 1fr)); gap: 15px; }
+        .card { background: white; padding: 15px; border-radius: 12px; text-align: center; cursor: pointer; border: 1px solid #e2e8f0; transition: transform 0.2s; }
+        .card:hover { transform: translateY(-3px); border-color: var(--primary); }
+        .card .val { font-size: 1.8rem; font-weight: 900; color: #0f172a; }
+
+        /* Incidents */
+        .incident { background: white; border-radius: 12px; border: 1px solid #e2e8f0; overflow: hidden; margin-bottom: 15px; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05); }
+        .incident .header { padding: 15px 25px; display: flex; align-items: center; cursor: pointer; gap: 20px; }
+        .incident .details { display: none; padding: 25px; border-top: 1px solid #f1f5f9; background: #fcfcfd; }
+        .incident.open .details { display: block; }
+        
+        /* Badges & Tables */
+        .p-tag { width: 36px; height: 36px; line-height: 36px; text-align: center; border-radius: 50%; font-weight: 800; font-size: 0.8rem; }
+        .P1 { background: #fee2e2; color: #b91c1c; } .P2 { background: #ffedd5; color: #c2410c; }
+        .P3 { background: #fef9c3; color: #a16207; } .P4 { background: #f1f5f9; color: #475569; }
+        .diag-table { width: 100%; border-collapse: collapse; margin-top: 10px; }
+        .diag-table th { background: #f8fafc; padding: 10px; font-size: 0.75rem; border-bottom: 2px solid #e2e8f0; color: #64748b; }
+        .diag-table td { padding: 10px; border-bottom: 1px solid #f1f5f9; text-align: center; font-size: 0.85rem; }
+        .site-cell-interactive { color: var(--primary); cursor: pointer; text-decoration: underline; font-weight: 700; text-align: left !important; }
+        .status-warn { color: #e11d48; font-weight: 800; background: #fff1f2; }
+
+        /* Priority Bars */
+        .priority-bar-container { min-width: 140px; text-align: right; }
+        .pb-bg { height: 8px; background: #e2e8f0; border-radius: 4px; margin-top: 5px; overflow: hidden; }
+        .pb-fill { height: 100%; background: var(--primary); width: 0%; transition: width 0.8s cubic-bezier(0.4, 0, 0.2, 1); }
+
+        /* Modal */
+        .modal { display: none; position: fixed; z-index: 9999; left: 0; top: 0; width: 100%; height: 100%; background: rgba(15, 23, 42, 0.85); backdrop-filter: blur(4px); }
+        .modal-content { background: white; margin: 4% auto; padding: 30px; width: 85%; border-radius: 12px; max-height: 85vh; overflow-y: auto; }
+    </style>
+</head>
+
+<body>
+    <div class="sidebar">
+        <h2>Network Ops AI</h2>
+        
+        <div class="stats-container">
+            <div class="stat-row"><span>Sites OOS</span> <span class="stat-val">##TOTAL_OOS##</span></div>
+            <div class="stat-row"><span>Hub Impacts</span> <span class="stat-val" style="color:#f87171;">##TOTAL_HUB##</span></div>
+            <div class="stat-row"><span>Power Alarms</span> <span class="stat-val" style="color:#fbbf24;">##TOTAL_PWR##</span></div>
+            <hr style="border:0; border-top:1px solid #334155; margin:15px 0;">
+            
+            <div class="stat-row"><span>P1 Critical</span> <span class="stat-val" style="color:var(--p1);">##P1_C##</span></div>
+            <div class="stat-row"><span>P2 High</span> <span class="stat-val" style="color:var(--p2);">##P2_C##</span></div>
+            <div class="stat-row"><span>P3 Moderate</span> <span class="stat-val" style="color:var(--p3);">##P3_C##</span></div>
+            <div class="stat-row"><span>P4 Low</span> <span class="stat-val" style="color:#94a3b8;">##P4_C##</span></div>
+            <div class="stat-row"><span>Total Alarms</span> <span class="stat-val">##TOTAL_ALARMS##</span></div>
+            <div class="stat-row"><span>Newest Alarm</span> <span class="stat-val">##NEWEST_ALARM##</span></div>
+        </div>
+
+        <div class="stats-container">
+            <span class="filter-label">RCA Distribution</span>
+            ##RCA_LIST##
+        </div>
+        
+        <div class="filter-group">
+            <span class="filter-label">Intelligent Filters</span>
+            
+            <input type="text" id="search" class="search-box" placeholder="Search RCA, ID, Hub..." onkeyup="searchDashboard()">
+            
+            <select id="focusFilter" class="filter-select" onchange="searchDashboard()">
+                <option value="all">All Incidents</option>
+                <option value="hub">Hub Failures Only</option>
+                <option value="link">Link/Trans Only</option>
+            </select>
+
+            <select id="rcaFilter" class="filter-select" onchange="searchDashboard()">
+                <option value="all">Root Cause</option>
+                ##RCA_OPTS##
+            </select>
+            
+            <select id="countyFilter" class="filter-select" onchange="searchDashboard()">
+                <option value="all">County</option>
+                ##COUNTY_OPTS##
+            </select>
+            
+            <input type="number" id="minSites" class="input-small" placeholder="Min Sites Impacted" value="0" oninput="searchDashboard()">
+            
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-bottom: 10px;">
+                <button onclick="sortDashboard('rank')" style="padding:10px; background:#334155; color:white; border:none; border-radius:8px; cursor:pointer; font-size: 0.8rem;">Sort Rank</button>
+                <button onclick="sortDashboard('time')" style="padding:10px; background:#334155; color:white; border:none; border-radius:8px; cursor:pointer; font-size: 0.8rem;">Sort Time</button>
+            </div>
+            
+            <button onclick="clearFilters()" style="width:100%; margin-bottom:10px; padding:10px; background:#475569; color:white; border:none; border-radius:8px; cursor:pointer; font-weight: 600;">Clear All Filters</button>
+            <button onclick="exportCSV()" style="width:100%; padding:10px; background:#10b981; color:white; border:none; border-radius:8px; cursor:pointer;">Export CSV</button>
+        </div>
+        
+        <div style="font-size:0.65rem; margin-top:20px; color:#64748b; text-align:center;">Last Sync: ##REFRESHED##</div>
+    </div>
+
+    <div class="main">
+        <div class="grid">##CARDS##</div>
+        <div id="incidentList">##LIST##</div>
+    </div>
+
+    <div id="alarmModal" class="modal">
+        <div class="modal-content">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;">
+                <h2 id="modalTitle" style="margin: 0; color: #0f172a;">Site Alarms</h2>
+                <button onclick="closeModal()" style="padding: 8px 16px; cursor: pointer; background: #ef4444; color: white; border: none; border-radius: 6px; font-weight: bold;">Close</button>
+            </div>
+            <div id="modalBody"></div>
+        </div>
+    </div>
+
+    <script>
+        let selectedRegion = null;
+
+        function filterByRegion(r) { 
+            selectedRegion = (selectedRegion === r) ? null : r; 
+            searchDashboard(); 
+        }
+
+       function searchDashboard() {
+    const query = document.getElementById('search').value.toLowerCase();
+    const minS = parseInt(document.getElementById('minSites').value) || 0;
+    const ctyF = document.getElementById('countyFilter').value;
+    const rcaF = document.getElementById('rcaFilter').value;
+    const focusF = document.getElementById('focusFilter').value;
+    
+    // SAVE FILTERS TO MEMORY
+    localStorage.setItem('dashboard_filters', JSON.stringify({
+        search: query, min: minS, county: ctyF, rca: rcaF, focus: focusF
+    }));
+
+    let visibleRanks = [];
+
+    document.querySelectorAll('.incident').forEach(inc => {
+        const oos = parseInt(inc.getAttribute('data-oos')) || 0;
+        const reg = inc.getAttribute('data-region') || "";
+        const rcaAttr = inc.getAttribute('data-rca') || "";
+        const rcaLower = rcaAttr.toLowerCase();
+        const rank = parseFloat(inc.getAttribute('data-rank')) || 0;
+        const counties = inc.getAttribute('data-counties') || "";
+        const isHub = inc.getAttribute('data-hubfail') === 'true';
+        
+        // --- NEW SEARCH LOGIC ---
+        // Get hub and site data attributes (ensure these are added in OutputHTML.py)
+        const hubName = (inc.getAttribute('data-hub') || "").toLowerCase();
+        const siteList = (inc.getAttribute('data-sites') || "").toLowerCase();
+        const visibleText = inc.innerText.toLowerCase();
+
+        // Check if query exists in visible text, the hub name, OR the site list
+        let show = visibleText.includes(query) || 
+                   hubName.includes(query) || 
+                   siteList.includes(query);
+        
+        // --- EXISTING FILTERS ---
+        if (selectedRegion && reg !== selectedRegion) show = false;
+        if (oos < minS) show = false;
+        if (ctyF !== 'all' && !counties.includes(ctyF)) show = false;
+        if (rcaF !== 'all' && rcaAttr !== rcaF) show = false;
+        if (focusF === 'hub' && !isHub) show = false;
+        if (focusF === 'link' && !rcaLower.includes('link') && !rcaLower.includes('transmission')) show = false;
+
+        inc.style.display = show ? 'block' : 'none';
+        if (show && rank > 0) visibleRanks.push(rank);
+    });
+    updateProgressBars(visibleRanks);
+}
+
+        function updateProgressBars(ranks) {
+            const currentMin = ranks.length ? Math.min(...ranks) : 0;
+            document.querySelectorAll('.incident').forEach(inc => {
+                if (inc.style.display !== 'none') {
+                    const r = parseFloat(inc.getAttribute('data-rank'));
+                    const fill = inc.querySelector('.pb-fill');
+                    if (fill && r > 0) {
+                        const percentage = Math.min((currentMin / r) * 100, 100);
+                        fill.style.width = percentage + '%';
+                    }
+                }
+            });
+        }
+
+        function sortDashboard(type) {
+            const container = document.getElementById('incidentList');
+            const incs = Array.from(container.children);
+            
+            incs.sort((a, b) => {
+                if (type === 'rank') {
+                    const rankA = parseFloat(a.getAttribute('data-rank')) || 999;
+                    const rankB = parseFloat(b.getAttribute('data-rank')) || 999;
+                    return rankA - rankB; 
+                } else if (type === 'time') {
+                    const dateA = parseInt(a.getAttribute('data-date')) || 0;
+                    const dateB = parseInt(b.getAttribute('data-date')) || 0;
+                    return dateB - dateA; 
+                }
+            });
+
+            container.innerHTML = ''; 
+            incs.forEach(i => container.appendChild(i));
+        }
+
+        function clearFilters() {
+            localStorage.removeItem('dashboard_filters'); // CLEAR SAVED MEMORY
+            document.getElementById('search').value = '';
+            document.getElementById('focusFilter').value = 'all';
+            document.getElementById('rcaFilter').value = 'all';
+            document.getElementById('countyFilter').value = 'all';
+            document.getElementById('minSites').value = 0;
+            selectedRegion = null;
+            searchDashboard();
+        }
+
+        function openAlarmModal(siteId, alarmJson) {
+            try {
+                let alarms = JSON.parse(alarmJson);
+                if (!Array.isArray(alarms) && alarms.alarms) alarms = alarms.alarms;
+                document.getElementById("modalTitle").innerText = "Site Alarms: " + siteId;
+                
+                let h = `<table class="diag-table" style="font-size: 0.75em; text-align: left;">
+                    <thead><tr><th>Alarm</th><th>Alert Group</th><th>Summary</th><th>First Occurrence</th><th>Last Occurrence</th><th>Tech</th><th>Serial</th><th>Sec. Pre-Outage</th></tr></thead>
+                    <tbody>`;
+                
+                if (!alarms || alarms.length === 0) {
+                    h += '<tr><td colspan="8" style="text-align:center;">No active alarms found for this site.</td></tr>';
+                } else {
+                    alarms.forEach(a => {
+                        h += `<tr>
+                            <td style="font-weight:bold;">${a.Alarm || '-'}</td>
+                            <td>${a.AlertGroup || '-'}</td>
+                            <td><small>${a.Summary || '-'}</small></td>
+                            <td>${a.FirstOccurrence || '-'}</td>
+                            <td>${a.LastOccurrence || '-'}</td>
+                            <td>${a.Tech || '-'}</td>
+                            <td>${a.Serial || '-'}</td>
+                            <td>${a.Seconds_Before_Outage || '0'}s</td>
+                        </tr>`;
+                    });
+                }
+                document.getElementById("modalBody").innerHTML = h + '</tbody></table>';
+                document.getElementById("alarmModal").style.display = "block";
+            } catch (e) {
+                console.error("Modal Error:", e);
+            }
+        }
+
+        function closeModal() { document.getElementById("alarmModal").style.display = "none"; }
+
+        function exportCSV() {
+            let csv = "Timestamp,Region,RCA,OOS,Priority\n";
+            document.querySelectorAll('.incident').forEach(inc => {
+                if (inc.style.display !== 'none') {
+                    const ts = inc.querySelector('.ts')?.innerText || "N/A";
+                    const reg = inc.getAttribute('data-region');
+                    const rca = inc.getAttribute('data-rca');
+                    const oos = inc.getAttribute('data-oos');
+                    const prio = inc.getAttribute('data-priority');
+                    csv += `"${ts}","${reg}","${rca}",${oos},"${prio}"\n`;
+                }
+            });
+            const blob = new Blob([csv], { type: 'text/csv' });
+            const url = window.URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = `Network_Incident_Report_${new Date().toISOString().slice(0,10)}.csv`;
+            a.click();
+        }
+
+        window.onclick = function(event) {
+            const modal = document.getElementById("alarmModal");
+            if (event.target == modal) closeModal();
+        }
+    </script>
+
+
+<div id="refresh-control" style="position: fixed; bottom: 20px; right: 20px; background: #1e293b; color: white; padding: 10px 15px; border-radius: 8px; font-size: 0.8rem; box-shadow: 0 4px 12px rgba(0,0,0,0.3); z-index: 1000; display: flex; align-items: center; gap: 10px; border: 1px solid #334155;">
+    <span id="refresh-status">🔄 Refreshing in: <b id="timer">60</b>s</span>
+    <button id="pause-btn" onclick="toggleRefresh()" style="background: #3b82f6; border: none; color: white; border-radius: 4px; padding: 4px 8px; cursor: pointer; font-weight: bold;">Pause</button>
+</div>
+
+<script>
+    let timeLeft = 60; // Refresh interval in seconds
+    let isPaused = false;
+    const timerElement = document.getElementById('timer');
+    const statusElement = document.getElementById('refresh-status');
+    const pauseBtn = document.getElementById('pause-btn');
+
+    function startTimer() {
+        setInterval(() => {
+            if (!isPaused) {
+                timeLeft--;
+                if (timeLeft <= 0) {
+                    window.location.reload();
+                }
+                timerElement.innerText = timeLeft;
+            }
+        }, 1000);
+    }
+
+    function toggleRefresh() {
+        isPaused = !isPaused;
+        if (isPaused) {
+            statusElement.innerText = "⏸ Refresh Paused";
+            pauseBtn.innerText = "Resume";
+            pauseBtn.style.background = "#10b981"; // Green for resume
+        } else {
+            statusElement.innerText = "🔄 Refreshing in: " + timeLeft + "s";
+            pauseBtn.innerText = "Pause";
+            pauseBtn.style.background = "#3b82f6"; // Blue for pause
+            // Immediately update timer display
+            timerElement.innerText = timeLeft;
+        }
+    }
+
+    // Start the countdown on load
+    startTimer();
+
+    function loadSavedFilters() {
+    const saved = localStorage.getItem('dashboard_filters');
+    if (saved) {
+        const f = JSON.parse(saved);
+        document.getElementById('search').value = f.search || "";
+        document.getElementById('minSites').value = f.min || 0;
+        document.getElementById('countyFilter').value = f.county || "all";
+        document.getElementById('rcaFilter').value = f.rca || "all";
+        document.getElementById('focusFilter').value = f.focus || "all";
+        
+        searchDashboard(); // Trigger the filter logic immediately
+    }
+}
+
+// Run this automatically when the page loads
+window.addEventListener('DOMContentLoaded', loadSavedFilters);
+</script>
+
+
+
+</body>
+</html>

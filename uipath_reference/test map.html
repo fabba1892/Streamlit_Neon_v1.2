@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOC Intelligence - Network & Weather Correlation</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <style>
+        body { margin: 0; padding: 0; font-family: 'Segoe UI', Tahoma, sans-serif; background: #f4f7f6; }
+        #map { height: 100vh; width: 100%; background: #e0e0e0; }
+        
+        /* Dashboard Overlay */
+        .dashboard-ui { 
+            position: absolute; top: 20px; left: 20px; z-index: 1000;
+            background: white; padding: 20px; border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2); width: 300px;
+        }
+        .status-header { border-bottom: 2px solid #eee; margin-bottom: 15px; padding-bottom: 10px; }
+        .stat-row { display: flex; justify-content: space-between; margin: 8px 0; font-size: 14px; }
+        .alert-p1 { color: #d9534f; font-weight: bold; }
+        
+        /* Filters */
+        .filter-panel { margin-top: 15px; background: #fafafa; padding: 10px; border-radius: 8px; }
+        .filter-item { display: block; margin: 8px 0; cursor: pointer; font-size: 13px; }
+        
+        /* Custom Popups */
+        .oos-popup b { color: #d9534f; }
+        .weather-popup b { color: #0275d8; }
+    </style>
+</head>
+<body>
+
+<div class="dashboard-ui">
+    <div class="status-header">
+        <h2 style="margin:0; font-size: 18px; color: #333;">NOC Dashboard</h2>
+        <small style="color: #888;">Live: 2026-04-02 11:17 (SAST)</small>
+    </div>
+    
+    <div class="stat-row"><span>Total Sites OOS:</span> <span class="alert-p1">536</span></div>
+    <div class="stat-row"><span>Active P1 Incidents:</span> <span class="alert-p1">11</span></div>
+    
+    <div class="filter-panel">
+        <strong>Display Layers:</strong>
+        <label class="filter-item"><input type="checkbox" id="checkOOS" checked onchange="updateLayers()"> 🔴 Active Outages (OOS)</label>
+        <label class="filter-item"><input type="checkbox" id="checkIncidents" checked onchange="updateLayers()"> ⚠️ Major Hub Failures (RCA)</label>
+        <label class="filter-item"><input type="checkbox" id="checkWeather" checked onchange="updateLayers()"> 💨 Weather Risks (>20km/h)</label>
+    </div>
+</div>
+
+<div id="map"></div>
+
+<script>
+    // 1. Initialize Map (Center of SA)
+    var map = L.map('map').setView([-28.479, 24.672], 6);
+
+    // 2. Load Reliable Street Tiles (Guaranteed not to be black)
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: '&copy; OpenStreetMap contributors'
+    }).addTo(map);
+
+    // 3. Layer Groups
+    var oosLayer = L.layerGroup().addTo(map);
+    var incidentLayer = L.layerGroup().addTo(map);
+    var weatherLayer = L.layerGroup().addTo(map);
+
+    // --- DATA INTEGRATION FROM YOUR FILES ---
+
+    // A. Major Incidents from Phase1result.txt
+    var majorIncidents = [
+        {lat: -22.9, lon: 30.4, name: "TSHILAMBA HUB", rca: "Power Failure", p: "P1", oos: 26},
+        {lat: -26.24, lon: 27.82, name: "EMDENI UCCSA", rca: "Transmission Failure", p: "P4", oos: 4},
+        {lat: -33.92, lon: 18.42, name: "CAPE TOWN VBS", rca: "Service Impact", p: "P2", oos: 143}
+    ];
+
+    majorIncidents.forEach(function(inc) {
+        L.marker([inc.lat, inc.lon]).addTo(incidentLayer)
+            .bindPopup(`<div class='oos-popup'><b>${inc.p} - ${inc.name}</b><br>RCA: ${inc.rca}<br>Impact: ${inc.oos} Sites</div>`);
+    });
+
+    // B. Weather Risks from DetailedWeatherDATA.txt (High Wind Filtering)
+    var weatherRisks = [
+        {lat: -33.68, lon: 19.20, site: "Worcester High Wind", wind: "55.8 km/h", impact: "Microwave Fade"},
+        {lat: -29.34, lon: 30.07, site: "Easingwold Farm", wind: "24.5 km/h", impact: "Monitor"},
+        {lat: -22.74, lon: 30.50, site: "Mutale Hilltop", wind: "24.1 km/h", impact: "Power Risk"}
+    ];
+
+    weatherRisks.forEach(function(w) {
+        L.circle([w.lat, w.lon], {
+            color: '#0275d8', fillColor: '#3498db', fillOpacity: 0.2, radius: 15000
+        }).addTo(weatherLayer)
+        .bindPopup(`<div class='weather-popup'><b>Weather Risk: ${w.site}</b><br>Wind: ${w.wind}<br>Potential: ${w.impact}</div>`);
+    });
+
+    // C. OOS Site Clusters
+    var oosClusters = [
+        [-26.2, 28.0, 68], // SGS
+        [-25.5, 30.0, 92], // MPU
+        [-29.1, 26.2, 47], // CEN
+        [-23.9, 29.4, 81]  // LIM
+    ];
+
+    oosClusters.forEach(function(c) {
+        L.circleMarker([c[0], c[1]], {
+            radius: Math.sqrt(c[2]) * 2,
+            color: 'red', fillOpacity: 0.5
+        }).addTo(oosLayer).bindPopup(`Regional OOS Total: ${c[2]}`);
+    });
+
+    // Toggle Functionality
+    function updateLayers() {
+        if(document.getElementById('checkOOS').checked) map.addLayer(oosLayer); else map.removeLayer(oosLayer);
+        if(document.getElementById('checkIncidents').checked) map.addLayer(incidentLayer); else map.removeLayer(incidentLayer);
+        if(document.getElementById('checkWeather').checked) map.addLayer(weatherLayer); else map.removeLayer(weatherLayer);
+    }
+</script>
+
+</body>
+</html>

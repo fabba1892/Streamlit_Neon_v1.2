@@ -1,0 +1,7 @@
+[theme]
+base="dark"
+primaryColor="#10b981"         # The Emerald Green for the Slider/Active Inputs
+backgroundColor="#0f172a"      # The deep dark background (Main UI)
+secondaryBackgroundColor="#111626" # The slightly darker Sidebar background
+textColor="#f1f5f9"            # Crisp white text
+font="sans serif"
