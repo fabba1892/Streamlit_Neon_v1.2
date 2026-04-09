@@ -40,7 +40,12 @@ def extract_sidebar_metrics(payload):
     # ... (Keep the top part of the function the same)
 
     # NEW: Pull the last refresh timestamp from the JSON
-    last_refresh = meta.get("last_refresh", "Unknown Timestamp")
+    # ... (Keep priority and RCA tallying exactly the same)
+
+    # NEW: Precisely targets the "last_refreshed" key from your JSON payload
+    last_refresh = meta.get("last_refreshed", 
+                   meta.get("last_refresh", 
+                   payload.get("last_refreshed", "Data Offline")))
 
     return {
         "total_oos": total_oos,
@@ -48,7 +53,7 @@ def extract_sidebar_metrics(payload):
         "total_alarms": total_alarms,
         "priorities": dict(priorities),
         "top_rcas": rca_dist.most_common(5),
-        "last_refresh": last_refresh # Injected for the UI
+        "last_refresh": last_refresh # Pushed to the UI
     }
 
 def extract_regional_cards(payload):

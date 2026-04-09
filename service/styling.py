@@ -6,20 +6,26 @@ def inject_sidebar_css():
         /* 1. Base Sidebar Styling */
         [data-testid="stSidebar"] { background-color: #0f172a !important; }
 
-        /* 2. Custom HTML Blocks (Stats & RCA) */
+        /* Custom HTML Blocks (Stats & RCA) - COMPACTED */
         .neon-box { 
-            background-color: #1e293b !important; padding: 18px !important; 
-            border-radius: 10px !important; margin-bottom: 20px !important; 
+            background-color: #1e293b !important; 
+            padding: 12px !important; /* Shrunk from 18px */
+            border-radius: 8px !important; 
+            margin-bottom: 12px !important; /* Shrunk from 20px */
             box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1) !important;
         }
         .blue-edge { border-left: 5px solid #3b82f6 !important; }
         
-        .stat-row { display: flex; justify-content: space-between; margin-bottom: 8px; font-size: 0.9rem; color: #94a3b8; }
+        /* Shrunk the margin between rows and slightly reduced font size */
+        .stat-row { display: flex; justify-content: space-between; margin-bottom: 3px; font-size: 0.85rem; color: #94a3b8; }
         .stat-val { font-weight: 700; color: #ffffff; }
         
-        .neon-rca-row { display: flex; justify-content: space-between; align-items: center; padding: 6px 0; border-bottom: 1px solid #334155; font-size: 0.85rem; color: #cbd5e1; }
-        .neon-rca-badge { background-color: #3b82f6; color: white; padding: 2px 8px; border-radius: 12px; font-weight: bold; font-size: 0.75rem; }
-        .filter-header { font-size: 0.75rem; color: #64748b; text-transform: uppercase; font-weight: 700; margin-bottom: 10px; display: block; }
+        .neon-rca-row { display: flex; justify-content: space-between; align-items: center; padding: 4px 0; border-bottom: 1px solid #334155; font-size: 0.80rem; color: #cbd5e1; }
+        .neon-rca-badge { background-color: #3b82f6; color: white; padding: 2px 6px; border-radius: 10px; font-weight: bold; font-size: 0.70rem; }
+        .filter-header { font-size: 0.75rem; color: #64748b; text-transform: uppercase; font-weight: 700; margin-bottom: 8px; display: block; }
+        
+        /* Tighter horizontal lines */
+        hr { border-top: 1px solid #334155 !important; margin: 8px 0 !important; }
 
         /* --- 3. THE FORM BYPASS FIX --- */
         /* This targets Streamlit's native form wrapper, which works on ALL versions */
@@ -96,10 +102,15 @@ def inject_sidebar_css():
             text-align: center !important;
         }
 
-        /* 5. ACTIVE STATE */
-        [data-testid="stAppViewContainer"] [data-testid="stButton"] button[data-baseweb="button"]:has(div:contains("ACTIVE")) {
-             border: 2px solid #3b82f6 !important;
-             background-color: #eff6ff !important;
+        /* 5. ACTIVE STATE (Primary Button = Light Red Indicator) */
+        /* Targets the button type="primary" set by our main_view.py logic */
+        [data-testid="stAppViewContainer"] [data-testid="stButton"] button[kind="primary"] {
+             border: 2px solid #ef4444 !important; /* Solid Red Border */
+             background-color: #fef2f2 !important; /* Light Red Background */
+             color: #991b1b !important; /* Dark Red Text for high contrast */
+        }
+        [data-testid="stAppViewContainer"] [data-testid="stButton"] button[kind="primary"] p {
+             color: #991b1b !important;
         }
 
         /* Sidebar Form Compact Fix */
