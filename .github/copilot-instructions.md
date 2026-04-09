@@ -1,4 +1,4 @@
-# Streamlit MSDP Monitor - Workspace Instructions
+# Streamlit - Workspace Instructions
 
 ## Project Overview
 

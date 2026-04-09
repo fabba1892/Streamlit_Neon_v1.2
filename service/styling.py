@@ -51,5 +51,58 @@ def inject_sidebar_css():
 
         [data-testid="stSidebar"] label p { color: #94a3b8 !important; font-size: 0.8rem !important; }
         hr { border-top: 1px solid #334155 !important; margin: 15px 0 !important; }
+                
+        /* =========================================
+           MAIN CANVAS & INTERACTIVE CARDS CSS
+           ========================================= */
+           
+        /* 1. Paint the Main Dashboard Background Off-White */
+        [data-testid="stAppViewContainer"] {
+            background-color: #f8fafc !important;
+            color: #0f172a !important;
+        }
+        [data-testid="stHeader"] {
+            background-color: #f8fafc !important;
+        }
+
+        /* 2. Transform Streamlit Buttons into Compact Floating Cards */
+        [data-testid="stAppViewContainer"] [data-testid="stButton"] button {
+            background-color: #ffffff !important;
+            color: #0f172a !important;
+            border: 1px solid #e2e8f0 !important;
+            border-radius: 10px !important;
+            padding: 8px 5px !important; /* TIGHTER PADDING */
+            height: auto !important;
+            min-height: 0 !important; /* REMOVES NATIVE HEIGHT RESTRICTIONS */
+            box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05) !important;
+            transition: transform 0.2s, border-color 0.2s !important;
+            width: 100% !important;
+        }
+
+        /* 3. Hover Effect */
+        [data-testid="stAppViewContainer"] [data-testid="stButton"] button:hover {
+            transform: translateY(-3px) !important;
+            border-color: #3b82f6 !important;
+            box-shadow: 0 8px 12px -3px rgba(0,0,0,0.1) !important;
+        }
+
+        /* 4. Formatting the Text inside the Button */
+        [data-testid="stAppViewContainer"] [data-testid="stButton"] button p {
+            font-size: 0.95rem !important;  /* SMALLER FONT */
+            font-weight: 800 !important;
+            margin: 0 !important;
+            white-space: pre-wrap !important; 
+            line-height: 1.2 !important; /* FORCES THE SECOND LINE TO SHOW */
+            text-align: center !important;
+        }
+
+        /* 5. ACTIVE STATE */
+        [data-testid="stAppViewContainer"] [data-testid="stButton"] button[data-baseweb="button"]:has(div:contains("ACTIVE")) {
+             border: 2px solid #3b82f6 !important;
+             background-color: #eff6ff !important;
+        }
+
+        /* Sidebar Form Compact Fix */
+        [data-testid="stSidebar"] [data-testid="stForm"] .stSelectbox { margin-bottom: -10px !important; }
     </style>
     """, unsafe_allow_html=True)

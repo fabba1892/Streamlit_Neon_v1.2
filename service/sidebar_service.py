@@ -4,7 +4,7 @@ from service.styling import inject_sidebar_css
 def render_sidebar(metrics):
     inject_sidebar_css()
 
-    st.sidebar.markdown("## Network Ops AI")
+    st.sidebar.markdown("## 🛜Network Ops AI")
     
     # 1. PULL METRICS
     oos = metrics.get("total_oos", 0)
@@ -34,29 +34,41 @@ def render_sidebar(metrics):
     rca_html += '</div>'
     st.sidebar.markdown(rca_html, unsafe_allow_html=True)
 
-    # 4. INTELLIGENT FILTERS (Version-Proof Form Wrapper)
+    # ... (Keep the Top Stats and RCA sections the same)
+
+    # 4. INTELLIGENT FILTERS (Compact & Formatted)
     with st.sidebar.form("filter_panel"):
         st.markdown('<span class="filter-header">Intelligent Filters</span>', unsafe_allow_html=True)
         
-        # Form Inputs
-        st.session_state.search_query = st.text_input("Search RCA, ID, Hub...", placeholder="Search...")
+        # Search Box
+        st.session_state.search_query = st.text_input("Search", placeholder="Search RCA, ID, Hub...", label_visibility="collapsed")
+        
+        # Dropdowns acting as Placeholders (first item is the label)
         st.session_state.focus_filter = st.selectbox("Focus", ["All Incidents", "Hub Failures Only", "Link/Trans Only"], label_visibility="collapsed")
         
-        dynamic_rca = ["All"] + [rca[0] for rca in metrics.get("top_rcas", [])]
+        dynamic_rca = ["Root Cause", "All"] + [rca[0] for rca in metrics.get("top_rcas", [])]
         st.session_state.rca_filter = st.selectbox("Root Cause", dynamic_rca, label_visibility="collapsed")
         
-        st.session_state.county_filter = st.selectbox("County", ["All"], label_visibility="collapsed")
+        st.session_state.county_filter = st.selectbox("County", ["County", "All"], label_visibility="collapsed")
+        
+        # Min Sites
         st.session_state.min_sites = st.number_input("Min Sites Impacted", min_value=0, step=1)
         
-        # Consolidated Sorting for Form compatibility
-        st.session_state.sort_type = st.selectbox("Sort Priority", ["Rank (Highest Impact)", "Time (Newest First)"])
-        
-        # The mandatory Form Submit Button (Triggers the update across the dashboard)
-        submitted = st.form_submit_button("Apply Filters", use_container_width=True)
+        # Side-by-Side Sort Buttons inside the form
+        col1, col2 = st.columns(2)
+        with col1:
+            sort_rank_clicked = st.form_submit_button("Sort Rank", use_container_width=True)
+        with col2:
+            sort_time_clicked = st.form_submit_button("Sort Time", use_container_width=True)
 
-    # Clear Filters Button (Placed outside the form to reset states safely)
-    if st.sidebar.button("Clear All Filters", use_container_width=True):
-        st.session_state.clear()
-        st.rerun()
+        # Logic to catch which sort button was pressed
+        if sort_rank_clicked: st.session_state.sort_type = 'rank'
+        if sort_time_clicked: st.session_state.sort_type = 'time'
 
-    st.sidebar.markdown('<div style="font-size:0.65rem; margin-top:20px; color:#64748b; text-align:center;">Last Sync: Live Engine Active</div>', unsafe_allow_html=True)
+    # External Action Buttons (Outside form to clear easily)
+    st.sidebar.button("Clear All Filters", type="primary", use_container_width=True)
+    st.sidebar.button("Export CSV", use_container_width=True)
+
+    # 5. DYNAMIC LAST SYNC TIMESTAMP
+    sync_time = metrics.get("last_refresh", "Data Offline")
+    st.sidebar.markdown(f'<div style="font-size:0.70rem; margin-top:20px; color:#94a3b8; text-align:center; font-weight: bold;">Last Sync: {sync_time}</div>', unsafe_allow_html=True)
