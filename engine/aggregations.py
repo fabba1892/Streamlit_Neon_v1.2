@@ -14,12 +14,15 @@ def extract_sidebar_metrics(payload):
     if not total_oos: total_oos = meta.get("total_oos", 0)
     if not total_hubs: total_hubs = meta.get("total_incidents_shown", 0) 
 
+    # ... (Keep the top part where total_oos and total_hubs are defined)
+
     regional_data = payload.get("regional_data", {})
     priorities = Counter()
     rca_dist = Counter()
+    unique_counties = set() # NEW: Harvester for the sidebar dropdown
     total_alarms = 0
 
-    # 2. MANUALLY TALLY PRIORITIES & RCA
+    # 2. MANUALLY TALLY PRIORITIES, RCA, AND COUNTIES
     for region, r_data in regional_data.items():
         incidents = r_data.get("Incidents", [])
         for inc in incidents:
@@ -36,16 +39,16 @@ def extract_sidebar_metrics(payload):
             raw_rca = str(inc.get("RCA", "Unknown"))
             clean_rca = raw_rca.split(":")[0].split("-")[0].strip()
             rca_dist[clean_rca] += 1
+            
+            # Tally Counties
+            counties = inc.get("County_List", [])
+            if isinstance(counties, list):
+                for c in counties:
+                    if c and str(c).strip() != "":
+                        unique_counties.add(str(c).strip())
 
-    # ... (Keep the top part of the function the same)
-
-    # NEW: Pull the last refresh timestamp from the JSON
-    # ... (Keep priority and RCA tallying exactly the same)
-
-    # NEW: Precisely targets the "last_refreshed" key from your JSON payload
-    last_refresh = meta.get("last_refreshed", 
-                   meta.get("last_refresh", 
-                   payload.get("last_refreshed", "Data Offline")))
+    # ... (Keep the timestamp hunter the same)
+    last_refresh = meta.get("last_refreshed", meta.get("last_refresh", payload.get("last_refreshed", "Data Offline")))
 
     return {
         "total_oos": total_oos,
@@ -53,7 +56,8 @@ def extract_sidebar_metrics(payload):
         "total_alarms": total_alarms,
         "priorities": dict(priorities),
         "top_rcas": rca_dist.most_common(5),
-        "last_refresh": last_refresh # Pushed to the UI
+        "all_counties": sorted(list(unique_counties)), # NEW: Passes list to UI
+        "last_refresh": last_refresh 
     }
 
 def extract_regional_cards(payload):
