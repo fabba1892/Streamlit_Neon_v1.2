@@ -115,5 +115,67 @@ def inject_sidebar_css():
 
         /* Sidebar Form Compact Fix */
         [data-testid="stSidebar"] [data-testid="stForm"] .stSelectbox { margin-bottom: -10px !important; }
+                
+        /* 6. EXPANDABLE GRID OVERRIDES */
+        /* Forces the expander to look like a clean, clickable row */
+        /* The outer shell */
+        /* =========================================
+           6. EXPANDABLE GRID OVERRIDES
+           ========================================= */
+           
+        /* The outer shell */
+        [data-testid="stExpander"] {
+            background-color: #ffffff !important;
+            border: 1px solid #e2e8f0 !important;
+            border-radius: 8px !important;
+            margin-bottom: 10px !important;
+            box-shadow: 0 2px 4px -1px rgba(0,0,0,0.05) !important;
+            overflow: hidden !important; /* Keeps the corners rounded */
+        }
+        
+        /* THE HEADER: The clickable row (Force light mode even when open) */
+        [data-testid="stExpander"] summary {
+            background-color: #f8fafc !important;
+            color: #0f172a !important;
+            padding: 10px 15px !important;
+        }
+        [data-testid="stExpander"] summary:hover {
+            background-color: #e2e8f0 !important;
+        }
+        [data-testid="stExpander"] summary p {
+            color: #0f172a !important; /* Force text to be dark */
+            font-weight: 700 !important;
+        }
+        [data-testid="stExpander"] summary svg {
+            fill: #0f172a !important; /* Make the dropdown arrow dark */
+            color: #0f172a !important;
+        }
+        
+        /* THE INSIDE: Force light background and dark text */
+        [data-testid="stExpanderDetails"] {
+            background-color: #ffffff !important; 
+            border-top: 1px solid #e2e8f0 !important;
+            padding: 15px !important;
+        }
+        [data-testid="stExpanderDetails"] p,
+        [data-testid="stExpanderDetails"] h5,
+        [data-testid="stExpanderDetails"] div {
+            color: #0f172a !important; /* Force dark text */
+        }
+
+        /* The Site Buttons inside the Expander */
+        [data-testid="stExpanderDetails"] [data-testid="stButton"] button {
+            background-color: #f1f5f9 !important; 
+            border: 1px solid #cbd5e1 !important;
+            color: #0f172a !important;
+            font-size: 0.85rem !important;
+            font-weight: 600 !important;
+            padding: 5px 10px !important;
+        }
+        [data-testid="stExpanderDetails"] [data-testid="stButton"] button:hover {
+            background-color: #e2e8f0 !important;
+            border-color: #3b82f6 !important;
+            color: #000000 !important;
+        }
     </style>
     """, unsafe_allow_html=True)
