@@ -44,15 +44,18 @@ def render_sidebar(metrics):
         st.session_state.search_query = st.text_input("Search", placeholder="Search RCA, ID, Hub...", label_visibility="collapsed")
         
         # Dropdowns acting as Placeholders (first item is the label)
+        # ... (Inside the form)
         st.session_state.focus_filter = st.selectbox("Focus", ["All Incidents", "Hub Failures Only", "Link/Trans Only"], label_visibility="collapsed")
         
         dynamic_rca = ["Root Cause", "All"] + [rca[0] for rca in metrics.get("top_rcas", [])]
         st.session_state.rca_filter = st.selectbox("Root Cause", dynamic_rca, label_visibility="collapsed")
         
-        st.session_state.county_filter = st.selectbox("County", ["County", "All"], label_visibility="collapsed")
+        # NEW: Inject dynamically harvested counties
+        dynamic_counties = ["County", "All"] + metrics.get("all_counties", [])
+        st.session_state.county_filter = st.selectbox("County", dynamic_counties, label_visibility="collapsed")
         
-        # Min Sites
         st.session_state.min_sites = st.number_input("Min Sites Impacted", min_value=0, step=1)
+        # ...
         
         # Side-by-Side Sort Buttons inside the form
         col1, col2 = st.columns(2)
