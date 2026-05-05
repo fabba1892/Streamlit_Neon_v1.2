@@ -33,18 +33,23 @@ def render_top_cards(total_all, regional_data):
     # --- RENDER THE GRID ---
     cols = st.columns(len(ordered_regions))
 
+    # ... (Inside render_top_cards grid loop)
     for i, col in enumerate(cols):
         reg = ordered_regions[i]
         
-        # Format explicitly for two lines
+        # Determine the correct Icon
+        icon = "🌍" if reg == "ALL" else "📉" if "down" in reg.lower() else "❓" if reg == "Unknown" else "📡"
+        
+        # Format explicitly for two lines with the icon
         if reg == "ALL":
             count = total_all
-            label = f"ALL REGIONS\n{count}"
+            label = f"{icon} ALL REGIONS\n{count}"
         else:
             count = regional_data.get(reg, 0)
-            label = f"{reg}\n{count}"
+            label = f"{icon} {reg}\n{count}"
 
         btn_type = "primary" if st.session_state.active_region == reg else "secondary"
+        # ...
 
         with col:
             # use_container_width ensures it spans the column perfectly
@@ -52,4 +57,3 @@ def render_top_cards(total_all, regional_data):
                 st.session_state.active_region = reg
                 st.rerun()
 
-    st.markdown("<hr style='border-top: 2px solid #e2e8f0; margin: 25px 0;'>", unsafe_allow_html=True)
